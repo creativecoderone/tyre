@@ -40,6 +40,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_app_error_error_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/error/error.component */ "./src/app/error/error.component.ts");
 /* harmony import */ var src_app_water_water_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/water/water.component */ "./src/app/water/water.component.ts");
 /* harmony import */ var src_app_application_locality_locality_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/application/locality/locality.component */ "./src/app/application/locality/locality.component.ts");
+/* harmony import */ var src_app_shift_shift_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/shift/shift.component */ "./src/app/shift/shift.component.ts");
+/* harmony import */ var src_app_unshift_unshift_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/app/unshift/unshift.component */ "./src/app/unshift/unshift.component.ts");
+/* harmony import */ var src_app_rental_rental_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! src/app/rental/rental.component */ "./src/app/rental/rental.component.ts");
+
+
+
 
 
 
@@ -64,6 +70,18 @@ var routes = [
     {
         path: "locality",
         component: src_app_application_locality_locality_component__WEBPACK_IMPORTED_MODULE_6__["LocalityComponent"]
+    },
+    {
+        path: "shift",
+        component: src_app_shift_shift_component__WEBPACK_IMPORTED_MODULE_7__["ShiftComponent"]
+    },
+    {
+        path: "unshift",
+        component: src_app_unshift_unshift_component__WEBPACK_IMPORTED_MODULE_8__["UnshiftComponent"]
+    },
+    {
+        path: "rental",
+        component: src_app_rental_rental_component__WEBPACK_IMPORTED_MODULE_9__["RentalComponent"]
     },
     {
         path: "**",
@@ -93,7 +111,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"board\" [ngClass]=\"(extract==true)?'activate':'board'\">\n  <button class=\"plus\"><i class=\"fas fa-plus-circle\"></i></button>\n   <div class=\"desk\">\n     <router-outlet></router-outlet>\n   </div>\n</div>\n<div class=\"online\">\n  <div class=\"sidebar\" [ngClass]=\"(extract==true)?'activatesidebar':'sidebar'\">\n    <br>\n    <!--{{extract}}-->\n    <i class='fas fa-expand extract' *ngIf=\"extract\" (click)=\"extract = false\"></i>\n    <i class='fas fa-expand-arrows-alt extract' *ngIf=\"!extract\" (click)=\"extract = true\"></i> <br> <br>\n    <a uk-tooltip=\"title:Dashboard;pos:right;\"[routerLink]=\"['/lander']\"><i class='fas fa-braille'></i><span> Dashboard</span></a>\n    <a uk-tooltip=\"title:Actions;pos:right;\" [routerLink]=\"['/locality']\"><i class='fas fa-bullseye'></i><span> Locality</span></a>\n    <a uk-tooltip=\"title:Cluster;pos:right;\" href=\"#\"><i class='fas fa-chart-pie'></i><span> Cluster</span></a>\n    <a uk-tooltip=\"title:Remote;pos:right;\" href=\"#\"><i class='fas fa-chart-line'></i><span> Remote</span></a>\n    <a uk-tooltip=\"title:About;pos:right;\" href=\"#\"><i class='fas fa-clipboard'></i><span> About</span></a>\n    <a uk-tooltip=\"title:Contact;pos:right;\" href=\"#\"><i class='fas fa-cogs'></i><span> Contact</span></a>\n\n  </div>\n</div>"
+module.exports = "<div class=\"board\" [ngClass]=\"(extract==true)?'activate':'board'\">\n  <button class=\"plus\"><i class=\"fas fa-plus-circle\"></i></button>\n  <div class=\"desk\">\n    <router-outlet></router-outlet>\n  </div>\n</div>\n<div class=\"online\">\n  <div class=\"sidebar\" [ngClass]=\"(extract==true)?'activatesidebar':'sidebar'\">\n    <br>\n    <!--{{extract}}-->\n    <i class='fas fa-expand extract' *ngIf=\"extract\" (click)=\"extract = false\"></i>\n    <i class='fas fa-expand-arrows-alt extract' *ngIf=\"!extract\" (click)=\"extract = true\"></i> <br> <br>\n    <a uk-tooltip=\"title:Dashboard;pos:right;\" [routerLink]=\"['/lander']\"><i class='fas fa-braille'></i><span> Dashboard</span></a>\n    <a uk-tooltip=\"title:Actions;pos:right;\" [routerLink]=\"['/locality']\"><i class='fas fa-bullseye'></i><span> Locality</span></a>\n    <a uk-tooltip=\"title:About;pos:right;\" [routerLink]=\"['/rental']\"><i class='fas fa-clipboard'></i><span> Rental board</span></a>\n    <a uk-tooltip=\"title:Cluster;pos:right;\" [routerLink]=\"['/shift']\"><i class='fas fa-chart-pie'></i><span> Login</span></a>\n    <a uk-tooltip=\"title:Remote;pos:right;\" [routerLink]=\"['/unshift']\"><i class='fas fa-chart-line'></i><span> Change password</span></a>\n    <a uk-tooltip=\"title:Contact;pos:right;\" href=\"#\"><i class='fas fa-cogs'></i><span> Contact</span></a>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -162,6 +180,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _water_water_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./water/water.component */ "./src/app/water/water.component.ts");
 /* harmony import */ var _application_locality_locality_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./application/locality/locality.component */ "./src/app/application/locality/locality.component.ts");
 /* harmony import */ var src_app_shared_locality_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! src/app/shared/locality.service */ "./src/app/shared/locality.service.ts");
+/* harmony import */ var _shift_shift_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./shift/shift.component */ "./src/app/shift/shift.component.ts");
+/* harmony import */ var _unshift_unshift_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./unshift/unshift.component */ "./src/app/unshift/unshift.component.ts");
+/* harmony import */ var _rental_rental_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./rental/rental.component */ "./src/app/rental/rental.component.ts");
+
+
+
 
 
 
@@ -184,7 +208,10 @@ var AppModule = /** @class */ (function () {
                 _lander_lander_component__WEBPACK_IMPORTED_MODULE_7__["LanderComponent"],
                 _error_error_component__WEBPACK_IMPORTED_MODULE_8__["ErrorComponent"],
                 _water_water_component__WEBPACK_IMPORTED_MODULE_9__["WaterComponent"],
-                _application_locality_locality_component__WEBPACK_IMPORTED_MODULE_10__["LocalityComponent"]
+                _application_locality_locality_component__WEBPACK_IMPORTED_MODULE_10__["LocalityComponent"],
+                _shift_shift_component__WEBPACK_IMPORTED_MODULE_12__["ShiftComponent"],
+                _unshift_unshift_component__WEBPACK_IMPORTED_MODULE_13__["UnshiftComponent"],
+                _rental_rental_component__WEBPACK_IMPORTED_MODULE_14__["RentalComponent"]
             ],
             imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"]],
             providers: [src_app_shared_locality_service__WEBPACK_IMPORTED_MODULE_11__["LocalityService"]],
@@ -205,7 +232,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--<div *ngIf=\"!loader\">\n  {{location|json}}\n</div>-->\n<form>\n  <fieldset class=\"uk-fieldset\">\n    <legend class=\"uk-legend\">Location</legend>\n    <div class=\"uk-margin\">\n      <label for=\"\">State</label>\n      <select class=\"uk-select\" [(ngModel)]=\"state\" (click)=\"stateset(state)\" name=\"asdsdc\">\n          <option *ngFor=\"let item of location_keys; let i=index\"   >{{item}}</option>\n      </select>\n    </div>\n    <div class=\"uk-margin\">\n      <label for=\"\">City</label>\n      <select class=\"uk-select\" [(ngModel)]=\"city\" (click)=\"cityset(city)\" name=\"sdcscf\">\n          <option *ngFor=\"let item of cities; let i=index\" >{{item}} </option>\n      </select>\n    </div>\n    <div class=\"uk-margin\">\n      <label for=\"\">locality</label>\n      <select class=\"uk-select\" [(ngModel)]=\"area\" name=\"a sascas f\">\n          <option *ngFor=\"let item of areas; let i=index\" >{{item}} </option>\n      </select>\n    </div>\n  </fieldset>\n</form>\n<i *ngIf=\"loader\" class='fab loader fa-digital-ocean'></i>\n<!--<div class=\"uk-child-width-1-3@m uk-grid-small uk-grid-match\" uk-grid>\n  <div *ngFor=\"let item of location; let i=index\">\n    <div class=\"uk-card uk-card-default uk-card-body\">\n      <h3 class=\"uk-card-title\">{{item?.City}}</h3>\n      <h6>{{item?.District}}</h6>\n      <h6>{{item?.PostOfficeName}}</h6>\n      <h6>{{item?.Pincode}}</h6>\n    </div>\n  </div>\n</div>-->\n"
+module.exports = "<!--<div *ngIf=\"!loader\">\n  {{location|json}}\n</div>-->\n<div class=\"row\">\n  <div class=\"col-md-3\">\n\n  </div>\n  <div class=\"col-md-6\">\n    <br> <br>\n    <form>\n      <fieldset class=\"uk-fieldset\">\n        <legend class=\"uk-legend\">Location</legend>\n        <div class=\"uk-margin\">\n          <label for=\"\">State</label>\n          <select uk-tooltip=\"title:Select state you belongs to;pos:left\" class=\"uk-select\" [(ngModel)]=\"loc.state\" (click)=\"stateset(loc.state)\"\n            name=\"asdsdc\">\n          <option *ngFor=\"let item of location_keys; let i=index\"   >{{item}}</option>\n      </select>\n        </div>\n        <div class=\"uk-margin\" *ngIf=\"loc?.state?.length>0\">\n          <label for=\"\">City</label>\n          <select uk-tooltip=\"title:Select city you belongs to;pos:left\" class=\"uk-select\" [(ngModel)]=\"loc.city\" (click)=\"cityset(loc.city)\"\n            name=\"sdcscf\">\n            <option *ngFor=\"let item of cities; let i=index\" >{{item}} </option>\n          </select>\n        </div>\n        <div class=\"uk-margin\" *ngIf=\"loc?.city?.length>0\">\n          <label for=\"\">locality</label>\n          <select uk-tooltip=\"title:Select locality area you belongs to;pos:left\" class=\"uk-select\" [(ngModel)]=\"loc.area\" name=\"a sascas f\">\n          <option *ngFor=\"let item of areas; let i=index\" >{{item}} </option>\n         </select>\n        </div>\n        <div class=\"uk-margin\" *ngIf=\"loc?.area?.length>0\">\n          <button  uk-tooltip=\"title:All set to go....!;pos:bottom\" class=\"btn-block uk-button uk-button-primary\">Set location </button>\n        </div>\n      </fieldset>\n    </form>\n  </div>\n  <div class=\"col-md-3\">\n\n  </div>\n</div>\n\n<i *ngIf=\"loader\" class='fab loader fa-digital-ocean'></i>\n<!--<div class=\"uk-child-width-1-3@m uk-grid-small uk-grid-match\" uk-grid>\n  <div *ngFor=\"let item of location; let i=index\">\n    <div class=\"uk-card uk-card-default uk-card-body\">\n      <h3 class=\"uk-card-title\">{{item?.City}}</h3>\n      <h6>{{item?.District}}</h6>\n      <h6>{{item?.PostOfficeName}}</h6>\n      <h6>{{item?.Pincode}}</h6>\n    </div>\n  </div>\n</div>-->\n<img src=\"./assets/Windmill_moving_fast.gif\" class=\"mill as-mob\" alt=\"\">\n<img src=\"http://www.powerelectricsolution.com/wp-content/uploads/2017/08/wind.gif\" class=\"mill2 as-mob\" alt=\"\">\n<img src=\"./assets/Windmill_moving_fast.gif\" class=\"as-non-mob mill3\" alt=\"\">\n"
 
 /***/ }),
 
@@ -216,7 +243,7 @@ module.exports = "<!--<div *ngIf=\"!loader\">\n  {{location|json}}\n</div>-->\n<
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".desk {\n  padding: 20px; }\n\n.loader {\n  position: absolute;\n  bottom: 0;\n  right: 0;\n  font-size: 30px;\n  margin: 20px;\n  color: #0d47a1;\n  animation: rotate 3s infinite alternate-reverse; }\n\n@-webkit-keyframes rotate {\n  from {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg); }\n  to {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg); } }\n\n@keyframes rotate {\n  from {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg); }\n  to {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg); } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwbGljYXRpb24vbG9jYWxpdHkvQzpcXFVzZXJzXFxtYW5vbXV0aFxcRGVza3RvcFxcV29ya0Zyb21IZXJlXFxTdGFydEhlcmVcXGFwcGxpY2F0aW9uLXdvcmtIZXJlXFx0eXJlL3NyY1xcYXBwXFxhcHBsaWNhdGlvblxcbG9jYWxpdHlcXGxvY2FsaXR5LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUdBO0VBQ0UsY0FBYSxFQUNkOztBQUNEO0VBQ0UsbUJBQWtCO0VBQ2xCLFVBQVM7RUFDVCxTQUFRO0VBQ1IsZ0JBQWU7RUFDZixhQUFZO0VBQ1osZUFBYztFQUNkLGdEQUErQyxFQUNoRDs7QUFDRDtFQUNFO0lBQ0UsZ0NBQXVCO1lBQXZCLHdCQUF1QixFQUFBO0VBRXpCO0lBQ0Usa0NBQXlCO1lBQXpCLDBCQUF5QixFQUFBLEVBQUE7O0FBTDdCO0VBQ0U7SUFDRSxnQ0FBdUI7WUFBdkIsd0JBQXVCLEVBQUE7RUFFekI7SUFDRSxrQ0FBeUI7WUFBekIsMEJBQXlCLEVBQUEsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2FwcGxpY2F0aW9uL2xvY2FsaXR5L2xvY2FsaXR5LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiJGRhcms6ICMwZDQ3YTE7XHJcbiRsaXRlOiAjZTNmMmZkO1xyXG5cclxuLmRlc2sge1xyXG4gIHBhZGRpbmc6IDIwcHg7XHJcbn1cclxuLmxvYWRlciB7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIGJvdHRvbTogMDtcclxuICByaWdodDogMDtcclxuICBmb250LXNpemU6IDMwcHg7XHJcbiAgbWFyZ2luOiAyMHB4O1xyXG4gIGNvbG9yOiAjMGQ0N2ExO1xyXG4gIGFuaW1hdGlvbjogcm90YXRlIDNzIGluZmluaXRlIGFsdGVybmF0ZS1yZXZlcnNlO1xyXG59XHJcbkBrZXlmcmFtZXMgcm90YXRlIHtcclxuICBmcm9tIHtcclxuICAgIHRyYW5zZm9ybTogcm90YXRlKDBkZWcpO1xyXG4gIH1cclxuICB0byB7XHJcbiAgICB0cmFuc2Zvcm06IHJvdGF0ZSgzNjBkZWcpO1xyXG4gIH1cclxufVxyXG4iXX0= */"
+module.exports = ".desk {\n  padding: 20px; }\n\n.loader {\n  position: absolute;\n  bottom: 0;\n  right: 0;\n  font-size: 30px;\n  margin: 20px;\n  color: #0d47a1;\n  animation: rotate 3s infinite alternate-reverse; }\n\n@-webkit-keyframes rotate {\n  from {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg); }\n  to {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg); } }\n\n@keyframes rotate {\n  from {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg); }\n  to {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg); } }\n\n.mill {\n  position: absolute;\n  bottom: 0;\n  display: block;\n  margin: auto;\n  width: 30%;\n  opacity: 0.3; }\n\n.mill2 {\n  position: absolute;\n  bottom: 0;\n  right: 0;\n  display: block;\n  margin: auto;\n  width: 40%;\n  opacity: 0.3;\n  margin-bottom: -100px; }\n\n@media (max-width: 576px) {\n  .as-mob {\n    display: none; }\n  .as-non-mob {\n    display: block;\n    position: absolute;\n    bottom: 0;\n    width: 80%;\n    opacity: 0.1; } }\n\n@media (min-width: 1200px) {\n  .as-non-mob {\n    display: none; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwbGljYXRpb24vbG9jYWxpdHkvQzpcXFVzZXJzXFxtYW5vbXV0aFxcRGVza3RvcFxcV29ya0Zyb21IZXJlXFxTdGFydEhlcmVcXGFwcGxpY2F0aW9uLXdvcmtIZXJlXFx0eXJlL3NyY1xcYXBwXFxhcHBsaWNhdGlvblxcbG9jYWxpdHlcXGxvY2FsaXR5LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUdBO0VBQ0UsY0FBYSxFQUNkOztBQUNEO0VBQ0UsbUJBQWtCO0VBQ2xCLFVBQVM7RUFDVCxTQUFRO0VBQ1IsZ0JBQWU7RUFDZixhQUFZO0VBQ1osZUFBYztFQUNkLGdEQUErQyxFQUNoRDs7QUFDRDtFQUNFO0lBQ0UsZ0NBQXVCO1lBQXZCLHdCQUF1QixFQUFBO0VBRXpCO0lBQ0Usa0NBQXlCO1lBQXpCLDBCQUF5QixFQUFBLEVBQUE7O0FBTDdCO0VBQ0U7SUFDRSxnQ0FBdUI7WUFBdkIsd0JBQXVCLEVBQUE7RUFFekI7SUFDRSxrQ0FBeUI7WUFBekIsMEJBQXlCLEVBQUEsRUFBQTs7QUFHN0I7RUFDRSxtQkFBa0I7RUFDbEIsVUFBUztFQUNULGVBQWM7RUFDZCxhQUFZO0VBQ1osV0FBVTtFQUNWLGFBQVksRUFDYjs7QUFFRDtFQUNFLG1CQUFrQjtFQUNsQixVQUFTO0VBQ1QsU0FBUTtFQUNSLGVBQWM7RUFDZCxhQUFZO0VBQ1osV0FBVTtFQUNWLGFBQVk7RUFDWixzQkFBcUIsRUFDdEI7O0FBRUQ7RUFDRTtJQUNFLGNBQWEsRUFDZDtFQUNEO0lBQ0UsZUFBYztJQUNkLG1CQUFrQjtJQUNsQixVQUFTO0lBQ1QsV0FBVTtJQUNWLGFBQVksRUFDYixFQUFBOztBQUVIO0VBQ0U7SUFDRSxjQUFhLEVBQ2QsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2FwcGxpY2F0aW9uL2xvY2FsaXR5L2xvY2FsaXR5LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiJGRhcms6ICMwZDQ3YTE7XHJcbiRsaXRlOiAjZTNmMmZkO1xyXG5cclxuLmRlc2sge1xyXG4gIHBhZGRpbmc6IDIwcHg7XHJcbn1cclxuLmxvYWRlciB7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIGJvdHRvbTogMDtcclxuICByaWdodDogMDtcclxuICBmb250LXNpemU6IDMwcHg7XHJcbiAgbWFyZ2luOiAyMHB4O1xyXG4gIGNvbG9yOiAjMGQ0N2ExO1xyXG4gIGFuaW1hdGlvbjogcm90YXRlIDNzIGluZmluaXRlIGFsdGVybmF0ZS1yZXZlcnNlO1xyXG59XHJcbkBrZXlmcmFtZXMgcm90YXRlIHtcclxuICBmcm9tIHtcclxuICAgIHRyYW5zZm9ybTogcm90YXRlKDBkZWcpO1xyXG4gIH1cclxuICB0byB7XHJcbiAgICB0cmFuc2Zvcm06IHJvdGF0ZSgzNjBkZWcpO1xyXG4gIH1cclxufVxyXG4ubWlsbCB7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIGJvdHRvbTogMDtcclxuICBkaXNwbGF5OiBibG9jaztcclxuICBtYXJnaW46IGF1dG87XHJcbiAgd2lkdGg6IDMwJTtcclxuICBvcGFjaXR5OiAwLjM7XHJcbn1cclxuXHJcbi5taWxsMiB7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIGJvdHRvbTogMDtcclxuICByaWdodDogMDtcclxuICBkaXNwbGF5OiBibG9jaztcclxuICBtYXJnaW46IGF1dG87XHJcbiAgd2lkdGg6IDQwJTtcclxuICBvcGFjaXR5OiAwLjM7XHJcbiAgbWFyZ2luLWJvdHRvbTogLTEwMHB4O1xyXG59XHJcblxyXG5AbWVkaWEgKG1heC13aWR0aDogNTc2cHgpIHtcclxuICAuYXMtbW9iIHtcclxuICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgfVxyXG4gIC5hcy1ub24tbW9iIHtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgYm90dG9tOiAwO1xyXG4gICAgd2lkdGg6IDgwJTtcclxuICAgIG9wYWNpdHk6IDAuMTtcclxuICB9XHJcbn1cclxuQG1lZGlhIChtaW4td2lkdGg6IDEyMDBweCkge1xyXG4gIC5hcy1ub24tbW9iIHtcclxuICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgfVxyXG59XHJcbiJdfQ== */"
 
 /***/ }),
 
@@ -237,11 +264,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var LocalityComponent = /** @class */ (function () {
-    function LocalityComponent(loc) {
-        this.loc = loc;
+    function LocalityComponent(locs) {
+        this.locs = locs;
         this.areas = [];
         this.cities = [];
         this.location_keys = [];
+        this.loc = {
+            state: "",
+            city: "",
+            area: ""
+        };
         this.loader = false;
     }
     LocalityComponent.prototype.ngOnInit = function () {
@@ -250,7 +282,7 @@ var LocalityComponent = /** @class */ (function () {
     };
     LocalityComponent.prototype.locServ = function () {
         var _this = this;
-        this.loc.getlocality().subscribe(function (data) {
+        this.locs.getlocality().subscribe(function (data) {
             _this.loader = false;
             _this.location = data;
             // tslint:disable-next-line:forin
@@ -261,6 +293,8 @@ var LocalityComponent = /** @class */ (function () {
     };
     LocalityComponent.prototype.stateset = function (state) {
         this.cities = [];
+        this.loc.city = "";
+        this.loc.area = "";
         this.city_list = this.location[state];
         // tslint:disable-next-line:forin
         for (var key in this.city_list) {
@@ -268,6 +302,7 @@ var LocalityComponent = /** @class */ (function () {
         }
     };
     LocalityComponent.prototype.cityset = function (statecity) {
+        this.loc.area = "";
         this.areas = [];
         this.areas = this.city_list[statecity];
         // tslint:disable-next-line:forin
@@ -400,6 +435,62 @@ var LanderComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/rental/rental.component.html":
+/*!**********************************************!*\
+  !*** ./src/app/rental/rental.component.html ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  rental works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/rental/rental.component.scss":
+/*!**********************************************!*\
+  !*** ./src/app/rental/rental.component.scss ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3JlbnRhbC9yZW50YWwuY29tcG9uZW50LnNjc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/rental/rental.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/rental/rental.component.ts ***!
+  \********************************************/
+/*! exports provided: RentalComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RentalComponent", function() { return RentalComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var RentalComponent = /** @class */ (function () {
+    function RentalComponent() {
+    }
+    RentalComponent.prototype.ngOnInit = function () {
+    };
+    RentalComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-rental',
+            template: __webpack_require__(/*! ./rental.component.html */ "./src/app/rental/rental.component.html"),
+            styles: [__webpack_require__(/*! ./rental.component.scss */ "./src/app/rental/rental.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], RentalComponent);
+    return RentalComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/shared/locality.service.ts":
 /*!********************************************!*\
   !*** ./src/app/shared/locality.service.ts ***!
@@ -430,6 +521,135 @@ var LocalityService = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
     ], LocalityService);
     return LocalityService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shift/shift.component.html":
+/*!********************************************!*\
+  !*** ./src/app/shift/shift.component.html ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"board\">\n  <div class=\"road\">\n    <div class=\"viewboard as-mob\">\n      <h1>Login&nbsp;<i class=\"fas fa-users\"></i> </h1>\n      <small class=\"small\">Please login with your crediantials</small>\n      <br> <br>\n      <!--<small class=\"subsmall\">For new user please register here</small>-->\n      <img src=\"./assets/50ee4ac981890b346eac69c0cf6f45ef.gif\" class=\"imgc\"\n        alt=\"\">\n      <i href=\"#modal-center\" uk-toggle class=\"fas query fa-question-circle\"></i>\n    </div>\n    <div class=\"formboard\">\n      <br><br> <br>\n      <form>\n        <fieldset class=\"uk-fieldset\">\n          <legend class=\"uk-legend\">Board&nbsp;<i class=\"far fa-user\"></i></legend>\n          <div class=\"uk-margin\">\n            <label for=\"\"> <i class=\"fas fa-user\"></i> Username</label> <i uk-tooltip=\"title:Username;pos:left\"  class=\"fas bgg fa-user\"></i>\n            <input class=\"uk-input\" [(ngModel)]=\"login.username\" name=\"username\" type=\"text\" placeholder=\"Username\">\n          </div>\n          <div class=\"uk-margin\">\n            <label for=\"\"> <i class=\"fas  fa-key\"></i> Password</label> <i uk-tooltip=\"title:Password;pos:left\"  class=\"fas bgg fa-key\"></i>\n            <input class=\"uk-input\" [(ngModel)]=\"login.password\" name=\"password\" type=\"password\" placeholder=\"Password\">\n          </div>\n          <div class=\"uk-margin\">\n            <label for=\"\"> <i class=\"fas fa-font\"></i> Phrase</label> <i uk-tooltip=\"title:Custom phrase;pos:left\"  class=\"fas bgg fa-font\"></i>\n            <input class=\"uk-input\" [(ngModel)]=\"login.phrase\" name=\"phrase\" type=\"text\" placeholder=\"Custom Phrase\">\n          </div>\n          <div class=\"uk-margin\">\n            <label for=\"\"><i class=\"fas fa-sort-numeric-down\"></i> Lucky number&nbsp; {{login?.lucky}} </label>\n            <input class=\"uk-range\"  [title]=\"login.lucky\"  [(ngModel)]=\"login.lucky\" min=\"0\" max=\"100\" step=\"1\" name=\"lucky\" type=\"range\">\n          </div>\n          <button class=\"btn-block uk-button uk-button-primary\">Login</button>\n        </fieldset>\n      </form>\n    </div>\n  </div>\n</div>\n\n<div id=\"modal-center\" class=\"uk-flex-top\" uk-modal>\n  <div class=\"uk-modal-dialog uk-modal-body uk-margin-auto-vertical\">\n\n    <button style=\"background-color: white\" class=\"uk-modal-close-default\" type=\"button\" uk-close></button>\n\n    <img src=\"https://miro.medium.com/max/1400/1*Xs2WKJ2jHKHhJEL29c4AyQ.gif\" style=\"width: 100%;\" alt=\"\">\n\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/shift/shift.component.scss":
+/*!********************************************!*\
+  !*** ./src/app/shift/shift.component.scss ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".road {\n  margin: -20px;\n  width: 100%;\n  margin-left: -40px;\n  margin-right: -40px; }\n\n.viewboard {\n  background-color: white;\n  padding: 40px;\n  border-radius: 0px 30px 30px 0px;\n  top: 0;\n  bottom: 0;\n  position: absolute;\n  left: 0;\n  width: 65%; }\n\n.formboard {\n  padding: 40px;\n  width: 35%;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 65%; }\n\n.imgc {\n  display: block;\n  margin: auto;\n  width: 95%;\n  -webkit-animation: scaleup 3s;\n          animation: scaleup 3s;\n  cursor: -webkit-zoom-in;\n  cursor: zoom-in;\n  -webkit-transition: -webkit-animation 2s ease-in-out;\n  transition: -webkit-animation 2s ease-in-out;\n  transition: animation 2s ease-in-out;\n  transition: animation 2s ease-in-out, -webkit-animation 2s ease-in-out; }\n\n@-webkit-keyframes scaleup {\n  from {\n    -webkit-transform: scale(0.9);\n            transform: scale(0.9); }\n  to {\n    -webkit-transform: scale(1);\n            transform: scale(1); } }\n\n@keyframes scaleup {\n  from {\n    -webkit-transform: scale(0.9);\n            transform: scale(0.9); }\n  to {\n    -webkit-transform: scale(1);\n            transform: scale(1); } }\n\n.small {\n  color: darkgray; }\n\n::-webkit-input-placeholder {\n  color: #0d47a1; }\n\nlegend {\n  color: #0d47a1; }\n\n.bgg {\n  position: absolute;\n  right: 0;\n  margin: 40px;\n  font-size: 24px;\n  margin-right: 50px;\n  color: #e3f2fd; }\n\ninput[type=\"text\"] {\n  border: 1px dotted #0d47a1; }\n\ninput[type=\"password\"] {\n  border: 1px dotted #0d47a1; }\n\ninput[type=\"text\"]:focus {\n  border: 1px solid #0d47a1;\n  -webkit-transition: border 2s ease-in-out;\n  transition: border 2s ease-in-out; }\n\ninput[type=\"password\"]:focus {\n  border: 1px solid #0d47a1;\n  -webkit-transition: border 2s ease-in-out;\n  transition: border 2s ease-in-out; }\n\nbutton {\n  background-color: #0d47a1; }\n\n.query {\n  position: absolute;\n  bottom: 0;\n  font-size: 30px;\n  cursor: pointer;\n  right: 0;\n  margin: 30px;\n  color: #0d47a1; }\n\n@media (max-width: 576px) {\n  .as-mob {\n    display: none; }\n  .formboard {\n    width: 100%;\n    position: absolute;\n    left: 0;\n    top: 0;\n    bottom: 0;\n    border-radius: 0px; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2hpZnQvQzpcXFVzZXJzXFxtYW5vbXV0aFxcRGVza3RvcFxcV29ya0Zyb21IZXJlXFxTdGFydEhlcmVcXGFwcGxpY2F0aW9uLXdvcmtIZXJlXFx0eXJlL3NyY1xcYXBwXFxzaGlmdFxcc2hpZnQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBR0E7RUFDRSxjQUFhO0VBQ2IsWUFBVztFQUNYLG1CQUFrQjtFQUNsQixvQkFBbUIsRUFDcEI7O0FBQ0Q7RUFDRSx3QkFBdUI7RUFDdkIsY0FBYTtFQUNiLGlDQUFnQztFQUNoQyxPQUFNO0VBQ04sVUFBUztFQUNULG1CQUFrQjtFQUNsQixRQUFPO0VBQ1AsV0FBVSxFQUNYOztBQUNEO0VBQ0UsY0FBYTtFQUNiLFdBQVU7RUFDVixtQkFBa0I7RUFDbEIsT0FBTTtFQUNOLFVBQVM7RUFDVCxVQUFTLEVBQ1Y7O0FBQ0Q7RUFDRSxlQUFjO0VBQ2QsYUFBWTtFQUNaLFdBQVU7RUFDViw4QkFBcUI7VUFBckIsc0JBQXFCO0VBQ3JCLHdCQUFlO0VBQWYsZ0JBQWU7RUFDZixxREFBb0M7RUFBcEMsNkNBQW9DO0VBQXBDLHFDQUFvQztFQUFwQyx1RUFBb0MsRUFDckM7O0FBQ0Q7RUFDRTtJQUNFLDhCQUFxQjtZQUFyQixzQkFBcUIsRUFBQTtFQUV2QjtJQUNFLDRCQUFtQjtZQUFuQixvQkFBbUIsRUFBQSxFQUFBOztBQUx2QjtFQUNFO0lBQ0UsOEJBQXFCO1lBQXJCLHNCQUFxQixFQUFBO0VBRXZCO0lBQ0UsNEJBQW1CO1lBQW5CLG9CQUFtQixFQUFBLEVBQUE7O0FBR3ZCO0VBQ0UsZ0JBQWUsRUFDaEI7O0FBQ0Q7RUFDRSxlQS9DWSxFQWdEYjs7QUFDRDtFQUNFLGVBbERZLEVBbURiOztBQUNEO0VBQ0UsbUJBQWtCO0VBQ2xCLFNBQVE7RUFDUixhQUFZO0VBQ1osZ0JBQWU7RUFDZixtQkFBa0I7RUFDbEIsZUF6RFksRUEwRGI7O0FBRUQ7RUFDRSwyQkE5RFksRUErRGI7O0FBQ0Q7RUFDRSwyQkFqRVksRUFrRWI7O0FBQ0Q7RUFDRSwwQkFwRVk7RUFxRVosMENBQWlDO0VBQWpDLGtDQUFpQyxFQUNsQzs7QUFDRDtFQUNFLDBCQXhFWTtFQXlFWiwwQ0FBaUM7RUFBakMsa0NBQWlDLEVBQ2xDOztBQUNEO0VBQ0UsMEJBNUVZLEVBNkViOztBQUNEO0VBQ0UsbUJBQWtCO0VBQ2xCLFVBQVM7RUFDVCxnQkFBZTtFQUNmLGdCQUFlO0VBQ2YsU0FBUTtFQUNSLGFBQVk7RUFDWixlQXJGWSxFQXNGYjs7QUFDRDtFQUNFO0lBQ0UsY0FBYSxFQUNkO0VBQ0Q7SUFDRSxZQUFXO0lBQ1gsbUJBQWtCO0lBQ2xCLFFBQU87SUFDUCxPQUFNO0lBQ04sVUFBUztJQUNULG1CQUFrQixFQUNuQixFQUFBIiwiZmlsZSI6InNyYy9hcHAvc2hpZnQvc2hpZnQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIkZGFyazogIzBkNDdhMTtcclxuJGxpdGU6ICNlM2YyZmQ7XHJcblxyXG4ucm9hZCB7XHJcbiAgbWFyZ2luOiAtMjBweDtcclxuICB3aWR0aDogMTAwJTtcclxuICBtYXJnaW4tbGVmdDogLTQwcHg7XHJcbiAgbWFyZ2luLXJpZ2h0OiAtNDBweDtcclxufVxyXG4udmlld2JvYXJkIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuICBwYWRkaW5nOiA0MHB4O1xyXG4gIGJvcmRlci1yYWRpdXM6IDBweCAzMHB4IDMwcHggMHB4O1xyXG4gIHRvcDogMDtcclxuICBib3R0b206IDA7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIGxlZnQ6IDA7XHJcbiAgd2lkdGg6IDY1JTtcclxufVxyXG4uZm9ybWJvYXJkIHtcclxuICBwYWRkaW5nOiA0MHB4O1xyXG4gIHdpZHRoOiAzNSU7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHRvcDogMDtcclxuICBib3R0b206IDA7XHJcbiAgbGVmdDogNjUlO1xyXG59XHJcbi5pbWdjIHtcclxuICBkaXNwbGF5OiBibG9jaztcclxuICBtYXJnaW46IGF1dG87XHJcbiAgd2lkdGg6IDk1JTtcclxuICBhbmltYXRpb246IHNjYWxldXAgM3M7XHJcbiAgY3Vyc29yOiB6b29tLWluO1xyXG4gIHRyYW5zaXRpb246IGFuaW1hdGlvbiAycyBlYXNlLWluLW91dDtcclxufVxyXG5Aa2V5ZnJhbWVzIHNjYWxldXAge1xyXG4gIGZyb20ge1xyXG4gICAgdHJhbnNmb3JtOiBzY2FsZSgwLjkpO1xyXG4gIH1cclxuICB0byB7XHJcbiAgICB0cmFuc2Zvcm06IHNjYWxlKDEpO1xyXG4gIH1cclxufVxyXG4uc21hbGwge1xyXG4gIGNvbG9yOiBkYXJrZ3JheTtcclxufVxyXG46Oi13ZWJraXQtaW5wdXQtcGxhY2Vob2xkZXIge1xyXG4gIGNvbG9yOiAkZGFyaztcclxufVxyXG5sZWdlbmQge1xyXG4gIGNvbG9yOiAkZGFyaztcclxufVxyXG4uYmdnIHtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgcmlnaHQ6IDA7XHJcbiAgbWFyZ2luOiA0MHB4O1xyXG4gIGZvbnQtc2l6ZTogMjRweDtcclxuICBtYXJnaW4tcmlnaHQ6IDUwcHg7XHJcbiAgY29sb3I6ICRsaXRlO1xyXG59XHJcblxyXG5pbnB1dFt0eXBlPVwidGV4dFwiXSB7XHJcbiAgYm9yZGVyOiAxcHggZG90dGVkICRkYXJrO1xyXG59XHJcbmlucHV0W3R5cGU9XCJwYXNzd29yZFwiXSB7XHJcbiAgYm9yZGVyOiAxcHggZG90dGVkICRkYXJrO1xyXG59XHJcbmlucHV0W3R5cGU9XCJ0ZXh0XCJdOmZvY3VzIHtcclxuICBib3JkZXI6IDFweCBzb2xpZCAkZGFyaztcclxuICB0cmFuc2l0aW9uOiBib3JkZXIgMnMgZWFzZS1pbi1vdXQ7XHJcbn1cclxuaW5wdXRbdHlwZT1cInBhc3N3b3JkXCJdOmZvY3VzIHtcclxuICBib3JkZXI6IDFweCBzb2xpZCAkZGFyaztcclxuICB0cmFuc2l0aW9uOiBib3JkZXIgMnMgZWFzZS1pbi1vdXQ7XHJcbn1cclxuYnV0dG9uIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAkZGFyaztcclxufVxyXG4ucXVlcnkge1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICBib3R0b206IDA7XHJcbiAgZm9udC1zaXplOiAzMHB4O1xyXG4gIGN1cnNvcjogcG9pbnRlcjtcclxuICByaWdodDogMDtcclxuICBtYXJnaW46IDMwcHg7XHJcbiAgY29sb3I6ICRkYXJrO1xyXG59XHJcbkBtZWRpYSAobWF4LXdpZHRoOiA1NzZweCkge1xyXG4gIC5hcy1tb2Ige1xyXG4gICAgZGlzcGxheTogbm9uZTtcclxuICB9XHJcbiAgLmZvcm1ib2FyZCB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIGxlZnQ6IDA7XHJcbiAgICB0b3A6IDA7XHJcbiAgICBib3R0b206IDA7XHJcbiAgICBib3JkZXItcmFkaXVzOiAwcHg7XHJcbiAgfVxyXG59XHJcbiJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/shift/shift.component.ts":
+/*!******************************************!*\
+  !*** ./src/app/shift/shift.component.ts ***!
+  \******************************************/
+/*! exports provided: ShiftComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ShiftComponent", function() { return ShiftComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var ShiftComponent = /** @class */ (function () {
+    function ShiftComponent() {
+        this.login = {
+            username: "",
+            password: "",
+            phrase: "",
+            lucky: 0
+        };
+    }
+    ShiftComponent.prototype.ngOnInit = function () { };
+    ShiftComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: "app-shift",
+            template: __webpack_require__(/*! ./shift.component.html */ "./src/app/shift/shift.component.html"),
+            styles: [__webpack_require__(/*! ./shift.component.scss */ "./src/app/shift/shift.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], ShiftComponent);
+    return ShiftComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/unshift/unshift.component.html":
+/*!************************************************!*\
+  !*** ./src/app/unshift/unshift.component.html ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"board\">\n  <div class=\"road\">\n    <div class=\"viewboard as-mob\">\n      <h1>Change password&nbsp;<i class=\"fas fa-key\"></i> </h1>\n      <small class=\"small\">Please reset with your old crediantials</small>\n      <br> <br>\n      <!--<small class=\"subsmall\">For new user please register here</small>-->\n      <!--<img src=\"./assets/forget.gif\" class=\"imgc\" alt=\"\" width=\"20%;\" *ngIf=\"load\">-->\n      <img src=\"./assets/developer-dribbble.gif\" alt=\"\" class=\"imgc\">\n      <i href=\"#modal-center\" uk-toggle class=\"fas query fa-question-circle\"></i>\n    </div>\n    <div class=\"formboard\">\n      <br><br> <br>\n      <form>\n        <fieldset class=\"uk-fieldset\">\n          <legend class=\"uk-legend\">Change Password&nbsp;<i class=\"fas fa-key\"></i></legend>\n          <div class=\"uk-margin\">\n            <label for=\"\"> <i class=\"fas fa-user\"></i> Username</label> <i uk-tooltip=\"title:Username;pos:left\" class=\"fas bgg fa-user\"></i>\n            <input class=\"uk-input\" [(ngModel)]=\"reset.username\" name=\"username\" type=\"text\" placeholder=\"Username\">\n          </div>\n          <div class=\"uk-margin\">\n            <label for=\"\"> <i class=\"fas  fa-key\"></i> Current Password</label> <i uk-tooltip=\"title:Current Password;pos:left\" class=\"fas bgg fa-key\"></i>\n            <input class=\"uk-input\" [(ngModel)]=\"reset.old\" name=\"password\" type=\"password\" placeholder=\"Current Password\">\n          </div>\n          <div class=\"uk-margin\">\n            <label for=\"\"> <i class=\"fas fa-key\"></i> New password</label> <i uk-tooltip=\"title:New password;pos:left\" class=\"fas bgg fa-key\"></i>\n            <input class=\"uk-input\" [(ngModel)]=\"reset.new\" name=\"new\" type=\"password\" placeholder=\"New password\">\n          </div>\n          <div class=\"uk-margin\">\n            <label for=\"\"> <i class=\"fas fa-key\"></i> Repeat password</label> <i uk-tooltip=\"title:Repeat password;pos:left\"\n              class=\"fas bgg fa-key\"></i>\n            <input class=\"uk-input\" [(ngModel)]=\"reset.re\" name=\"re\" type=\"password\" placeholder=\"Repeat password\">\n          </div>\n          <button class=\"btn-block uk-button uk-button-primary\" uk-tooltip=\"title:Change passwor;pos:bottom\">Change password</button>\n        </fieldset>\n      </form>\n    </div>\n  </div>\n</div>\n\n<div id=\"modal-center\" class=\"uk-flex-top\" uk-modal>\n  <div class=\"uk-modal-dialog uk-modal-body uk-margin-auto-vertical\">\n    <button style=\"background-color: white\" class=\"uk-modal-close-default\" type=\"button\" uk-close></button>\n    <legend>Change password</legend>\n    <small class=\"small\">Use atleast one Uppercase letter-   <b class=\"right\">  A-Z </b></small>\n    <br>\n    <small class=\"small\">Use atleast one Lowercase letter-    <b class=\"right\"> a-z</b> </small>\n    <br>\n    <small class=\"small\">Use atleast one number/digit character-  <b class=\"right\">  0-9</b> </small>\n    <br>\n    <small class=\"small\">Keep minimum of 8 charater combination length <b class=\"right\"> 8</b> </small>\n    <br>\n    <small class=\"small\">Use atleast one special character-  <b class=\"right\">  */&amp;-+=</b> </small> <br>\n    <img src=\"./assets/forget.gif\" style=\"width: 75%;margin: auto;display: block\" alt=\"\">\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/unshift/unshift.component.scss":
+/*!************************************************!*\
+  !*** ./src/app/unshift/unshift.component.scss ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".road {\n  margin: -20px;\n  width: 100%;\n  margin-left: -40px;\n  margin-right: -40px; }\n\n.viewboard {\n  background-color: white;\n  padding: 40px;\n  border-radius: 0px 30px 30px 0px;\n  top: 0;\n  bottom: 0;\n  position: absolute;\n  left: 0;\n  width: 65%; }\n\n.formboard {\n  padding: 40px;\n  width: 35%;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 65%; }\n\n.imgc {\n  display: block;\n  margin: auto;\n  width: 95%;\n  -webkit-animation: scaleup 3s;\n          animation: scaleup 3s;\n  cursor: -webkit-zoom-in;\n  cursor: zoom-in;\n  -webkit-transition: -webkit-animation 2s ease-in-out;\n  transition: -webkit-animation 2s ease-in-out;\n  transition: animation 2s ease-in-out;\n  transition: animation 2s ease-in-out, -webkit-animation 2s ease-in-out; }\n\n@-webkit-keyframes scaleup {\n  from {\n    -webkit-transform: scale(0.9);\n            transform: scale(0.9); }\n  to {\n    -webkit-transform: scale(1);\n            transform: scale(1); } }\n\n@keyframes scaleup {\n  from {\n    -webkit-transform: scale(0.9);\n            transform: scale(0.9); }\n  to {\n    -webkit-transform: scale(1);\n            transform: scale(1); } }\n\n.small {\n  color: darkgray; }\n\n::-webkit-input-placeholder {\n  color: #0d47a1; }\n\nlegend {\n  color: #0d47a1; }\n\n.bgg {\n  position: absolute;\n  right: 0;\n  margin: 40px;\n  font-size: 24px;\n  margin-right: 50px;\n  color: #e3f2fd; }\n\ninput[type=\"text\"] {\n  border: 1px dotted #0d47a1; }\n\ninput[type=\"password\"] {\n  border: 1px dotted #0d47a1; }\n\ninput[type=\"text\"]:focus {\n  border: 1px solid #0d47a1;\n  -webkit-transition: border 2s ease-in-out;\n  transition: border 2s ease-in-out; }\n\ninput[type=\"password\"]:focus {\n  border: 1px solid #0d47a1;\n  -webkit-transition: border 2s ease-in-out;\n  transition: border 2s ease-in-out; }\n\nbutton {\n  background-color: #0d47a1; }\n\n.query {\n  position: absolute;\n  bottom: 0;\n  font-size: 30px;\n  cursor: pointer;\n  right: 0;\n  margin: 30px;\n  color: #0d47a1; }\n\n.right {\n  float: right;\n  text-align: right; }\n\ni {\n  cursor: pointer; }\n\n@media (max-width: 576px) {\n  .as-mob {\n    display: none; }\n  .formboard {\n    width: 100%;\n    position: absolute;\n    left: 0;\n    top: 0;\n    bottom: 0;\n    border-radius: 0px; } }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdW5zaGlmdC9DOlxcVXNlcnNcXG1hbm9tdXRoXFxEZXNrdG9wXFxXb3JrRnJvbUhlcmVcXFN0YXJ0SGVyZVxcYXBwbGljYXRpb24td29ya0hlcmVcXHR5cmUvc3JjXFxhcHBcXHVuc2hpZnRcXHVuc2hpZnQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBR0E7RUFDRSxjQUFhO0VBQ2IsWUFBVztFQUNYLG1CQUFrQjtFQUNsQixvQkFBbUIsRUFDcEI7O0FBQ0Q7RUFDRSx3QkFBdUI7RUFDdkIsY0FBYTtFQUNiLGlDQUFnQztFQUNoQyxPQUFNO0VBQ04sVUFBUztFQUNULG1CQUFrQjtFQUNsQixRQUFPO0VBQ1AsV0FBVSxFQUNYOztBQUNEO0VBQ0UsY0FBYTtFQUNiLFdBQVU7RUFDVixtQkFBa0I7RUFDbEIsT0FBTTtFQUNOLFVBQVM7RUFDVCxVQUFTLEVBQ1Y7O0FBQ0Q7RUFDRSxlQUFjO0VBQ2QsYUFBWTtFQUNaLFdBQVU7RUFDViw4QkFBcUI7VUFBckIsc0JBQXFCO0VBQ3JCLHdCQUFlO0VBQWYsZ0JBQWU7RUFDZixxREFBb0M7RUFBcEMsNkNBQW9DO0VBQXBDLHFDQUFvQztFQUFwQyx1RUFBb0MsRUFDckM7O0FBQ0Q7RUFDRTtJQUNFLDhCQUFxQjtZQUFyQixzQkFBcUIsRUFBQTtFQUV2QjtJQUNFLDRCQUFtQjtZQUFuQixvQkFBbUIsRUFBQSxFQUFBOztBQUx2QjtFQUNFO0lBQ0UsOEJBQXFCO1lBQXJCLHNCQUFxQixFQUFBO0VBRXZCO0lBQ0UsNEJBQW1CO1lBQW5CLG9CQUFtQixFQUFBLEVBQUE7O0FBR3ZCO0VBQ0UsZ0JBQWUsRUFDaEI7O0FBQ0Q7RUFDRSxlQS9DWSxFQWdEYjs7QUFDRDtFQUNFLGVBbERZLEVBbURiOztBQUNEO0VBQ0UsbUJBQWtCO0VBQ2xCLFNBQVE7RUFDUixhQUFZO0VBQ1osZ0JBQWU7RUFDZixtQkFBa0I7RUFDbEIsZUF6RFksRUEwRGI7O0FBRUQ7RUFDRSwyQkE5RFksRUErRGI7O0FBQ0Q7RUFDRSwyQkFqRVksRUFrRWI7O0FBQ0Q7RUFDRSwwQkFwRVk7RUFxRVosMENBQWlDO0VBQWpDLGtDQUFpQyxFQUNsQzs7QUFDRDtFQUNFLDBCQXhFWTtFQXlFWiwwQ0FBaUM7RUFBakMsa0NBQWlDLEVBQ2xDOztBQUNEO0VBQ0UsMEJBNUVZLEVBNkViOztBQUNEO0VBQ0UsbUJBQWtCO0VBQ2xCLFVBQVM7RUFDVCxnQkFBZTtFQUNmLGdCQUFlO0VBQ2YsU0FBUTtFQUNSLGFBQVk7RUFDWixlQXJGWSxFQXNGYjs7QUFDRDtFQUNFLGFBQVk7RUFDWixrQkFBaUIsRUFDbEI7O0FBRUQ7RUFDRSxnQkFBZSxFQUNoQjs7QUFDRDtFQUNFO0lBQ0UsY0FBYSxFQUNkO0VBQ0Q7SUFDRSxZQUFXO0lBQ1gsbUJBQWtCO0lBQ2xCLFFBQU87SUFDUCxPQUFNO0lBQ04sVUFBUztJQUNULG1CQUFrQixFQUNuQixFQUFBIiwiZmlsZSI6InNyYy9hcHAvdW5zaGlmdC91bnNoaWZ0LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiJGRhcms6ICMwZDQ3YTE7XHJcbiRsaXRlOiAjZTNmMmZkO1xyXG5cclxuLnJvYWQge1xyXG4gIG1hcmdpbjogLTIwcHg7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgbWFyZ2luLWxlZnQ6IC00MHB4O1xyXG4gIG1hcmdpbi1yaWdodDogLTQwcHg7XHJcbn1cclxuLnZpZXdib2FyZCB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbiAgcGFkZGluZzogNDBweDtcclxuICBib3JkZXItcmFkaXVzOiAwcHggMzBweCAzMHB4IDBweDtcclxuICB0b3A6IDA7XHJcbiAgYm90dG9tOiAwO1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICBsZWZ0OiAwO1xyXG4gIHdpZHRoOiA2NSU7XHJcbn1cclxuLmZvcm1ib2FyZCB7XHJcbiAgcGFkZGluZzogNDBweDtcclxuICB3aWR0aDogMzUlO1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB0b3A6IDA7XHJcbiAgYm90dG9tOiAwO1xyXG4gIGxlZnQ6IDY1JTtcclxufVxyXG4uaW1nYyB7XHJcbiAgZGlzcGxheTogYmxvY2s7XHJcbiAgbWFyZ2luOiBhdXRvO1xyXG4gIHdpZHRoOiA5NSU7XHJcbiAgYW5pbWF0aW9uOiBzY2FsZXVwIDNzO1xyXG4gIGN1cnNvcjogem9vbS1pbjtcclxuICB0cmFuc2l0aW9uOiBhbmltYXRpb24gMnMgZWFzZS1pbi1vdXQ7XHJcbn1cclxuQGtleWZyYW1lcyBzY2FsZXVwIHtcclxuICBmcm9tIHtcclxuICAgIHRyYW5zZm9ybTogc2NhbGUoMC45KTtcclxuICB9XHJcbiAgdG8ge1xyXG4gICAgdHJhbnNmb3JtOiBzY2FsZSgxKTtcclxuICB9XHJcbn1cclxuLnNtYWxsIHtcclxuICBjb2xvcjogZGFya2dyYXk7XHJcbn1cclxuOjotd2Via2l0LWlucHV0LXBsYWNlaG9sZGVyIHtcclxuICBjb2xvcjogJGRhcms7XHJcbn1cclxubGVnZW5kIHtcclxuICBjb2xvcjogJGRhcms7XHJcbn1cclxuLmJnZyB7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHJpZ2h0OiAwO1xyXG4gIG1hcmdpbjogNDBweDtcclxuICBmb250LXNpemU6IDI0cHg7XHJcbiAgbWFyZ2luLXJpZ2h0OiA1MHB4O1xyXG4gIGNvbG9yOiAkbGl0ZTtcclxufVxyXG5cclxuaW5wdXRbdHlwZT1cInRleHRcIl0ge1xyXG4gIGJvcmRlcjogMXB4IGRvdHRlZCAkZGFyaztcclxufVxyXG5pbnB1dFt0eXBlPVwicGFzc3dvcmRcIl0ge1xyXG4gIGJvcmRlcjogMXB4IGRvdHRlZCAkZGFyaztcclxufVxyXG5pbnB1dFt0eXBlPVwidGV4dFwiXTpmb2N1cyB7XHJcbiAgYm9yZGVyOiAxcHggc29saWQgJGRhcms7XHJcbiAgdHJhbnNpdGlvbjogYm9yZGVyIDJzIGVhc2UtaW4tb3V0O1xyXG59XHJcbmlucHV0W3R5cGU9XCJwYXNzd29yZFwiXTpmb2N1cyB7XHJcbiAgYm9yZGVyOiAxcHggc29saWQgJGRhcms7XHJcbiAgdHJhbnNpdGlvbjogYm9yZGVyIDJzIGVhc2UtaW4tb3V0O1xyXG59XHJcbmJ1dHRvbiB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogJGRhcms7XHJcbn1cclxuLnF1ZXJ5IHtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgYm90dG9tOiAwO1xyXG4gIGZvbnQtc2l6ZTogMzBweDtcclxuICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgcmlnaHQ6IDA7XHJcbiAgbWFyZ2luOiAzMHB4O1xyXG4gIGNvbG9yOiAkZGFyaztcclxufVxyXG4ucmlnaHQge1xyXG4gIGZsb2F0OiByaWdodDtcclxuICB0ZXh0LWFsaWduOiByaWdodDtcclxufVxyXG5cclxuaSB7XHJcbiAgY3Vyc29yOiBwb2ludGVyO1xyXG59XHJcbkBtZWRpYSAobWF4LXdpZHRoOiA1NzZweCkge1xyXG4gIC5hcy1tb2Ige1xyXG4gICAgZGlzcGxheTogbm9uZTtcclxuICB9XHJcbiAgLmZvcm1ib2FyZCB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIGxlZnQ6IDA7XHJcbiAgICB0b3A6IDA7XHJcbiAgICBib3R0b206IDA7XHJcbiAgICBib3JkZXItcmFkaXVzOiAwcHg7XHJcbiAgfVxyXG59XHJcbiJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/unshift/unshift.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/unshift/unshift.component.ts ***!
+  \**********************************************/
+/*! exports provided: UnshiftComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UnshiftComponent", function() { return UnshiftComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var UnshiftComponent = /** @class */ (function () {
+    function UnshiftComponent() {
+        this.reset = {
+            username: "",
+            old: "",
+            new: "",
+            re: ""
+        };
+        this.load = true;
+    }
+    UnshiftComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.load = true;
+        setTimeout(function () {
+            _this.load = false;
+        }, 3000);
+    };
+    UnshiftComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: "app-unshift",
+            template: __webpack_require__(/*! ./unshift.component.html */ "./src/app/unshift/unshift.component.html"),
+            styles: [__webpack_require__(/*! ./unshift.component.scss */ "./src/app/unshift/unshift.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], UnshiftComponent);
+    return UnshiftComponent;
 }());
 
 
