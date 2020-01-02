@@ -1,3 +1,6 @@
-[{ "mates": 5, "landmark": "Church road", "starts": 3000, "acc": 2, "ends": 10000, "add": "D1- 203 Cosmo City Pudhupakkam", "state": "Tamil Nadu", "country": "India", "pin": 603103, "loc": "Pudhupakkam", "type": "Broker" },
-{ "mates": 3, "landmark": "Park road", "starts": "1000", "acc": 1, "ends": "5000", "add": "67", "state": "Tamil Nadu", "country": "India", "pin": 645465, "loc": "school road", "type": "Second" }
+[
+  { "mates": 5, "landmark": "Boat house", "starts": "3000", "acc": 2, "ends": "5000", "add": "D1- 203 Cosmo City Pudhupakkam", "htype": "House", "state": "TN", "country": "India", "pin": 603103, "loc": "Vit", "type": "First" },
+  { "mates": 3, "landmark": "Sand Cross", "starts": "3000", "acc": 2, "ends": "7000", "add": "AAA Street", "htype": "PG-Paying Guest", "state": "TN", "country": "India", "pin": 676793, "loc": "BBBB", "type": "First" },
+  { "mates": 8, "landmark": "Pyramid", "starts": "3000", "acc": 1, "ends": "7000", "add": "HUJ Street", "htype": "Apartment", "state": "TN", "country": "India", "pin": 676793, "loc": "HUIN", "type": "First" },
+  { "mates": 4, "landmark": "Pyramid", "starts": 12000, "acc": 1, "ends": 57000, "add": "HUJ Street", "htype": "Hostel", "state": "TN", "country": "India", "pin": 676793, "loc": "HUIN", "type": "First" }
 ]
