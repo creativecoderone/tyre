@@ -91,7 +91,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<p>profile-info works!</p>\n";
+    __webpack_exports__["default"] = "<p>profile-info works!</p>\n<div id=\"snackbar\">{{msg}}</div>";
     /***/
   },
 
@@ -111,7 +111,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"row\">\n    <div class=\"col-md-12 card-left\">\n        <div class=\"card\" [ngClass]=\"(sidemenu==true)?'active_screen':'inactive_screen'\">\n            <div class=\"card-body\">\n                <h4>Your information</h4>\n                <i class=\"fas fa-chevron-down expand\" (mouseover)=\"sidemenu = !sidemenu\"\n                    (click)=\"sidemenu = !sidemenu\"></i>\n                <form class=\"uk-grid-small\" uk-grid>\n                    <div class=\"uk-width-1-2@s\">\n                        <label for=\"\">Profile firstname</label>&nbsp;<i class=\"fas fa-signature\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prof.fname\" name=\"fname\" type=\"text\" uk-tooltip=\"title:First name;pos:top;\"\n                            placeholder=\"First name\">\n                    </div>\n                    <div class=\"uk-width-1-2@s\">\n                        <label for=\"\">Profile lastname</label>&nbsp;<i class=\"fas fa-signature\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prof.lname\" name=\"lname\" type=\"text\" uk-tooltip=\"title:Last name;pos:top;\"\n                            placeholder=\"Last name\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Permenant location Landmark</label>&nbsp;<i class=\"fas fa-map-marker\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prof.landmark\" name=\"land\" type=\"text\" uk-tooltip=\"title:Permenant location Landmark;pos:top;\"\n                            placeholder=\"Landmark\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Door# / Street name</label>&nbsp;<i class=\"fas fa-thumbtack\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prof.door\" name=\"door\" type=\"text\" uk-tooltip=\"title:Door# / Street name;pos:top;\"\n                            placeholder=\"Door# / Street name\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Locality / Apartment / Soceity</label>&nbsp;<i class=\"fas fa-search-location\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prof.loc\" name=\"loc\" type=\"text\" uk-tooltip=\"title:Locality / Apartment / Soceity;pos:top;\"\n                            placeholder=\"Locality / Apartment / Soceity\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">State</label>&nbsp;<i class=\"fas fa-map-marked-alt\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prof.state\" name=\"state\" type=\"text\" uk-tooltip=\"title:State;pos:top;\" placeholder=\"State\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Country</label>&nbsp;<i class=\"fas fa-bookmark\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prof.cty\" name=\"cty\" type=\"text\" uk-tooltip=\"title:Country;pos:top;\" placeholder=\"Country\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Pincode</label>&nbsp;<i class=\"fas fa-list-ol\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prof.pin\" name=\"pin\" type=\"number\" uk-tooltip=\"title:Pincode;pos:top;\" placeholder=\"Pincode\">\n                    </div>\n                    <button class=\"uk-button uk-button-primary btn-block\">Set profile</button>\n                    {{prof|json}}\n                </form>\n            </div>\n        </div>\n    </div>\n</div>";
+    __webpack_exports__["default"] = "<div class=\"row\">\n    <div class=\"col-md-12 card-left\">\n        <div class=\"card\" [ngClass]=\"(sidemenu==true)?'active_screen':'inactive_screen'\">\n            <div class=\"card-body\">\n                <h4>Your information</h4>\n                <i class=\"fas fa-chevron-down expand\" (mouseover)=\"sidemenu = !sidemenu\"\n                    (click)=\"sidemenu = !sidemenu\"></i>\n                <form class=\"uk-grid-small\" uk-grid>\n                    <div class=\"uk-width-1-2@s\">\n                        <label for=\"\">Profile firstname</label>&nbsp;<i class=\"fas fa-signature\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prof.fname\" name=\"fname\" type=\"text\"\n                            uk-tooltip=\"title:First name;pos:top;\" placeholder=\"First name\">\n                    </div>\n                    <div class=\"uk-width-1-2@s\">\n                        <label for=\"\">Profile lastname</label>&nbsp;<i class=\"fas fa-signature\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prof.lname\" name=\"lname\" type=\"text\"\n                            uk-tooltip=\"title:Last name;pos:top;\" placeholder=\"Last name\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Permenant location Landmark</label>&nbsp;<i class=\"fas fa-map-marker\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prof.landmark\" name=\"land\" type=\"text\"\n                            uk-tooltip=\"title:Permenant location Landmark;pos:top;\" placeholder=\"Landmark\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Door# / Street name</label>&nbsp;<i class=\"fas fa-thumbtack\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prof.door\" name=\"door\" type=\"text\"\n                            uk-tooltip=\"title:Door# / Street name;pos:top;\" placeholder=\"Door# / Street name\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Locality / Apartment / Soceity</label>&nbsp;<i class=\"fas fa-search-location\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prof.loc\" name=\"loc\" type=\"text\"\n                            uk-tooltip=\"title:Locality / Apartment / Soceity;pos:top;\"\n                            placeholder=\"Locality / Apartment / Soceity\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">State</label>&nbsp;<i class=\"fas fa-map-marked-alt\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prof.state\" name=\"state\" type=\"text\"\n                            uk-tooltip=\"title:State;pos:top;\" placeholder=\"State\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Country</label>&nbsp;<i class=\"fas fa-bookmark\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prof.cty\" name=\"cty\" type=\"text\"\n                            uk-tooltip=\"title:Country;pos:top;\" placeholder=\"Country\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Pincode</label>&nbsp;<i class=\"fas fa-list-ol\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prof.pin\" name=\"pin\" type=\"number\"\n                            uk-tooltip=\"title:Pincode;pos:top;\" placeholder=\"Pincode\">\n                    </div>\n                    <button (click)=\"profile()\" class=\"uk-button uk-button-primary btn-block\">Set profile</button>\n                    <!-- {{prof|json}} -->\n                </form>\n            </div>\n        </div>\n    </div>\n</div>\n<div id=\"snackbar\">{{msg}}</div>";
     /***/
   },
 
@@ -131,7 +131,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<br>\n<h5>Property dashboard <i class=\"fas fa-home\"></i> </h5>\n\n<!-- {{props|json}} - -->\n<hr>\n<div class=\"row\">\n    <div class=\"col-md-6\" *ngFor=\"let item of props; let i=index\">\n        <div class=\"card\" style=\"margin: 10px 0px;\">\n            <div class=\"cardbody\">\n                <img src=\"https://image.flaticon.com/icons/svg/953/953503.svg\" *ngIf=\"item?.htype=='House'\" alt=\"\" class=\"home\">\n                <img src=\"https://image.flaticon.com/icons/svg/953/953541.svg\" *ngIf=\"item?.htype=='Apartment'\"  class=\"home\" alt=\"\">\n                <img src=\"https://image.flaticon.com/icons/svg/953/953546.svg\" *ngIf=\"item?.htype=='PG-Paying Guest'\"  class=\"home\" alt=\"\">\n                <img src=\"https://image.flaticon.com/icons/svg/953/953482.svg\" *ngIf=\"item?.htype=='Hostel'\"  class=\"home\" alt=\"\">\n\n                <table class=\"uk-table\">\n                    <tr>\n                        <td>\n                            Accomadation\n                        </td>\n                        <td>\n                            <b>{{item?.mates}}  </b> out of     <b>\n                                {{item?.acc}} </b> managed by  <b>\n                                     {{item?.type}} </b> owner.\n                        </td>\n                    </tr>\n                    <tr>\n                        <td>\n                            Landmark\n                        </td>\n                        <td>\n                            <b>{{item?.landmark}} </b>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td>\n                            Rent\n                        </td>\n                        <td>\n                            <b>\n                                <i class=\"fas fa-rupee-sign\"></i>&nbsp;{{item?.starts}} - <i\n                                    class=\"fas fa-rupee-sign\"></i>&nbsp;{{item?.ends}} </b>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td>\n                            Address\n                        </td>\n                        <td>\n                            <i class=\"fas fa-map-signs\"></i>&nbsp;&nbsp;{{item?.add}} <br>\n                            <i class=\"fas fa-map-pin\"></i>&nbsp;&nbsp;&nbsp;{{item?.state}} <br>\n                            <i class=\"fas fa-map-marked-alt\"></i>&nbsp;&nbsp;{{item?.country}} <br>\n                            <b> <i class=\"fas fa-location-arrow\"></i>&nbsp;&nbsp;{{item?.pin}} <br>\n                            </b>\n                        </td>\n                    </tr>\n                </table>\n            </div>\n        </div>\n    </div>\n</div>";
+    __webpack_exports__["default"] = "<br>\n<h5>Property dashboard <i class=\"fas fa-home\"></i> </h5>\n\n<!-- {{props|json}} - -->\n<hr>\n<div class=\"row\">\n    <div class=\"col-md-6\" *ngFor=\"let item of props; let i=index\">\n        <div class=\"card\" style=\"margin: 10px 0px;\">\n            <div class=\"cardbody\">\n                <img src=\"https://image.flaticon.com/icons/svg/953/953503.svg\" *ngIf=\"item?.htype=='House'\" alt=\"\" class=\"home\">\n                <img src=\"https://image.flaticon.com/icons/svg/953/953541.svg\" *ngIf=\"item?.htype=='Apartment'\"  class=\"home\" alt=\"\">\n                <img src=\"https://image.flaticon.com/icons/svg/953/953546.svg\" *ngIf=\"item?.htype=='PG-Paying Guest'\"  class=\"home\" alt=\"\">\n                <img src=\"https://image.flaticon.com/icons/svg/953/953482.svg\" *ngIf=\"item?.htype=='Hostel'\"  class=\"home\" alt=\"\">\n\n                <table class=\"uk-table\">\n                    <tr>\n                        <td>\n                            Accomadation\n                        </td>\n                        <td>\n                            <b>{{item?.mates}}  </b> out of     <b>\n                                {{item?.acc}} </b> managed by  <b>\n                                     {{item?.type}} </b> owner.\n                        </td>\n                    </tr>\n                    <tr>\n                        <td>\n                            Landmark\n                        </td>\n                        <td>\n                            <b>{{item?.landmark}} </b>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td>\n                            Rent\n                        </td>\n                        <td>\n                            <b>\n                                <i class=\"fas fa-rupee-sign\"></i>&nbsp;{{item?.starts}} - <i\n                                    class=\"fas fa-rupee-sign\"></i>&nbsp;{{item?.ends}} </b>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td>\n                            Address\n                        </td>\n                        <td>\n                            <i class=\"fas fa-map-signs\"></i>&nbsp;&nbsp;{{item?.add}} <br>\n                            <i class=\"fas fa-map-pin\"></i>&nbsp;&nbsp;&nbsp;{{item?.state}} <br>\n                            <i class=\"fas fa-map-marked-alt\"></i>&nbsp;&nbsp;{{item?.country}} <br>\n                            <b> <i class=\"fas fa-location-arrow\"></i>&nbsp;&nbsp;{{item?.pin}} <br>\n                            </b>\n                        </td>\n                    </tr>\n                </table>\n            </div>\n        </div>\n    </div>\n</div>\n<div id=\"snackbar\">{{msg}}</div>";
     /***/
   },
 
@@ -151,7 +151,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"row\">\n    <div class=\"col-md-12 card-left\">\n        <div class=\"card\" [ngClass]=\"(sidemenu==true)?'active_screen':'inactive_screen'\">\n            <div class=\"card-body\">\n                <legend>Property information</legend>\n                <form class=\"uk-grid-small\" uk-grid>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Number of house mates</label>&nbsp;\n                        <input class=\"uk-input\" [(ngModel)]=\"prop.mates\" name=\"mates\" type=\"number\"\n                            uk-tooltip=\"title:Number of house mates;pos:top;\" placeholder=\"Number of house mates\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Accomadation available</label>&nbsp;\n                        <input class=\"uk-input\" [(ngModel)]=\"prop.acc\" name=\"acc\" type=\"number\"\n                            uk-tooltip=\"title:Accomadation available;pos:top;\" placeholder=\"Accomadation available\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Property landmark</label>&nbsp;<i class=\"fas fa-map-marker\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prop.landmark\" name=\"landmark\" type=\"text\"\n                            uk-tooltip=\"title:Property landmark;pos:top;\" placeholder=\"Property landmark\">\n                    </div>\n                    <div class=\"uk-width-1-1@s\">\n                        <label for=\"\">Property type</label>&nbsp;<i class=\"fas fa-compress\"></i>\n                        <select class=\"uk-select\" name=\"\" [(ngModel)]=\"prop.htype\" name=\"type\" id=\"\"\n                            uk-tooltip=\"title:Property type;pos:top;\" placeholder=\"Property type\">\n                            <option>\n                                <img src=\"https://image.flaticon.com/icons/svg/953/953503.svg\" alt=\"\" class=\"home\">\n                                House\n                            </option>\n                            <option>\n                                <img src=\"https://image.flaticon.com/icons/svg/953/953541.svg\" class=\"home\"\n                                    alt=\"\">Apartment\n                            </option>\n                            <option>\n                                <img src=\"https://image.flaticon.com/icons/svg/953/953546.svg\" class=\"home\"\n                                    alt=\"\">PG-Paying Guest\n                            </option>\n                            <option>\n                                <img src=\"https://image.flaticon.com/icons/svg/953/953482.svg\" class=\"home\"\n                                    alt=\"\">Hostel\n                            </option>\n                        </select>\n                    </div>\n\n\n                    <div class=\"uk-width-1-2@s\">\n                        <label for=\"\">Rent starts from</label>&nbsp;<i class=\"fas fa-step-backward\"></i>&nbsp;\n                        <input type=\"range\" class=\"uk-range\" value=\"0\" id=\"asaf\" [(ngModel)]=\"prop.starts\" name=\"starts\"\n                            step=\"1000\" min=\"0\" max=\"1111111\">\n                    </div>\n                    <div class=\"uk-width-1-2@s\">\n                        <label for=\"\">Rent ends with</label>&nbsp;<i class=\"fas fa-step-forward\"></i>&nbsp;\n                        <input type=\"range\" class=\"uk-range\" value=\"0\" id=\"ssd\" [(ngModel)]=\"prop.ends\" step=\"1000\"\n                            min=\"0\" max=\"11111111\" name=\"ends\">\n                    </div>\n                    <div class=\"uk-width-1-2@s\">\n                        <!-- <label for=\"\">Rent starts from</label>&nbsp;<i -->\n                        <!-- class=\"fas fa-step-backward\"></i>&nbsp;{{prop.starts}} -->\n                        <i class=\"fas rup fa-rupee-sign\"></i>\n                        <input type=\"text\" class=\"uk-input\" id=\"asaf\" [(ngModel)]=\"prop.starts\" name=\"starts\"\n                            uk-tooltip=\"title:Rent starts from;pos:top;\">\n                    </div>\n                    <div class=\"uk-width-1-2@s\">\n                        <i class=\"fas rup fa-rupee-sign\"></i>\n                        <!-- <span class=\"\">{{prop.starts - props.ends}}</span> -->\n                        <!-- <label for=\"\">Rent ends with</label>&nbsp;<i class=\"fas fa-step-forward\"></i>&nbsp;{{prop.ends}} -->\n                        <input type=\"text\" class=\"uk-input\" id=\"ssd\" [(ngModel)]=\"prop.ends\" name=\"ends\"\n                            uk-tooltip=\"title:Rent ends with;pos:top;\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Door# / Street name</label>&nbsp;<i class=\"fas fa-thumbtack\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prop.add\" name=\"add\" type=\"text\"\n                            uk-tooltip=\"title:Door# / Street name;pos:top;\" placeholder=\"Door# / Street name\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Locality / Apartment / Soceity</label>&nbsp;<i class=\"fas fa-search-location\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prop.loc\" name=\"loc\" type=\"text\"\n                            uk-tooltip=\"title:Locality / Apartment / Soceity;pos:top;\"\n                            placeholder=\"Locality / Apartment / Soceity\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">State</label>&nbsp;<i class=\"fas fa-map-marked-alt\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prop.state\" name=\"state\" type=\"text\"\n                            uk-tooltip=\"title:State;pos:top;\" placeholder=\"State\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Country</label>&nbsp;<i class=\"fas fa-bookmark\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prop.country\" name=\"country\" type=\"text\"\n                            uk-tooltip=\"title:Country;pos:top;\" placeholder=\"Country\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Pincode</label>&nbsp;<i class=\"fas fa-list-ol\"></i>\n                        <input class=\"uk-input\" type=\"number\" [(ngModel)]=\"prop.pin\" name=\"pin\"\n                            uk-tooltip=\"title:Pincode;pos:top;\" placeholder=\"Pincode\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Owner type</label>&nbsp;<i class=\"fas fa-compress\"></i>\n                        <select class=\"uk-select\" name=\"\" [(ngModel)]=\"prop.type\" name=\"type\" id=\"\"\n                            uk-tooltip=\"title:Owner type;pos:top;\" placeholder=\"Owner type\">\n                            <option>First</option>\n                            <option>Second</option>\n                            <option>Broker</option>\n                            <option>NRI</option>\n                        </select>\n                    </div>\n                    <button (click)=\"props()\" class=\"uk-button uk-button-primary btn-block\">Set Property</button>\n                    {{prop|json}}\n                </form>\n            </div>\n        </div>\n    </div>\n</div>";
+    __webpack_exports__["default"] = "<div class=\"row\">\n    <div class=\"col-md-12 card-left\">\n        <div class=\"card\" [ngClass]=\"(sidemenu==true)?'active_screen':'inactive_screen'\">\n            <div class=\"card-body\">\n                <legend>Property information</legend>\n                <form class=\"uk-grid-small\" uk-grid>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Number of house mates</label>&nbsp;\n                        <input class=\"uk-input\" [(ngModel)]=\"prop.mates\" name=\"mates\" type=\"number\"\n                            uk-tooltip=\"title:Number of house mates;pos:top;\" placeholder=\"Number of house mates\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Accomadation available</label>&nbsp;\n                        <input class=\"uk-input\" [(ngModel)]=\"prop.acc\" name=\"acc\" type=\"number\"\n                            uk-tooltip=\"title:Accomadation available;pos:top;\" placeholder=\"Accomadation available\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Property landmark</label>&nbsp;<i class=\"fas fa-map-marker\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prop.landmark\" name=\"landmark\" type=\"text\"\n                            uk-tooltip=\"title:Property landmark;pos:top;\" placeholder=\"Property landmark\">\n                    </div>\n                    <div class=\"uk-width-1-1@s\">\n                        <label for=\"\">Property type</label>&nbsp;<i class=\"fas fa-compress\"></i>\n                        <select class=\"uk-select\" name=\"\" [(ngModel)]=\"prop.htype\" name=\"type\" id=\"\"\n                            uk-tooltip=\"title:Property type;pos:top;\" placeholder=\"Property type\">\n                            <option>\n                                <img src=\"https://image.flaticon.com/icons/svg/953/953503.svg\" alt=\"\" class=\"home\">\n                                House\n                            </option>\n                            <option>\n                                <img src=\"https://image.flaticon.com/icons/svg/953/953541.svg\" class=\"home\"\n                                    alt=\"\">Apartment\n                            </option>\n                            <option>\n                                <img src=\"https://image.flaticon.com/icons/svg/953/953546.svg\" class=\"home\"\n                                    alt=\"\">PG-Paying Guest\n                            </option>\n                            <option>\n                                <img src=\"https://image.flaticon.com/icons/svg/953/953482.svg\" class=\"home\"\n                                    alt=\"\">Hostel\n                            </option>\n                        </select>\n                    </div>\n                    <div class=\"uk-width-1-2@s\">\n                        <!-- <label for=\"\">Rent starts from</label>&nbsp;<i -->\n                        <!-- class=\"fas fa-step-backward\"></i>&nbsp;{{prop.starts}} -->\n                        <i class=\"fas rup fa-rupee-sign\"></i>\n                        <input type=\"text\" class=\"uk-input\" id=\"asaf\" [(ngModel)]=\"prop.starts\" name=\"starts\"\n                            uk-tooltip=\"title:Rent starts from;pos:top;\">\n                    </div>\n                    <div class=\"uk-width-1-2@s\">\n                        <i class=\"fas rup fa-rupee-sign\"></i>\n                        <!-- <span class=\"\">{{prop.starts - props.ends}}</span> -->\n                        <!-- <label for=\"\">Rent ends with</label>&nbsp;<i class=\"fas fa-step-forward\"></i>&nbsp;{{prop.ends}} -->\n                        <input type=\"text\" class=\"uk-input\" id=\"ssd\" [(ngModel)]=\"prop.ends\" name=\"ends\"\n                            uk-tooltip=\"title:Rent ends with;pos:top;\">\n                    </div>\n                    <div class=\"uk-width-1-2@s\">\n                        <label for=\"\">Rent starts from</label>&nbsp;<i class=\"fas fa-step-backward\"></i>&nbsp;\n                        <input type=\"range\" class=\"uk-range\" value=\"0\" id=\"asaf\" [(ngModel)]=\"prop.starts\" name=\"starts\"\n                            step=\"1000\" min=\"0\" max=\"10000\">\n                    </div>\n                    <div class=\"uk-width-1-2@s\">\n                        <label for=\"\">Rent ends with</label>&nbsp;<i class=\"fas fa-step-forward\"></i>&nbsp;\n                        <input type=\"range\" class=\"uk-range\" value=\"0\" id=\"ssd\" [(ngModel)]=\"prop.ends\" step=\"1000\"\n                            min=\"0\" max=\"10000\" name=\"ends\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Door# / Street name</label>&nbsp;<i class=\"fas fa-thumbtack\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prop.add\" name=\"add\" type=\"text\"\n                            uk-tooltip=\"title:Door# / Street name;pos:top;\" placeholder=\"Door# / Street name\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Locality / Apartment / Soceity</label>&nbsp;<i class=\"fas fa-search-location\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prop.loc\" name=\"loc\" type=\"text\"\n                            uk-tooltip=\"title:Locality / Apartment / Soceity;pos:top;\"\n                            placeholder=\"Locality / Apartment / Soceity\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">State</label>&nbsp;<i class=\"fas fa-map-marked-alt\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prop.state\" name=\"state\" type=\"text\"\n                            uk-tooltip=\"title:State;pos:top;\" placeholder=\"State\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Country</label>&nbsp;<i class=\"fas fa-bookmark\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prop.country\" name=\"country\" type=\"text\"\n                            uk-tooltip=\"title:Country;pos:top;\" placeholder=\"Country\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Pincode</label>&nbsp;<i class=\"fas fa-list-ol\"></i>\n                        <input class=\"uk-input\" type=\"number\" [(ngModel)]=\"prop.pin\" name=\"pin\"\n                            uk-tooltip=\"title:Pincode;pos:top;\" placeholder=\"Pincode\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Owner type</label>&nbsp;<i class=\"fas fa-compress\"></i>\n                        <select class=\"uk-select\" name=\"\" [(ngModel)]=\"prop.type\" name=\"type\" id=\"\"\n                            uk-tooltip=\"title:Owner type;pos:top;\" placeholder=\"Owner type\">\n                            <option>First</option>\n                            <option>Second</option>\n                            <option>Broker</option>\n                            <option>NRI</option>\n                        </select>\n                    </div>\n                    <button (click)=\"props()\" class=\"uk-button uk-button-primary btn-block\">Set Property</button>\n                    <!-- {{prop|json}} -->\n                </form>\n            </div>\n        </div>\n    </div>\n</div>\n<div id=\"snackbar\">{{msg}}</div>";
     /***/
   },
 
@@ -1465,21 +1465,54 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var src_app_shared_locality_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! src/app/shared/locality.service */
+    "./src/app/shared/locality.service.ts");
 
     var ProfileInfoComponent =
     /*#__PURE__*/
     function () {
-      function ProfileInfoComponent() {
+      function ProfileInfoComponent(loc) {
         _classCallCheck(this, ProfileInfoComponent);
+
+        this.loc = loc;
       }
 
       _createClass(ProfileInfoComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {}
+      }, {
+        key: "eat",
+        value: function eat(msg, color) {
+          this.msg = msg;
+          var x = document.getElementById("snackbar");
+
+          if (color === 1) {
+            x.style.backgroundColor = "#9ccc65";
+          } else if (color === 2) {
+            x.style.backgroundColor = "#ffc107";
+          } else {
+            x.style.backgroundColor = "#ef5350";
+          }
+
+          x.className = "show";
+          setTimeout(function () {
+            x.className = x.className.replace("show", "");
+          }, 5000);
+        }
       }]);
 
       return ProfileInfoComponent;
     }();
+
+    ProfileInfoComponent.ctorParameters = function () {
+      return [{
+        type: src_app_shared_locality_service__WEBPACK_IMPORTED_MODULE_2__["LocalityService"]
+      }];
+    };
 
     ProfileInfoComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-profile-info',
@@ -1544,13 +1577,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var src_app_shared_locality_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! src/app/shared/locality.service */
+    "./src/app/shared/locality.service.ts");
 
     var ProfileComponent =
     /*#__PURE__*/
     function () {
-      function ProfileComponent() {
+      function ProfileComponent(loc) {
         _classCallCheck(this, ProfileComponent);
 
+        this.loc = loc;
         this.prof = {
           fname: '',
           lname: '',
@@ -1566,10 +1606,48 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {}
+      }, {
+        key: "profile",
+        value: function profile() {
+          var _this6 = this;
+
+          this.loc.profile(this.prof).subscribe(function (data) {
+            if (data['status'] === true) {
+              _this6.eat(data['msg'], 1);
+            } else {
+              _this6.eat(data['msg'], 2);
+            }
+          });
+        }
+      }, {
+        key: "eat",
+        value: function eat(msg, color) {
+          this.msg = msg;
+          var x = document.getElementById("snackbar");
+
+          if (color === 1) {
+            x.style.backgroundColor = "#9ccc65";
+          } else if (color === 2) {
+            x.style.backgroundColor = "#ffc107";
+          } else {
+            x.style.backgroundColor = "#ef5350";
+          }
+
+          x.className = "show";
+          setTimeout(function () {
+            x.className = x.className.replace("show", "");
+          }, 5000);
+        }
       }]);
 
       return ProfileComponent;
     }();
+
+    ProfileComponent.ctorParameters = function () {
+      return [{
+        type: src_app_shared_locality_service__WEBPACK_IMPORTED_MODULE_2__["LocalityService"]
+      }];
+    };
 
     ProfileComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-profile',
@@ -1660,11 +1738,30 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(PropertyInfoComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this6 = this;
+          var _this7 = this;
 
           this.loc.getgit('tyre', 'props').subscribe(function (data) {
-            _this6.props = data;
+            _this7.props = data;
           });
+        }
+      }, {
+        key: "eat",
+        value: function eat(msg, color) {
+          this.msg = msg;
+          var x = document.getElementById("snackbar");
+
+          if (color === 1) {
+            x.style.backgroundColor = "#9ccc65";
+          } else if (color === 2) {
+            x.style.backgroundColor = "#ffc107";
+          } else {
+            x.style.backgroundColor = "#ef5350";
+          }
+
+          x.className = "show";
+          setTimeout(function () {
+            x.className = x.className.replace("show", "");
+          }, 5000);
         }
       }]);
 
@@ -1742,13 +1839,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var src_app_shared_locality_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! src/app/shared/locality.service */
+    "./src/app/shared/locality.service.ts");
 
     var PropertyComponent =
     /*#__PURE__*/
     function () {
-      function PropertyComponent() {
+      function PropertyComponent(loc) {
         _classCallCheck(this, PropertyComponent);
 
+        this.loc = loc;
         this.prop = {
           mates: '',
           landmark: '',
@@ -1768,11 +1872,46 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function ngOnInit() {}
       }, {
         key: "props",
-        value: function props() {}
+        value: function props() {
+          var _this8 = this;
+
+          this.loc.property(this.prop).subscribe(function (data) {
+            if (data['status'] === true) {
+              _this8.eat(data['msg'], 1);
+            } else {
+              _this8.eat(data['msg'], 2);
+            }
+          });
+        }
+      }, {
+        key: "eat",
+        value: function eat(msg, color) {
+          this.msg = msg;
+          var x = document.getElementById("snackbar");
+
+          if (color === 1) {
+            x.style.backgroundColor = "#9ccc65";
+          } else if (color === 2) {
+            x.style.backgroundColor = "#ffc107";
+          } else {
+            x.style.backgroundColor = "#ef5350";
+          }
+
+          x.className = "show";
+          setTimeout(function () {
+            x.className = x.className.replace("show", "");
+          }, 5000);
+        }
       }]);
 
       return PropertyComponent;
     }();
+
+    PropertyComponent.ctorParameters = function () {
+      return [{
+        type: src_app_shared_locality_service__WEBPACK_IMPORTED_MODULE_2__["LocalityService"]
+      }];
+    };
 
     PropertyComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-property',
@@ -2098,6 +2237,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           return this.http.post('https://backendpro.herokuapp.com/register', data);
         }
       }, {
+        key: "property",
+        value: function property(data) {
+          return this.http.post('https://backendpro.herokuapp.com/property', data);
+        }
+      }, {
+        key: "profile",
+        value: function profile(data) {
+          return this.http.post('https://backendpro.herokuapp.com/profile', data);
+        }
+      }, {
         key: "login",
         value: function login(data) {
           return this.http.post('https://backendpro.herokuapp.com/login', data);
@@ -2248,44 +2397,47 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ShiftComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this7 = this;
+          var _this9 = this;
 
           this.loc.getYellow().subscribe(function (data) {
-            _this7.info = data; // console.log(this.info.length);
+            _this9.info = data; // console.log(this.info.length);
           });
         }
       }, {
         key: "logins",
         value: function logins() {
-          var _this8 = this;
+          var _this10 = this;
 
           this.enter = false;
           this.logdata = true;
           this.loc.usercheck(this.login).subscribe(function (ccc) {
             if (ccc['status'] === false) {
-              _this8.loc.login(_this8.login).subscribe(function (data) {
-                _this8.logdata = false;
+              _this10.loc.login(_this10.login).subscribe(function (data) {
+                _this10.logdata = false;
 
                 if (data['status'] === true) {
-                  _this8.eat(data['msg'], 1);
-                } else {
-                  _this8.eat(data['msg'], 2);
-                }
+                  _this10.eat(data['msg'], 1);
 
-                window.localStorage.setItem("logged", _this8.login.username);
-                window.localStorage.setItem("state", "true");
+                  _this10.logdata = false;
+                  window.localStorage.setItem("logged", _this10.login.username);
+                  window.localStorage.setItem("state", "true");
+                } else {
+                  _this10.eat(data['msg'], 2);
+
+                  _this10.logdata = false;
+                }
               });
             } else {
-              _this8.logdata = false;
+              _this10.logdata = false;
 
-              _this8.eat('Username not exists', 2);
+              _this10.eat('Username not exists', 2);
             }
           });
         }
       }, {
         key: "register",
         value: function register() {
-          var _this9 = this;
+          var _this11 = this;
 
           this.enter = false; // delete this.login.lucky;
           // delete this.login.phrase;
@@ -2293,32 +2445,32 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           this.logdata = true;
           this.loc.usercheck(this.login).subscribe(function (ccc) {
             if (ccc['status'] === true) {
-              if (_this9.login.password === _this9.login.cpassword) {
-                _this9.loc.register(_this9.login).subscribe(function (data) {
-                  _this9.logdata = undefined;
-                  _this9.enter = true;
-                  _this9.reg = true;
-                  _this9.regData = data['msg'];
+              if (_this11.login.password === _this11.login.cpassword) {
+                _this11.loc.register(_this11.login).subscribe(function (data) {
+                  _this11.logdata = undefined;
+                  _this11.enter = true;
+                  _this11.reg = true;
+                  _this11.regData = data['msg'];
 
                   if (data['status'] === true) {
-                    _this9.eat(data['msg'], 1);
+                    _this11.eat(data['msg'], 1);
                   } else {
-                    _this9.eat(data['msg'], 2);
+                    _this11.eat(data['msg'], 2);
                   }
                 });
               } else {
-                _this9.logdata = undefined;
-                _this9.enter = true;
-                _this9.reg = true;
+                _this11.logdata = undefined;
+                _this11.enter = true;
+                _this11.reg = true;
 
-                _this9.eat('Password not matched', 2);
+                _this11.eat('Password not matched', 2);
               }
             } else {
-              _this9.logdata = undefined;
-              _this9.enter = true;
-              _this9.reg = true;
+              _this11.logdata = undefined;
+              _this11.enter = true;
+              _this11.reg = true;
 
-              _this9.eat(ccc['msg'], 2);
+              _this11.eat(ccc['msg'], 2);
             }
           });
         }
@@ -2436,11 +2588,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(UnshiftComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this10 = this;
+          var _this12 = this;
 
           this.load = true;
           setTimeout(function () {
-            _this10.load = false;
+            _this12.load = false;
           }, 3000);
         }
       }]);
