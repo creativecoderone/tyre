@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"board\" [ngClass]=\"(extract==true)?'activate':'board'\">\n        <!--<button class=\"plus\" *ngIf=\"state\" >M</button>-->\n        <!--<i class=\"fas fa-plus-circle\"></i>-->\n        <div class=\"desk\">\n                <router-outlet></router-outlet>\n        </div>\n</div>\n<div class=\"online as-mob\">\n        <div class=\"sidebar\" [ngClass]=\"(extract==true)?'activatesidebar':'sidebar'\">\n                <br>\n\n                <!--{{extract}}-->\n                <i class='fas fa-expand extract' *ngIf=\"extract\" (click)=\"extract = false\"></i>\n                <i class='fas fa-expand-arrows-alt extract' *ngIf=\"!extract\" (click)=\"extract = true\"></i> <br>\n                <a uk-tooltip=\"title:Dashboard;pos:right;\" (click)=\"app='lander'\"><i class='fas fa-braille'></i><span>\n                                Dashboard</span></a>\n                <a uk-tooltip=\"title:Locality;pos:right;\" [routerLink]=\"['/locality']\" (click)=\"app='locality'\"><i\n                                class='fas fa-bullseye'></i><span>\n                                Locality</span></a>\n                <a uk-tooltip=\"title:Profile;pos:right;\" [routerLink]=\"['/profile']\" (click)=\"app='profile'\"><i\n                                class='fas fa-clipboard'></i><span>\n                                Profile</span></a>\n                <a uk-tooltip=\"title:Property;pos:right;\" [routerLink]=\"['/property']\" (click)=\"app='property'\"><i\n                                class='fas fa-cogs'></i><span>\n                                Property </span></a>\n                <a uk-tooltip=\"title:Property board;pos:right;\" [routerLink]=\"['/property-info']\"\n                        (click)=\"app='property-info'\"><i class='fas fa-home'></i><span>\n                                Property Board</span></a>\n                <a uk-tooltip=\"title:Profile board;pos:right;\" [routerLink]=\"['/profile-info']\"\n                        (click)=\"app='profile-info'\"><i class='fas fa-clipboard'></i><span>\n                                Profile Board</span></a>\n                <a uk-tooltip=\"title:Login / Register;pos:right;\" [routerLink]=\"['/shift']\" (click)=\"app='shift'\"><i\n                                class='fas fa-users'></i><span> Login\n                                /\n                                Register</span></a>\n                <a uk-tooltip=\"title: Change password;pos:right;\" [routerLink]=\"['/unshift']\" (click)=\"app='unshift'\"><i\n                                class='fas fa-chart-line'></i><span>\n                                Change password</span></a>\n                <a uk-tooltip=\"title:Logout;pos:right;\" (click)=\"logout()\"><i class='fas fa-user'></i><span>\n                                Logout</span></a>\n        </div>\n</div>\n<!--[routerLink]=\"['/lander']\"-->\n\n<!--7=77777777777777777777777777777777777777777777-->\n<div id=\"mySidebar\" class=\"sidebars\" style=\"font-size: 16px;\">\n        <a href=\"javascript:void(0)\" *ngIf=\"open\" class=\"closebtn\" (click)=\"closeNav()\">&times;</a>\n        <br>\n        <!--{{extract}}-->\n        <a uk-tooltip=\"title:Dashboard;pos:right;\" (click)=\"app='lander'\"><i class='fas fa-braille'></i><span>\n                Dashboard</span></a>\n<a uk-tooltip=\"title:Locality;pos:right;\" [routerLink]=\"['/locality']\" (click)=\"app='locality'\"><i\n                class='fas fa-bullseye'></i><span>\n                Locality</span></a>\n<a uk-tooltip=\"title:Profile;pos:right;\" [routerLink]=\"['/profile']\" (click)=\"app='profile'\"><i\n                class='fas fa-clipboard'></i><span>\n                Profile</span></a>\n<a uk-tooltip=\"title:Property;pos:right;\" [routerLink]=\"['/property']\" (click)=\"app='property'\"><i\n                class='fas fa-cogs'></i><span>\n                Property </span></a>\n<a uk-tooltip=\"title:Property board;pos:right;\" [routerLink]=\"['/property-info']\"\n        (click)=\"app='property-info'\"><i class='fas fa-home'></i><span>\n                Property Board</span></a>\n<a uk-tooltip=\"title:Profile board;pos:right;\" [routerLink]=\"['/profile-info']\"\n        (click)=\"app='profile-info'\"><i class='fas fa-clipboard'></i><span>\n                Profile Board</span></a>\n<a uk-tooltip=\"title:Login / Register;pos:right;\" [routerLink]=\"['/shift']\" (click)=\"app='shift'\"><i\n                class='fas fa-users'></i><span> Login\n                /\n                Register</span></a>\n<a uk-tooltip=\"title: Change password;pos:right;\" [routerLink]=\"['/unshift']\" (click)=\"app='unshift'\"><i\n                class='fas fa-chart-line'></i><span>\n                Change password</span></a>\n<a uk-tooltip=\"title:Logout;pos:right;\" (click)=\"logout()\"><i class='fas fa-user'></i><span>\n                Logout</span></a>\n\n        <button class=\"btnclose as-non-mob\" *ngIf=\"!open\" (click)=\"open = true\" (click)=\"openNav()\">&#9776;</button>\n        <div id=\"snackbar\">{{msg}}</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"board\" [ngClass]=\"(extract==true)?'activate':'board'\">\n        <!--<button class=\"plus\" *ngIf=\"state\" >M</button>-->\n        <!--<i class=\"fas fa-plus-circle\"></i>-->\n        <div class=\"desk\">\n                <router-outlet></router-outlet>\n        </div>\n</div>\n<div class=\"online as-mob\">\n        <div class=\"sidebar\" [ngClass]=\"(extract==true)?'activatesidebar':'sidebar'\">\n                <br>\n\n                <!--{{extract}}-->\n                <i class='fas fa-expand extract' *ngIf=\"extract\" (click)=\"extract = false\"></i>\n                <i class='fas fa-expand-arrows-alt extract' *ngIf=\"!extract\" (click)=\"extract = true\"></i> <br>\n                <a uk-tooltip=\"title:Dashboard;pos:right;\" *ngIf=\"state==true\"><i class='fas fa-braille'></i><span>\n                                Dashboard</span></a>\n                <a uk-tooltip=\"title:Locality;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/locality']\"><i\n                                class='fas fa-bullseye'></i><span>\n                                Locality</span></a>\n                <a uk-tooltip=\"title:Profile;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/profile']\"><i\n                                class='fas fa-clipboard'></i><span>\n                                Profile</span></a>\n                <a uk-tooltip=\"title:Property;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/property']\"><i\n                                class='fas fa-cogs'></i><span>\n                                Property </span></a>\n                <a uk-tooltip=\"title:Property board;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/property-info']\"><i\n                                class='fas fa-home'></i><span>\n                                Property Board</span></a>\n                <a uk-tooltip=\"title:Profile board;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/profile-info']\"><i\n                                class='fas fa-clipboard'></i><span>\n                                Profile Board</span></a>\n                <a uk-tooltip=\"title:Login / Register;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/shift']\"><i\n                                class='fas fa-users'></i><span> Login\n                                /\n                                Register</span></a>\n                <a uk-tooltip=\"title: Change password;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/unshift']\"><i\n                                class='fas fa-chart-line'></i><span>\n                                Change password</span></a>\n                <a uk-tooltip=\"title:Logout;pos:right;\" *ngIf=\"state==true\" (click)=\"logout()\"><i\n                                class='fas fa-user'></i><span>\n                                Logout</span></a>\n        </div>\n</div>\n<!--[routerLink]=\"['/lander']\"-->\n\n<!--7=77777777777777777777777777777777777777777777-->\n<div id=\"mySidebar\" class=\"sidebars\" style=\"font-size: 16px;\">\n        <a href=\"javascript:void(0)\" *ngIf=\"open\" class=\"closebtn\" (click)=\"closeNav()\">&times;</a>\n        <br>\n        <!--{{extract}}-->\n        <a uk-tooltip=\"title:Dashboard;pos:right;\" *ngIf=\"state==true\"><i class='fas fa-braille'></i><span>\n                        Dashboard</span></a>\n        <a uk-tooltip=\"title:Locality;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/locality']\"><i\n                        class='fas fa-bullseye'></i><span>\n                        Locality</span></a>\n        <a uk-tooltip=\"title:Profile;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/profile']\"><i\n                        class='fas fa-clipboard'></i><span>\n                        Profile</span></a>\n        <a uk-tooltip=\"title:Property;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/property']\"><i\n                        class='fas fa-cogs'></i><span>\n                        Property </span></a>\n        <a uk-tooltip=\"title:Property board;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/property-info']\"><i\n                        class='fas fa-home'></i><span>\n                        Property Board</span></a>\n        <a uk-tooltip=\"title:Profile board;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/profile-info']\"><i\n                        class='fas fa-clipboard'></i><span>\n                        Profile Board</span></a>\n        <a uk-tooltip=\"title:Login / Register;pos:right;\" [routerLink]=\"['/shift']\" *ngIf=\"state==true\"><i\n                        class='fas fa-users'></i><span> Login\n                        /\n                        Register</span></a>\n        <a uk-tooltip=\"title: Change password;pos:right;\" [routerLink]=\"['/unshift']\" *ngIf=\"state==true\"><i\n                        class='fas fa-chart-line'></i><span>\n                        Change password</span></a>\n        <a uk-tooltip=\"title:Logout;pos:right;\" *ngIf=\"state==true\" (click)=\"logout()\"><i class='fas fa-user'></i><span>\n                        Logout</span></a>\n\n        <button class=\"btnclose as-non-mob\" *ngIf=\"!open\" (click)=\"open = true\" (click)=\"openNav()\">&#9776;</button>\n        <div id=\"snackbar\">{{msg}}</div>");
 
 /***/ }),
 
@@ -431,6 +431,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _application_property_property_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./application/property/property.component */ "./src/app/application/property/property.component.ts");
 /* harmony import */ var _application_profile_info_profile_info_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./application/profile-info/profile-info.component */ "./src/app/application/profile-info/profile-info.component.ts");
 /* harmony import */ var _application_property_info_property_info_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./application/property-info/property-info.component */ "./src/app/application/property-info/property-info.component.ts");
+/* harmony import */ var _guards_auth_guard_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./guards/auth-guard.service */ "./src/app/guards/auth-guard.service.ts");
+
 
 
 
@@ -447,7 +449,8 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     {
         path: "lander",
-        component: src_app_lander_lander_component__WEBPACK_IMPORTED_MODULE_3__["LanderComponent"]
+        component: src_app_lander_lander_component__WEBPACK_IMPORTED_MODULE_3__["LanderComponent"],
+        canActivate: [_guards_auth_guard_service__WEBPACK_IMPORTED_MODULE_13__["AuthGuardService"]]
     },
     {
         path: "",
@@ -460,7 +463,8 @@ const routes = [
     },
     {
         path: "locality",
-        component: src_app_application_locality_locality_component__WEBPACK_IMPORTED_MODULE_5__["LocalityComponent"]
+        component: src_app_application_locality_locality_component__WEBPACK_IMPORTED_MODULE_5__["LocalityComponent"],
+        canActivate: [_guards_auth_guard_service__WEBPACK_IMPORTED_MODULE_13__["AuthGuardService"]]
     },
     {
         path: "shift",
@@ -472,23 +476,28 @@ const routes = [
     },
     {
         path: "rental",
-        component: src_app_rental_rental_component__WEBPACK_IMPORTED_MODULE_8__["RentalComponent"]
+        component: src_app_rental_rental_component__WEBPACK_IMPORTED_MODULE_8__["RentalComponent"],
+        canActivate: [_guards_auth_guard_service__WEBPACK_IMPORTED_MODULE_13__["AuthGuardService"]]
     },
     {
         path: "profile",
-        component: _application_profile_profile_component__WEBPACK_IMPORTED_MODULE_9__["ProfileComponent"]
+        component: _application_profile_profile_component__WEBPACK_IMPORTED_MODULE_9__["ProfileComponent"],
+        canActivate: [_guards_auth_guard_service__WEBPACK_IMPORTED_MODULE_13__["AuthGuardService"]]
     },
     {
         path: "property",
-        component: _application_property_property_component__WEBPACK_IMPORTED_MODULE_10__["PropertyComponent"]
+        component: _application_property_property_component__WEBPACK_IMPORTED_MODULE_10__["PropertyComponent"],
+        canActivate: [_guards_auth_guard_service__WEBPACK_IMPORTED_MODULE_13__["AuthGuardService"]]
     },
     {
         path: "profile-info",
-        component: _application_profile_info_profile_info_component__WEBPACK_IMPORTED_MODULE_11__["ProfileInfoComponent"]
+        component: _application_profile_info_profile_info_component__WEBPACK_IMPORTED_MODULE_11__["ProfileInfoComponent"],
+        canActivate: [_guards_auth_guard_service__WEBPACK_IMPORTED_MODULE_13__["AuthGuardService"]]
     },
     {
         path: "property-info",
-        component: _application_property_info_property_info_component__WEBPACK_IMPORTED_MODULE_12__["PropertyInfoComponent"]
+        component: _application_property_info_property_info_component__WEBPACK_IMPORTED_MODULE_12__["PropertyInfoComponent"],
+        canActivate: [_guards_auth_guard_service__WEBPACK_IMPORTED_MODULE_13__["AuthGuardService"]]
     }
 ];
 let AppRoutingModule = class AppRoutingModule {
@@ -537,8 +546,18 @@ let AppComponent = class AppComponent {
     constructor(router) {
         this.router = router;
         this.app = "shift";
+        this.state = true;
     }
-    ngOnInit() { }
+    ngOnInit() {
+        // if (window.localStorage.getItem('state') === null) {
+        //   this.state = false;
+        // } else if (window.localStorage.getItem('state') === undefined) {
+        //   this.state = false;
+        // } else {
+        //   this.state = true;
+        // }
+        console.log(this.state);
+    }
     logout() {
         this.eat("Logged out", 1);
         setTimeout(() => {
@@ -1173,6 +1192,53 @@ ErrorComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/guards/auth-guard.service.ts":
+/*!**********************************************!*\
+  !*** ./src/app/guards/auth-guard.service.ts ***!
+  \**********************************************/
+/*! exports provided: AuthGuardService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthGuardService", function() { return AuthGuardService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _shared_auths_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/auths.service */ "./src/app/shared/auths.service.ts");
+
+
+
+
+let AuthGuardService = class AuthGuardService {
+    constructor(router, auth) {
+        this.router = router;
+        this.auth = auth;
+    }
+    canActivate(next, state) {
+        if (this.auth.isAuthenticated()) {
+            return true;
+        }
+        // navigate to login page
+        this.router.navigate(['/shift']);
+        // you can save redirect url so after authing we can move them back to the page they requested
+        return false;
+    }
+};
+AuthGuardService.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
+    { type: _shared_auths_service__WEBPACK_IMPORTED_MODULE_3__["AuthsService"] }
+];
+AuthGuardService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], AuthGuardService);
+
+
+
+/***/ }),
+
 /***/ "./src/app/lander/lander.component.scss":
 /*!**********************************************!*\
   !*** ./src/app/lander/lander.component.scss ***!
@@ -1272,6 +1338,39 @@ RentalComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./rental.component.scss */ "./src/app/rental/rental.component.scss")).default]
     })
 ], RentalComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/auths.service.ts":
+/*!*****************************************!*\
+  !*** ./src/app/shared/auths.service.ts ***!
+  \*****************************************/
+/*! exports provided: AuthsService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthsService", function() { return AuthsService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let AuthsService = class AuthsService {
+    constructor() { }
+    isAuthenticated() {
+        if (window.localStorage.getItem('state') === 'true') {
+            return true;
+        }
+        return false;
+    }
+};
+AuthsService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], AuthsService);
 
 
 
@@ -1439,6 +1538,7 @@ let ShiftComponent = class ShiftComponent {
                         this.eat(data['msg'], 2);
                         this.logdata = false;
                         this.enter = true;
+                        window.localStorage.setItem("state", "false");
                     }
                 });
             }
