@@ -51,7 +51,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"board\" [ngClass]=\"(extract==true)?'activate':'board'\">\n  <!--<button class=\"plus\" *ngIf=\"state\" >M</button>-->\n  <!--<i class=\"fas fa-plus-circle\"></i>-->\n  <div class=\"desk\">\n    <router-outlet></router-outlet>\n\n    <app-locality *ngIf=\"app=='locality'\"></app-locality>\n    <app-lander *ngIf=\"app=='lander'\"></app-lander>\n    <app-shift *ngIf=\"app=='shift'\"></app-shift>\n    <app-unshift *ngIf=\"app=='unshift'\"></app-unshift>\n    <app-rental *ngIf=\"app=='rental'\"></app-rental>\n    <app-profile *ngIf=\"app=='profile'\"></app-profile>\n    <app-property *ngIf=\"app=='property'\"></app-property>\n    <app-profile-info *ngIf=\"app=='profile-info'\"></app-profile-info>\n    <app-property-info *ngIf=\"app=='property-info'\"></app-property-info>\n  </div>\n</div>\n<div class=\"online as-mob\">\n  <div class=\"sidebar\" [ngClass]=\"(extract==true)?'activatesidebar':'sidebar'\">\n    <br>\n    <!--{{extract}}-->\n    <i class='fas fa-expand extract' *ngIf=\"extract\" (click)=\"extract = false\"></i>\n    <i class='fas fa-expand-arrows-alt extract' *ngIf=\"!extract\" (click)=\"extract = true\"></i> <br>\n    <a uk-tooltip=\"title:Dashboard;pos:right;\" (click)=\"app='lander'\"><i class='fas fa-braille'></i><span>\n        Dashboard</span></a>\n    <a uk-tooltip=\"title:Locality;pos:right;\" (click)=\"app='locality'\"><i class='fas fa-bullseye'></i><span>\n        Locality</span></a>\n    <a uk-tooltip=\"title:Profile;pos:right;\" (click)=\"app='profile'\"><i class='fas fa-clipboard'></i><span>\n        Profile</span></a>\n    <a uk-tooltip=\"title:Property;pos:right;\" (click)=\"app='property'\"><i class='fas fa-cogs'></i><span>\n        Property</span></a>\n    <a uk-tooltip=\"title:Property board;pos:right;\" (click)=\"app='property-info'\"><i class='fas fa-home'></i><span>\n        Property Board</span></a>\n    <!-- <a uk-tooltip=\"title:Profile;pos:right;\"  (click)=\"app='profile'\"  ><i class='fas fa-clipboard'></i><span> Profile</span></a> -->\n    <a uk-tooltip=\"title:Login / Register;pos:right;\" (click)=\"app='shift'\"><i class='fas fa-users'></i><span> Login /\n        Register</span></a>\n    <a uk-tooltip=\"title: Change password;pos:right;\" (click)=\"app='unshift'\"><i class='fas fa-chart-line'></i><span>\n        Change password</span></a>\n    <a uk-tooltip=\"title:Logout;pos:right;\" (click)=\"logout()\"><i class='fas fa-user'></i><span> Logout</span></a>\n  </div>\n</div>\n<!--[routerLink]=\"['/lander']\"-->\n\n<!--7=77777777777777777777777777777777777777777777-->\n<div id=\"mySidebar\" class=\"sidebars\" style=\"font-size: 16px;\">\n  <a href=\"javascript:void(0)\" *ngIf=\"open\" class=\"closebtn\" (click)=\"closeNav()\">&times;</a>\n  <br>\n  <!--{{extract}}-->\n  <a uk-tooltip=\"title:Dashboard;pos:right;\" (click)=\"closeNav()\" (click)=\"app='lander'\"><i class='fas fa-braille'></i><span>\n      Dashboard</span></a>\n  <a uk-tooltip=\"title:Locality;pos:right;\" (click)=\"closeNav()\" (click)=\"app='locality'\"><i class='fas fa-bullseye'></i><span>\n      Locality</span></a>\n  <a uk-tooltip=\"title:Profile;pos:right;\" (click)=\"closeNav()\" (click)=\"app='profile'\"><i class='fas fa-clipboard'></i><span>\n      Profile</span></a>\n  <a uk-tooltip=\"title:Property;pos:right;\" (click)=\"closeNav()\" (click)=\"app='property'\"><i class='fas fa-cogs'></i><span>\n      Property</span></a>\n  <a uk-tooltip=\"title:Property board;pos:right;\" (click)=\"closeNav()\" (click)=\"app='property-info'\"><i class='fas fa-home'></i><span>\n      Property Board</span></a>\n  <!-- <a uk-tooltip=\"title:Profile;pos:right;\"  (click)=\"app='profile'\"  ><i class='fas fa-clipboard'></i><span> Profile</span></a> -->\n  <a uk-tooltip=\"title:Login / Register;pos:right;\" (click)=\"closeNav()\" (click)=\"app='shift'\"><i class='fas fa-users'></i><span> Login /\n      Register</span></a>\n  <a uk-tooltip=\"title: Change password;pos:right;\" (click)=\"closeNav()\" (click)=\"app='unshift'\"><i class='fas fa-chart-line'></i><span>\n      Change password</span></a>\n  <a uk-tooltip=\"title:Logout;pos:right;\" (click)=\"logout()\"><i class='fas fa-user'></i><span> Logout</span></a>\n\n<button class=\"btnclose as-non-mob\" *ngIf=\"!open\" (click)=\"open = true\" (click)=\"openNav()\">&#9776;</button>\n<div id=\"snackbar\">{{msg}}</div>";
+    __webpack_exports__["default"] = "<div class=\"board\" [ngClass]=\"(extract==true)?'activate':'board'\">\n        <!--<button class=\"plus\" *ngIf=\"state\" >M</button>-->\n        <!--<i class=\"fas fa-plus-circle\"></i>-->\n        <div class=\"desk\">\n                <router-outlet></router-outlet>\n        </div>\n</div>\n<div class=\"online as-mob\">\n        <div class=\"sidebar\" [ngClass]=\"(extract==true)?'activatesidebar':'sidebar'\">\n                <br>\n\n                <!--{{extract}}-->\n                <i class='fas fa-expand extract' *ngIf=\"extract\" (click)=\"extract = false\"></i>\n                <i class='fas fa-expand-arrows-alt extract' *ngIf=\"!extract\" (click)=\"extract = true\"></i> <br>\n                <a uk-tooltip=\"title:Dashboard;pos:right;\" (click)=\"app='lander'\"><i class='fas fa-braille'></i><span>\n                                Dashboard</span></a>\n                <a uk-tooltip=\"title:Locality;pos:right;\" [routerLink]=\"['/locality']\" (click)=\"app='locality'\"><i\n                                class='fas fa-bullseye'></i><span>\n                                Locality</span></a>\n                <a uk-tooltip=\"title:Profile;pos:right;\" [routerLink]=\"['/profile']\" (click)=\"app='profile'\"><i\n                                class='fas fa-clipboard'></i><span>\n                                Profile</span></a>\n                <a uk-tooltip=\"title:Property;pos:right;\" [routerLink]=\"['/property']\" (click)=\"app='property'\"><i\n                                class='fas fa-cogs'></i><span>\n                                Property </span></a>\n                <a uk-tooltip=\"title:Property board;pos:right;\" [routerLink]=\"['/property-info']\"\n                        (click)=\"app='property-info'\"><i class='fas fa-home'></i><span>\n                                Property Board</span></a>\n                <a uk-tooltip=\"title:Profile board;pos:right;\" [routerLink]=\"['/profile-info']\"\n                        (click)=\"app='profile-info'\"><i class='fas fa-clipboard'></i><span>\n                                Profile Board</span></a>\n                <a uk-tooltip=\"title:Login / Register;pos:right;\" [routerLink]=\"['/shift']\" (click)=\"app='shift'\"><i\n                                class='fas fa-users'></i><span> Login\n                                /\n                                Register</span></a>\n                <a uk-tooltip=\"title: Change password;pos:right;\" [routerLink]=\"['/unshift']\" (click)=\"app='unshift'\"><i\n                                class='fas fa-chart-line'></i><span>\n                                Change password</span></a>\n                <a uk-tooltip=\"title:Logout;pos:right;\" (click)=\"logout()\"><i class='fas fa-user'></i><span>\n                                Logout</span></a>\n        </div>\n</div>\n<!--[routerLink]=\"['/lander']\"-->\n\n<!--7=77777777777777777777777777777777777777777777-->\n<div id=\"mySidebar\" class=\"sidebars\" style=\"font-size: 16px;\">\n        <a href=\"javascript:void(0)\" *ngIf=\"open\" class=\"closebtn\" (click)=\"closeNav()\">&times;</a>\n        <br>\n        <!--{{extract}}-->\n        <a uk-tooltip=\"title:Dashboard;pos:right;\" (click)=\"app='lander'\"><i class='fas fa-braille'></i><span>\n                Dashboard</span></a>\n<a uk-tooltip=\"title:Locality;pos:right;\" [routerLink]=\"['/locality']\" (click)=\"app='locality'\"><i\n                class='fas fa-bullseye'></i><span>\n                Locality</span></a>\n<a uk-tooltip=\"title:Profile;pos:right;\" [routerLink]=\"['/profile']\" (click)=\"app='profile'\"><i\n                class='fas fa-clipboard'></i><span>\n                Profile</span></a>\n<a uk-tooltip=\"title:Property;pos:right;\" [routerLink]=\"['/property']\" (click)=\"app='property'\"><i\n                class='fas fa-cogs'></i><span>\n                Property </span></a>\n<a uk-tooltip=\"title:Property board;pos:right;\" [routerLink]=\"['/property-info']\"\n        (click)=\"app='property-info'\"><i class='fas fa-home'></i><span>\n                Property Board</span></a>\n<a uk-tooltip=\"title:Profile board;pos:right;\" [routerLink]=\"['/profile-info']\"\n        (click)=\"app='profile-info'\"><i class='fas fa-clipboard'></i><span>\n                Profile Board</span></a>\n<a uk-tooltip=\"title:Login / Register;pos:right;\" [routerLink]=\"['/shift']\" (click)=\"app='shift'\"><i\n                class='fas fa-users'></i><span> Login\n                /\n                Register</span></a>\n<a uk-tooltip=\"title: Change password;pos:right;\" [routerLink]=\"['/unshift']\" (click)=\"app='unshift'\"><i\n                class='fas fa-chart-line'></i><span>\n                Change password</span></a>\n<a uk-tooltip=\"title:Logout;pos:right;\" (click)=\"logout()\"><i class='fas fa-user'></i><span>\n                Logout</span></a>\n\n        <button class=\"btnclose as-non-mob\" *ngIf=\"!open\" (click)=\"open = true\" (click)=\"openNav()\">&#9776;</button>\n        <div id=\"snackbar\">{{msg}}</div>";
     /***/
   },
 
@@ -91,7 +91,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<p>profile-info works!</p>\n<div id=\"snackbar\">{{msg}}</div>";
+    __webpack_exports__["default"] = "\n\n\n<br>\n<h5>Profile dashboard <i class=\"fas fa-home\"></i> </h5>\n\n<!-- {{props|json}} - -->\n<hr>\n<div class=\"row\">\n    <div class=\"col-md-6\" *ngFor=\"let item of profs; let i=index\">\n        <div class=\"card\" style=\"margin: 10px 0px;\">\n            <div class=\"cardbody\">\n                <img src=\"https://image.flaticon.com/icons/svg/953/953503.svg\" *ngIf=\"item?.htype=='House'\" alt=\"\" class=\"home\">\n                <img src=\"https://image.flaticon.com/icons/svg/953/953541.svg\" *ngIf=\"item?.htype=='Apartment'\"  class=\"home\" alt=\"\">\n                <img src=\"https://image.flaticon.com/icons/svg/953/953546.svg\" *ngIf=\"item?.htype=='PG-Paying Guest'\"  class=\"home\" alt=\"\">\n                <img src=\"https://image.flaticon.com/icons/svg/953/953482.svg\" *ngIf=\"item?.htype=='Hostel'\"  class=\"home\" alt=\"\">\n\n                <table class=\"uk-table\">\n                    <tr>\n                        <td>\n                            Name\n                        </td>\n                        <td>\n                            <b>{{item?.fname}}&nbsp;{{item?.lname}} </b>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td>\n                            Landmark\n                        </td>\n                        <td>\n                            <b>{{item?.land}} </b>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td>\n                            Address\n                        </td>\n                        <td>\n                            <i class=\"fas fa-map-signs\"></i>&nbsp;&nbsp;{{item?.loc}} <br>\n                            <i class=\"fas fa-map-pin\"></i>&nbsp;&nbsp;&nbsp;{{item?.state}} <br>\n                            <!-- <i class=\"fas fa-map-marked-alt\"></i>&nbsp;&nbsp;{{item?.country}} <br> -->\n                            <b> <i class=\"fas fa-location-arrow\"></i>&nbsp;&nbsp;{{item?.pin}} <br>\n                            </b>\n                        </td>\n                    </tr>\n                </table>\n            </div>\n        </div>\n    </div>\n</div>\n\n<div id=\"snackbar\">{{msg}}</div>";
     /***/
   },
 
@@ -231,7 +231,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"board\">\n  <div class=\"road\">\n    <div class=\"viewboard as-mob\">\n      <h1>Login/Register&nbsp;<i class=\"fas fa-users\"></i> </h1>\n      <small class=\"small\">Please login with your crediantials</small>\n      <br class=\"as-mob\"> <br class=\"as-mob\">\n      <!--<small class=\"subsmall\">For new user please register here</small>-->\n      <img src=\"./assets/50ee4ac981890b346eac69c0cf6f45ef.gif\" *ngIf=\"enter\" class=\"imgc\" alt=\"\">\n      <img src=\"./assets/revizo-5.gif\" *ngIf=\"logdata\" alt=\"\" class=\"imgc\">\n      <img src=\"https://gatesbbq.com/wp-content/uploads/2017/04/checkmarksuccess.gif\" *ngIf=\"!logdata && !enter\" class=\"imgc\" alt=\"\">\n      <i href=\"#modal-center\" uk-toggle class=\"fas query fa-question-circle\"></i>\n    </div>\n    <div class=\"formboard\">\n      <br class=\"as-mob\">\n      <form>\n        <fieldset class=\"uk-fieldset\">\n          <legend class=\"uk-legend\">User Board&nbsp;<i class=\"far fa-user\"></i></legend>\n          <div class=\"uk-margin\">\n            <label for=\"\"> <i class=\"fas fa-user\"></i> Username</label> <i uk-tooltip=\"title:Username;pos:left\" class=\"fas bgg fa-user\"></i>\n            <input class=\"uk-input\" [(ngModel)]=\"login.username\" name=\"username\" type=\"text\" placeholder=\"Username\">\n            <small class=\"look\" style=\"float:right\">*Required for Login/Register</small>\n          </div>\n          <div class=\"uk-margin\">\n            <label for=\"\"> <i class=\"fas  fa-key\"></i> Password</label> <i uk-tooltip=\"title:Password;pos:left\" class=\"fas bgg fa-key\"></i>\n            <input class=\"uk-input\" [(ngModel)]=\"login.password\" name=\"password\" type=\"password\" placeholder=\"Password\">\n            <small class=\"look\" style=\"float:right\">*Required for Login/Register</small>\n          </div>\n          <!-- <div class=\"uk-margin\">\n            <label for=\"\"> <i class=\"fas fa-font\"></i> Phrase</label> <i uk-tooltip=\"title:Custom phrase;pos:left\" class=\"fas bgg fa-font\"></i>\n            <input class=\"uk-input\" [(ngModel)]=\"login.phrase\" name=\"phrase\" type=\"text\" placeholder=\"Custom Phrase\">\n            <small class=\"look\" style=\"float:right\">Optional for login</small>\n          </div> -->\n          <!-- <div class=\"uk-margin\">\n            <label for=\"\"><i class=\"fas fa-sort-numeric-down\"></i> Lucky number&nbsp; {{login?.lucky}} </label>\n            <input class=\"uk-range\" [title]=\"login.lucky\" [(ngModel)]=\"login.lucky\" min=\"0\" max=\"100\" step=\"1\" name=\"lucky\" type=\"range\">\n            <small class=\"look\" style=\"float:right\">Optional for login</small>\n          </div> -->\n          <button (click)=\"logins()\"  class=\"btn-block uk-button uk-button-primary\">Login</button>\n          <br>\n          <button href=\"#modal-reg\" uk-toggle class=\"btn-block uk-button uk-button-primary\">Register</button>\n          <br>\n          <!-- <div class=\"alert alert-warning\" *ngIf=\"reg\">\n            {{regData|slice:0:9}} <i ngxClipboard [cbContent]=\"regData\" class=\"far fa-copy\" (click)=\"eat('Copied',2)\" style=\"float: right\"></i>\n          </div> -->\n        </fieldset>\n      </form>\n    </div>\n  </div>\n</div>\n\n<div id=\"modal-center\" class=\"uk-flex-top\" uk-modal>\n  <div class=\"uk-modal-dialog uk-modal-body uk-margin-auto-vertical\">\n    <button style=\"background-color: white\" class=\"uk-modal-close-default\" type=\"button\" uk-close></button>\n    <img src=\"https://miro.medium.com/max/1400/1*Xs2WKJ2jHKHhJEL29c4AyQ.gif\" style=\"width: 100%;\" alt=\"\">\n  </div>\n</div>\n<div id=\"snackbar\">{{msg}}</div>\n<div class=\"loader\">\n  <i class=\"fas fa-spinner as-non-mob\" *ngIf=\"logdata\"></i>\n</div>\n\n\n\n<div id=\"modal-reg\" class=\"uk-flex-top\" uk-modal>\n  <div class=\"uk-modal-dialog uk-modal-body uk-margin-auto-vertical\">\n\n    <button class=\"uk-modal-close-default\" type=\"button\" uk-close></button>\n    <form action=\"\">\n      <div class=\"uk-margin\">\n        <label for=\"\"> <i class=\"fas  fa-key\"></i>&nbsp;Confirm Password</label> <i uk-tooltip=\"title:ConfirmPassword;pos:left\"\n          class=\"fas bgg fa-key\"></i>\n        <input class=\"uk-input\" [(ngModel)]=\"login.cpassword\" name=\"login.cpassword\" type=\"password\" placeholder=\"Confirm Password\">\n        <small class=\"look\" style=\"float:right\">Please Confirm Your Password</small>\n      </div>\n      <button class=\"uk-button uk-button-primary uk-modal-close btn-block\" (click)=\"register()\">Register</button></form>\n  </div>\n</div>\n";
+    __webpack_exports__["default"] = "<div class=\"board\">\n  <div class=\"road\">\n    <div class=\"viewboard as-mob\">\n      <h1>Login/Register&nbsp;<i class=\"fas fa-users\"></i> </h1>\n      <small class=\"small\">Please login with your crediantials</small>\n      <br class=\"as-mob\"> <br class=\"as-mob\">\n      <!--<small class=\"subsmall\">For new user please register here</small>-->\n      <img src=\"./assets/50ee4ac981890b346eac69c0cf6f45ef.gif\" *ngIf=\"enter\" class=\"imgc\" alt=\"\">\n      <img src=\"./assets/revizo-5.gif\" *ngIf=\"logdata\" alt=\"\" class=\"imgc\">\n      <img src=\"https://gatesbbq.com/wp-content/uploads/2017/04/checkmarksuccess.gif\" *ngIf=\"!logdata && !enter\" class=\"imgc\" alt=\"\">\n      <i href=\"#modal-center\" uk-toggle class=\"fas query fa-question-circle\"></i>\n    </div>\n    <div class=\"formboard\">\n      <br class=\"as-mob\">\n      <form>\n        <fieldset class=\"uk-fieldset\">\n          <legend class=\"uk-\">User Board&nbsp;<i class=\"far fa-user\"></i></legend>\n          <div class=\"uk-margin\">\n            <label for=\"\"> <i class=\"fas fa-user\"></i> Username</label> <i uk-tooltip=\"title:Username;pos:left\" class=\"fas bgg fa-user\"></i>\n            <input class=\"uk-input\" [(ngModel)]=\"login.username\" name=\"username\" type=\"text\" placeholder=\"Username\">\n            <small class=\"look\" style=\"float:right\">*Required for Login/Register</small>\n          </div>\n          <div class=\"uk-margin\">\n            <label for=\"\"> <i class=\"fas  fa-key\"></i> Password</label> <i uk-tooltip=\"title:Password;pos:left\" class=\"fas bgg fa-key\"></i>\n            <input class=\"uk-input\" [(ngModel)]=\"login.password\" name=\"password\" type=\"password\" placeholder=\"Password\">\n            <small class=\"look\" style=\"float:right\">*Required for Login/Register</small>\n          </div>\n          <!-- <div class=\"uk-margin\">\n            <label for=\"\"> <i class=\"fas fa-font\"></i> Phrase</label> <i uk-tooltip=\"title:Custom phrase;pos:left\" class=\"fas bgg fa-font\"></i>\n            <input class=\"uk-input\" [(ngModel)]=\"login.phrase\" name=\"phrase\" type=\"text\" placeholder=\"Custom Phrase\">\n            <small class=\"look\" style=\"float:right\">Optional for login</small>\n          </div> -->\n          <!-- <div class=\"uk-margin\">\n            <label for=\"\"><i class=\"fas fa-sort-numeric-down\"></i> Lucky number&nbsp; {{login?.lucky}} </label>\n            <input class=\"uk-range\" [title]=\"login.lucky\" [(ngModel)]=\"login.lucky\" min=\"0\" max=\"100\" step=\"1\" name=\"lucky\" type=\"range\">\n            <small class=\"look\" style=\"float:right\">Optional for login</small>\n          </div> -->\n          <button (click)=\"logins()\"  class=\"btn-block uk-button uk-button-primary\">Login</button>\n          <br>\n          <button href=\"#modal-reg\" uk-toggle class=\"btn-block uk-button uk-button-primary\">Register</button>\n          <br>\n          <!-- <div class=\"alert alert-warning\" *ngIf=\"reg\">\n            {{regData|slice:0:9}} <i ngxClipboard [cbContent]=\"regData\" class=\"far fa-copy\" (click)=\"eat('Copied',2)\" style=\"float: right\"></i>\n          </div> -->\n        </fieldset>\n      </form>\n    </div>\n  </div>\n</div>\n\n<div id=\"modal-center\" class=\"uk-flex-top\" uk-modal>\n  <div class=\"uk-modal-dialog uk-modal-body uk-margin-auto-vertical\">\n    <button style=\"background-color: white\" class=\"uk-modal-close-default\" type=\"button\" uk-close></button>\n    <img src=\"https://miro.medium.com/max/1400/1*Xs2WKJ2jHKHhJEL29c4AyQ.gif\" style=\"width: 100%;\" alt=\"\">\n  </div>\n</div>\n<div id=\"snackbar\">{{msg}}</div>\n<div class=\"loader\">\n  <i class=\"fas fa-spinner as-non-mob\" *ngIf=\"logdata\"></i>\n</div>\n\n\n\n<div id=\"modal-reg\" class=\"uk-flex-top\" uk-modal>\n  <div class=\"uk-modal-dialog uk-modal-body uk-margin-auto-vertical\">\n\n    <button class=\"uk-modal-close-default\" type=\"button\" uk-close></button>\n    <form action=\"\">\n      <div class=\"uk-margin\">\n        <label for=\"\"> <i class=\"fas  fa-key\"></i>&nbsp;Confirm Password</label> <i uk-tooltip=\"title:ConfirmPassword;pos:left\"\n          class=\"fas bgg fa-key\"></i>\n        <input class=\"uk-input\" [(ngModel)]=\"login.cpassword\" name=\"login.cpassword\" type=\"password\" placeholder=\"Confirm Password\">\n        <small class=\"look\" style=\"float:right\">Please Confirm Your Password</small>\n      </div>\n      <button class=\"uk-button uk-button-primary uk-modal-close btn-block\" (click)=\"register()\">Register</button></form>\n  </div>\n</div>\n";
     /***/
   },
 
@@ -870,41 +870,102 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @angular/router */
     "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
 
-    var routes = [// {
-      //   path: "lander",
-      //   component: LanderComponent
-      // },
-      // {
-      //   path: "",
-      //   redirectTo: "/lander",
-      //   pathMatch: "full"
-      // },
-      // {
-      //   path: "water",
-      //   component: WaterComponent
-      // },
-      // {
-      //   path: "locality",
-      //   component: LocalityComponent
-      // },
-      // {
-      //   path: "shift",
-      //   component: ShiftComponent
-      // },
-      // {
-      //   path: "unshift",
-      //   component: UnshiftComponent
-      // },
-      // {
-      //   path: "rental",
-      //   component: RentalComponent
-      // },
-      // {
-      //   path: "**",
-      //   component: ErrorComponent
-      // }
-    ];
+
+    var src_app_lander_lander_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! src/app/lander/lander.component */
+    "./src/app/lander/lander.component.ts");
+    /* harmony import */
+
+
+    var src_app_water_water_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! src/app/water/water.component */
+    "./src/app/water/water.component.ts");
+    /* harmony import */
+
+
+    var src_app_application_locality_locality_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! src/app/application/locality/locality.component */
+    "./src/app/application/locality/locality.component.ts");
+    /* harmony import */
+
+
+    var src_app_shift_shift_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! src/app/shift/shift.component */
+    "./src/app/shift/shift.component.ts");
+    /* harmony import */
+
+
+    var src_app_unshift_unshift_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! src/app/unshift/unshift.component */
+    "./src/app/unshift/unshift.component.ts");
+    /* harmony import */
+
+
+    var src_app_rental_rental_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! src/app/rental/rental.component */
+    "./src/app/rental/rental.component.ts");
+    /* harmony import */
+
+
+    var _application_profile_profile_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    /*! ./application/profile/profile.component */
+    "./src/app/application/profile/profile.component.ts");
+    /* harmony import */
+
+
+    var _application_property_property_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    /*! ./application/property/property.component */
+    "./src/app/application/property/property.component.ts");
+    /* harmony import */
+
+
+    var _application_profile_info_profile_info_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    /*! ./application/profile-info/profile-info.component */
+    "./src/app/application/profile-info/profile-info.component.ts");
+    /* harmony import */
+
+
+    var _application_property_info_property_info_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    /*! ./application/property-info/property-info.component */
+    "./src/app/application/property-info/property-info.component.ts");
+
+    var routes = [{
+      path: "lander",
+      component: src_app_lander_lander_component__WEBPACK_IMPORTED_MODULE_3__["LanderComponent"]
+    }, {
+      path: "",
+      redirectTo: "/shift",
+      pathMatch: "full"
+    }, {
+      path: "water",
+      component: src_app_water_water_component__WEBPACK_IMPORTED_MODULE_4__["WaterComponent"]
+    }, {
+      path: "locality",
+      component: src_app_application_locality_locality_component__WEBPACK_IMPORTED_MODULE_5__["LocalityComponent"]
+    }, {
+      path: "shift",
+      component: src_app_shift_shift_component__WEBPACK_IMPORTED_MODULE_6__["ShiftComponent"]
+    }, {
+      path: "unshift",
+      component: src_app_unshift_unshift_component__WEBPACK_IMPORTED_MODULE_7__["UnshiftComponent"]
+    }, {
+      path: "rental",
+      component: src_app_rental_rental_component__WEBPACK_IMPORTED_MODULE_8__["RentalComponent"]
+    }, {
+      path: "profile",
+      component: _application_profile_profile_component__WEBPACK_IMPORTED_MODULE_9__["ProfileComponent"]
+    }, {
+      path: "property",
+      component: _application_property_property_component__WEBPACK_IMPORTED_MODULE_10__["PropertyComponent"]
+    }, {
+      path: "profile-info",
+      component: _application_profile_info_profile_info_component__WEBPACK_IMPORTED_MODULE_11__["ProfileInfoComponent"]
+    }, {
+      path: "property-info",
+      component: _application_property_info_property_info_component__WEBPACK_IMPORTED_MODULE_12__["PropertyInfoComponent"]
+    }];
 
     var AppRoutingModule = function AppRoutingModule() {
       _classCallCheck(this, AppRoutingModule);
@@ -1430,7 +1491,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcGxpY2F0aW9uL3Byb2ZpbGUtaW5mby9wcm9maWxlLWluZm8uY29tcG9uZW50LnNjc3MifQ== */";
+    __webpack_exports__["default"] = ".home {\n  width: 50px;\n  position: absolute;\n  right: 0;\n  margin: 20px;\n}\n\n.cardbody {\n  padding: 10px;\n}\n\ntr {\n  padding: 5px;\n}\n\n.uk-table td {\n  padding: 7px 10px;\n  vertical-align: top;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwbGljYXRpb24vcHJvZmlsZS1pbmZvL0M6XFxVc2Vyc1xcQWRtaW5pc3RyYXRvclxcRG9jdW1lbnRzXFxyYWNlL3NyY1xcYXBwXFxhcHBsaWNhdGlvblxccHJvZmlsZS1pbmZvXFxwcm9maWxlLWluZm8uY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2FwcGxpY2F0aW9uL3Byb2ZpbGUtaW5mby9wcm9maWxlLWluZm8uY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxXQUFBO0VBQ0Esa0JBQUE7RUFDQSxRQUFBO0VBQ0EsWUFBQTtBQ0NKOztBRENBO0VBQ0ksYUFBQTtBQ0VKOztBREFBO0VBQ0ksWUFBQTtBQ0dKOztBRERBO0VBQ0ksaUJBQUE7RUFDQSxtQkFBQTtBQ0lKIiwiZmlsZSI6InNyYy9hcHAvYXBwbGljYXRpb24vcHJvZmlsZS1pbmZvL3Byb2ZpbGUtaW5mby5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5ob21le1xyXG4gICAgd2lkdGg6IDUwcHg7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7IFxyXG4gICAgcmlnaHQ6IDA7XHJcbiAgICBtYXJnaW46IDIwcHg7XHJcbn1cclxuLmNhcmRib2R5e1xyXG4gICAgcGFkZGluZzogMTBweDtcclxufVxyXG50cntcclxuICAgIHBhZGRpbmc6IDVweDtcclxufVxyXG4udWstdGFibGUgdGQge1xyXG4gICAgcGFkZGluZzogN3B4IDEwcHg7XHJcbiAgICB2ZXJ0aWNhbC1hbGlnbjogdG9wO1xyXG59IiwiLmhvbWUge1xuICB3aWR0aDogNTBweDtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICByaWdodDogMDtcbiAgbWFyZ2luOiAyMHB4O1xufVxuXG4uY2FyZGJvZHkge1xuICBwYWRkaW5nOiAxMHB4O1xufVxuXG50ciB7XG4gIHBhZGRpbmc6IDVweDtcbn1cblxuLnVrLXRhYmxlIHRkIHtcbiAgcGFkZGluZzogN3B4IDEwcHg7XG4gIHZlcnRpY2FsLWFsaWduOiB0b3A7XG59Il19 */";
     /***/
   },
 
@@ -1483,7 +1544,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass(ProfileInfoComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          var _this6 = this;
+
+          this.loc.profileinfo().subscribe(function (data) {
+            _this6.profs = data;
+          });
+        }
       }, {
         key: "eat",
         value: function eat(msg, color) {
@@ -1609,13 +1676,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "profile",
         value: function profile() {
-          var _this6 = this;
+          var _this7 = this;
 
           this.loc.profile(this.prof).subscribe(function (data) {
             if (data['status'] === true) {
-              _this6.eat(data['msg'], 1);
+              _this7.eat(data['msg'], 1);
             } else {
-              _this6.eat(data['msg'], 2);
+              _this7.eat(data['msg'], 2);
             }
           });
         }
@@ -1738,10 +1805,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(PropertyInfoComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this7 = this;
+          var _this8 = this;
 
-          this.loc.getgit('tyre', 'props').subscribe(function (data) {
-            _this7.props = data;
+          this.loc.propertyinfo().subscribe(function (data) {
+            _this8.props = data;
           });
         }
       }, {
@@ -1873,13 +1940,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "props",
         value: function props() {
-          var _this8 = this;
+          var _this9 = this;
 
           this.loc.property(this.prop).subscribe(function (data) {
             if (data['status'] === true) {
-              _this8.eat(data['msg'], 1);
+              _this9.eat(data['msg'], 1);
             } else {
-              _this8.eat(data['msg'], 2);
+              _this9.eat(data['msg'], 2);
             }
           });
         }
@@ -2252,6 +2319,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           return this.http.post('https://backendpro.herokuapp.com/login', data);
         }
       }, {
+        key: "propertyinfo",
+        value: function propertyinfo() {
+          return this.http.get('https://backendpro.herokuapp.com/propertyinfo');
+        }
+      }, {
+        key: "profileinfo",
+        value: function profileinfo() {
+          return this.http.get('https://backendpro.herokuapp.com/profileinfo');
+        }
+      }, {
         key: "getTest",
         value: function getTest() {
           return this.http.get('https://backendpro.herokuapp.com/apps');
@@ -2373,15 +2450,22 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! @angular/router */
     "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
 
     var ShiftComponent =
     /*#__PURE__*/
     function () {
-      function ShiftComponent(loc, router) {
+      function ShiftComponent(loc, router, location) {
         _classCallCheck(this, ShiftComponent);
 
         this.loc = loc;
         this.router = router;
+        this.location = location;
         this.msg = "";
         this.enter = true;
         this.login = {
@@ -2397,47 +2481,57 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ShiftComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this9 = this;
+          var _this10 = this;
 
           this.loc.getYellow().subscribe(function (data) {
-            _this9.info = data; // console.log(this.info.length);
+            _this10.info = data; // console.log(this.info.length);
           });
         }
       }, {
         key: "logins",
         value: function logins() {
-          var _this10 = this;
+          var _this11 = this;
 
           this.enter = false;
           this.logdata = true;
           this.loc.usercheck(this.login).subscribe(function (ccc) {
             if (ccc['status'] === false) {
-              _this10.loc.login(_this10.login).subscribe(function (data) {
-                _this10.logdata = false;
+              _this11.loc.login(_this11.login).subscribe(function (data) {
+                _this11.logdata = false;
 
                 if (data['status'] === true) {
-                  _this10.eat(data['msg'], 1);
+                  console.log(data, data['msg']);
 
-                  _this10.logdata = false;
-                  window.localStorage.setItem("logged", _this10.login.username);
+                  _this11.eat(data['msg'], 1);
+
+                  _this11.logdata = false;
+                  window.localStorage.setItem("logged", _this11.login.username);
+
+                  _this11.router.navigate(['/profile']); // this.router.navigateByUrl('/profile',{skipLocationChange:true}).then(()=>{
+                  //   this.router.navigate([decodeURI(this.location.path())]);
+                  // })
+
+
                   window.localStorage.setItem("state", "true");
                 } else {
-                  _this10.eat(data['msg'], 2);
+                  _this11.eat(data['msg'], 2);
 
-                  _this10.logdata = false;
+                  _this11.logdata = false;
+                  _this11.enter = true;
                 }
               });
             } else {
-              _this10.logdata = false;
+              _this11.logdata = false;
+              _this11.enter = true;
 
-              _this10.eat('Username not exists', 2);
+              _this11.eat('Username not exists', 2);
             }
           });
         }
       }, {
         key: "register",
         value: function register() {
-          var _this11 = this;
+          var _this12 = this;
 
           this.enter = false; // delete this.login.lucky;
           // delete this.login.phrase;
@@ -2445,32 +2539,32 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           this.logdata = true;
           this.loc.usercheck(this.login).subscribe(function (ccc) {
             if (ccc['status'] === true) {
-              if (_this11.login.password === _this11.login.cpassword) {
-                _this11.loc.register(_this11.login).subscribe(function (data) {
-                  _this11.logdata = undefined;
-                  _this11.enter = true;
-                  _this11.reg = true;
-                  _this11.regData = data['msg'];
+              if (_this12.login.password === _this12.login.cpassword) {
+                _this12.loc.register(_this12.login).subscribe(function (data) {
+                  _this12.logdata = undefined;
+                  _this12.enter = true;
+                  _this12.reg = true;
+                  _this12.regData = data['msg'];
 
                   if (data['status'] === true) {
-                    _this11.eat(data['msg'], 1);
+                    _this12.eat(data['msg'], 1);
                   } else {
-                    _this11.eat(data['msg'], 2);
+                    _this12.eat(data['msg'], 2);
                   }
                 });
               } else {
-                _this11.logdata = undefined;
-                _this11.enter = true;
-                _this11.reg = true;
+                _this12.logdata = undefined;
+                _this12.enter = true;
+                _this12.reg = true;
 
-                _this11.eat('Password not matched', 2);
+                _this12.eat('Password not matched', 2);
               }
             } else {
-              _this11.logdata = undefined;
-              _this11.enter = true;
-              _this11.reg = true;
+              _this12.logdata = undefined;
+              _this12.enter = true;
+              _this12.reg = true;
 
-              _this11.eat(ccc['msg'], 2);
+              _this12.eat(ccc['msg'], 2);
             }
           });
         }
@@ -2503,6 +2597,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         type: src_app_shared_locality_service__WEBPACK_IMPORTED_MODULE_2__["LocalityService"]
       }, {
         type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]
+      }, {
+        type: _angular_common__WEBPACK_IMPORTED_MODULE_4__["Location"]
       }];
     };
 
@@ -2588,11 +2684,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(UnshiftComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this12 = this;
+          var _this13 = this;
 
           this.load = true;
           setTimeout(function () {
-            _this12.load = false;
+            _this13.load = false;
           }, 3000);
         }
       }]);
