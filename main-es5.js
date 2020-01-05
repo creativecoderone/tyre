@@ -191,7 +191,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div id=\"snackbar\">{{msg}}</div>\r\n\r\n<!-- <h5>User profile</h5> -->\r\n<!-- <hr> -->\r\n<!-- {{profile|json}} -->\r\n\r\n<div class=\"row\">\r\n    <div class=\"col-md-6\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n                <h5>\r\n                    <i class=\"far fa-smile\"></i>&nbsp;{{profile?.username|uppercase}}\r\n                    <!-- <a > <i class=\"fas edit fa-edit\"></i></a> -->\r\n                </h5>\r\n                <img [src]=\"profile.img\" alt=\"\" class=\"userimg\">\r\n                <br>\r\n                <div class=\"uk-margin\">\r\n                    <label><i class=\"fas fa-envelope-square\"></i> <b> Email</b> </label>\r\n                    <input type=\"text\" [(ngModel)]=\"profile.email\" name=\"email\" class=\"form-control form-control-sm\"\r\n                        readonly placeholder=\"Email\" name=\"ins\" id=\"\">\r\n                </div>\r\n                <!-- <h5 class=\"card-title\">\r\n                    <a [href]=\"'mailto:'+profile?.email\"><i class=\"fas fa-envelope-square\"></i> {{profile?.email}}</a>\r\n                </h5> -->\r\n                <div class=\"uk-margin\">\r\n                    <label><i class=\"fas fa-calendar-week\"></i> <b> Profile created on</b></label> <br>\r\n                    <input type=\"text\" [(ngModel)]=\"profile.date\" class=\"form-control form-control-sm\" readonly\r\n                        placeholder=\"Email\" name=\"ins\" id=\"\">\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <label><i class=\"fas fa-mobile\"></i> <b> Mobile</b></label> <br>\r\n                    <input type=\"text\" [(ngModel)]=\"profile.mobile\" class=\"form-control form-control-sm\" readonly\r\n                        placeholder=\"mobile\" name=\"ins\" id=\"\">\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <label><i class=\"fas fa-baby-carriage\"></i> <b> Property rented</b> </label>\r\n                    <input type=\"text\" [(ngModel)]=\"profile.properties\" name=\"email\"\r\n                        class=\"form-control form-control-sm\" readonly placeholder=\"Property rented\" name=\"ins\" id=\"\">\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <label><i class=\"fas fa-border-none\"></i> <b> Property owned</b> </label>\r\n                    <input type=\"text\" [(ngModel)]=\"profile.owned\" name=\"email\" class=\"form-control form-control-sm\"\r\n                        readonly placeholder=\"Property owned\" name=\"ins\" id=\"\">\r\n                </div>\r\n            </div>\r\n            <div class=\"card-footer text-muted\">\r\n                #{{profile?._id}}\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"col-md-6\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n                <h5 id=\"edit\" class=\"card-title\"> <a name=\"edit\"> Update user profile</a></h5>\r\n                <hr>\r\n                <div class=\"uk-margin\">\r\n                    <label><i class=\"fab fa-instagram\"></i> <b> Update with instagram </b> </label>\r\n                    <input type=\"text\" [(ngModel)]=\"instaname\" class=\"form-control form-control-sm\"\r\n                        placeholder=\"username\" name=\"ins\" id=\"\">\r\n                    <br>\r\n                    <button (click)=\"profilo()\"  class=\"btn btn-sm rr btn-outline-dark\">Get profile</button>\r\n                    <!-- {{instapay|json}} -->\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <div class=\"uk-form-label\">Gender</div>\r\n                    <div class=\"uk-form-controls\">\r\n                        <label><input [checked]=\"profile.gender == 'male'\"  (click)=\"profile.gender = 'male'\" class=\"uk-radio\" type=\"radio\" name=\"radio1\">\r\n                            Male </label> &nbsp;&nbsp;\r\n                        <label><input [checked]=\"profile.gender == 'female'\" (click)=\"profile.gender = 'female'\" name=\"email\" class=\"uk-radio\" type=\"radio\"\r\n                                name=\"radio1\"> Female</label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <div class=\"uk-form-label\">Date of birth</div>\r\n                    <input type=\"date\" [(ngModel)]=\"profile.dob\" name=\"email\" class=\"form-control form-control-sm\"\r\n                        placeholder=\"Date of birth\" name=\"dob\" id=\"\">\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <div class=\"uk-form-label\">Bio</div>\r\n                    <textarea name=\"\" [(ngModel)]=\"profile.bio\" name=\"bio\" id=\"\" rows=\"4\" placeholder=\"Bio\"\r\n                        class=\"form-control form-control-sm\"></textarea>\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <div class=\"uk-form-label\">Feedback</div>\r\n                    <textarea name=\"\" [(ngModel)]=\"profile.feed\" name=\"feed\" id=\"\" rows=\"2\" placeholder=\"Feedback\"\r\n                        class=\"form-control form-control-sm\"></textarea>\r\n                </div>\r\n\r\n                <button  (click)=\"loadprofile()\"  class=\"btn rr btn-primary\">Update</button>\r\n            </div>\r\n            <!-- <div class=\"card-footer text-muted\">\r\n                #{{profile?._id}}\r\n            </div> -->\r\n        </div>\r\n    </div>\r\n</div>\r\n<div class=\"row\">\r\n    <div class=\"col-md-12 card-left\">\r\n        <div class=\"card\" [ngClass]=\"(sidemenu==true)?'active_screen':'inactive_screen'\">\r\n            <div class=\"card-body\">\r\n                <h4>Your information</h4>\r\n                <!-- <i class=\"fas fa-chevron-down expand\" (mouseover)=\"sidemenu = !sidemenu\"\r\n                    (click)=\"sidemenu = !sidemenu\"></i> -->\r\n                <form class=\"uk-grid-small\" uk-grid>\r\n                    <div class=\"uk-width-1-1@s\">\r\n                        <label for=\"\">Profile name</label>&nbsp;<i class=\"fas fa-signature\"></i>\r\n                        <input class=\"form-control form-control-sm\" [(ngModel)]=\"prof.fname\" name=\"fname\" type=\"text\"\r\n                            uk-tooltip=\"title:First name;pos:top;\" placeholder=\"First name\">\r\n                    </div>\r\n\r\n                    <div class=\"uk-width-1-3@s\">\r\n                        <label for=\"\">Permenant location Landmark</label>&nbsp;<i class=\"fas fa-map-marker\"></i>\r\n                        <input class=\"form-control form-control-sm\" [(ngModel)]=\"prof.landmark\" name=\"land\" type=\"text\"\r\n                            uk-tooltip=\"title:Permenant location Landmark;pos:top;\" placeholder=\"Landmark\">\r\n                    </div>\r\n                    <div class=\"uk-width-1-3@s\">\r\n                        <label for=\"\">Door# / Street name</label>&nbsp;<i class=\"fas fa-thumbtack\"></i>\r\n                        <input class=\"form-control form-control-sm\" [(ngModel)]=\"prof.door\" name=\"door\" type=\"text\"\r\n                            uk-tooltip=\"title:Door# / Street name;pos:top;\" placeholder=\"Door# / Street name\">\r\n                    </div>\r\n                    <div class=\"uk-width-1-3@s\">\r\n                        <label for=\"\">Locality / Apartment / Soceity</label>&nbsp;<i class=\"fas fa-search-location\"></i>\r\n                        <input class=\"form-control form-control-sm\" [(ngModel)]=\"prof.loc\" name=\"loc\" type=\"text\"\r\n                            uk-tooltip=\"title:Locality / Apartment / Soceity;pos:top;\"\r\n                            placeholder=\"Locality / Apartment / Soceity\">\r\n                    </div>\r\n                    <div class=\"uk-width-1-3@s\">\r\n                        <label for=\"\">State</label>&nbsp;<i class=\"fas fa-map-marked-alt\"></i>\r\n                        <input class=\"form-control form-control-sm\" [(ngModel)]=\"prof.state\" name=\"state\" type=\"text\"\r\n                            uk-tooltip=\"title:State;pos:top;\" placeholder=\"State\">\r\n                    </div>\r\n                    <div class=\"uk-width-1-3@s\">\r\n                        <label for=\"\">Country</label>&nbsp;<i class=\"fas fa-bookmark\"></i>\r\n                        <input class=\"form-control form-control-sm\" [(ngModel)]=\"prof.cty\" name=\"cty\" type=\"text\"\r\n                            uk-tooltip=\"title:Country;pos:top;\" placeholder=\"Country\">\r\n                    </div>\r\n                    <div class=\"uk-width-1-3@s\">\r\n                        <label for=\"\">Pincode</label>&nbsp;<i class=\"fas fa-list-ol\"></i>\r\n                        <input class=\"form-control form-control-sm\" [(ngModel)]=\"prof.pin\" name=\"pin\" type=\"number\"\r\n                            uk-tooltip=\"title:Pincode;pos:top;\" placeholder=\"Pincode\">\r\n                    </div>\r\n                    <button (click)=\"profile()\"  class=\"uk-button uk-button-primary btn-block\">Set profile</button>\r\n                    <!-- {{prof|json}} -->\r\n                </form>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>";
+    __webpack_exports__["default"] = "<div id=\"snackbar\">{{msg}}</div>\r\n\r\n<!-- <h5>User profile</h5> -->\r\n<!-- <hr> -->\r\n<!-- {{profile|json}} -->\r\n\r\n<div class=\"row\">\r\n    <div class=\"col-md-6\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n                <h5>\r\n                    <i class=\"far fa-smile\"></i>&nbsp;{{profile?.username|uppercase}}\r\n                    <!-- <a > <i class=\"fas edit fa-edit\"></i></a> -->\r\n                </h5>\r\n                <img [src]=\"profile.img\" alt=\"\" class=\"userimg\">\r\n                <br>\r\n                <div class=\"uk-margin\">\r\n                    <label><i class=\"fas fa-envelope-square\"></i> <b> Email</b> </label>\r\n                    <input type=\"text\" [(ngModel)]=\"profile.email\" name=\"email\" class=\"form-control form-control-sm\"\r\n                        readonly placeholder=\"Email\" name=\"ins\" id=\"\">\r\n                </div>\r\n                <!-- <h5 class=\"card-title\">\r\n                    <a [href]=\"'mailto:'+profile?.email\"><i class=\"fas fa-envelope-square\"></i> {{profile?.email}}</a>\r\n                </h5> -->\r\n                <div class=\"uk-margin\">\r\n                    <label><i class=\"fas fa-calendar-week\"></i> <b> Profile created on</b></label> <br>\r\n                    <input type=\"text\" [(ngModel)]=\"profile.date\" class=\"form-control form-control-sm\" readonly\r\n                        placeholder=\"Email\" name=\"ins\" id=\"\">\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <label><i class=\"fas fa-mobile\"></i> <b> Mobile</b></label> <br>\r\n                    <input type=\"text\" [(ngModel)]=\"profile.mobile\" class=\"form-control form-control-sm\" readonly\r\n                        placeholder=\"mobile\" name=\"ins\" id=\"\">\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <label><i class=\"fas fa-baby-carriage\"></i> <b> Property rented</b> </label>\r\n                    <input type=\"text\" [(ngModel)]=\"profile.properties\" name=\"email\"\r\n                        class=\"form-control form-control-sm\" readonly placeholder=\"Property rented\" name=\"ins\" id=\"\">\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <label><i class=\"fas fa-border-none\"></i> <b> Property owned</b> </label>\r\n                    <input type=\"text\" [(ngModel)]=\"profile.owned\" name=\"email\" class=\"form-control form-control-sm\"\r\n                        readonly placeholder=\"Property owned\" name=\"ins\" id=\"\">\r\n                </div>\r\n            </div>\r\n            <!-- <div class=\"card-footer text-muted\">\r\n                #{{profile?._id}}\r\n            </div> -->\r\n        </div>\r\n    </div>\r\n    <div class=\"col-md-6\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n                <h5 id=\"edit\" class=\"card-title\"> <a name=\"edit\"> Update user profile</a></h5>\r\n                <hr>\r\n                <div class=\"uk-margin\">\r\n                    <label><i class=\"fab fa-instagram\"></i> <b> Update with instagram </b> </label>\r\n                    <input type=\"text\" [(ngModel)]=\"instaname\" class=\"form-control form-control-sm\"\r\n                        placeholder=\"username\" name=\"ins\" id=\"\">\r\n                    <br>\r\n                    <button (click)=\"profilo()\"  class=\"btn btn-sm rr btn-outline-dark\">\r\n                        <i class=\"fab fa-instagram\"></i> Get insta profile</button>\r\n                    \r\n\r\n                    <!-- {{instapay|json}} -->\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <div class=\"uk-form-label\">Gender</div>\r\n                    <div class=\"uk-form-controls\">\r\n                        <label><input [checked]=\"profile.gender == 'male'\" (click)=\"profile.gender = 'male'\"\r\n                                class=\"uk-radio\" type=\"radio\" name=\"radio1\">\r\n                            Male </label> &nbsp;&nbsp;\r\n                        <label><input [checked]=\"profile.gender == 'female'\" (click)=\"profile.gender = 'female'\"\r\n                                name=\"email\" class=\"uk-radio\" type=\"radio\" name=\"radio1\"> Female</label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <div class=\"uk-form-label\">Date of birth</div>\r\n                    <input type=\"date\" [(ngModel)]=\"profile.dob\" name=\"email\" class=\"form-control form-control-sm\"\r\n                        placeholder=\"Date of birth\" name=\"dob\" id=\"\">\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <div class=\"uk-form-label\">Bio</div>\r\n                    <textarea name=\"\" [(ngModel)]=\"profile.bio\" name=\"bio\" id=\"\" rows=\"4\" placeholder=\"Bio\"\r\n                        class=\"form-control form-control-sm\"></textarea>\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <div class=\"uk-form-label\">Feedback</div>\r\n                    <textarea name=\"\" [(ngModel)]=\"profile.feed\" name=\"feed\" id=\"\" rows=\"2\" placeholder=\"Feedback\"\r\n                        class=\"form-control form-control-sm\"></textarea>\r\n                </div>\r\n                <button (click)=\"doloadprofile()\" *ngIf=\"profile?.update =='1'\" class=\"btn rr btn-primary\">Update\r\n                    again</button>\r\n                <button (click)=\"loadprofile()\" *ngIf=\"profile?.update =='0'\" class=\"btn rr btn-primary\">Update</button>\r\n            </div>\r\n            <!-- <div class=\"card-footer text-muted\">\r\n                #{{profile?._id}}\r\n            </div> -->\r\n        </div>\r\n    </div>\r\n</div>\r\n<div class=\"row\">\r\n    <div class=\"col-md-12 card-left\">\r\n        <div class=\"card\" [ngClass]=\"(sidemenu==true)?'active_screen':'inactive_screen'\">\r\n            <div class=\"card-body\">\r\n                <h4>Your information</h4>\r\n                <!-- <i class=\"fas fa-chevron-down expand\" (mouseover)=\"sidemenu = !sidemenu\"\r\n                    (click)=\"sidemenu = !sidemenu\"></i> -->\r\n                <form class=\"uk-grid-small\" uk-grid>\r\n                    <div class=\"uk-width-1-1@s\">\r\n                        <label for=\"\">Profile name</label>&nbsp;<i class=\"fas fa-signature\"></i>\r\n                        <input class=\"form-control form-control-sm\" [(ngModel)]=\"prof.fname\" name=\"fname\" type=\"text\"\r\n                            uk-tooltip=\"title:First name;pos:top;\" placeholder=\"First name\">\r\n                    </div>\r\n\r\n                    <div class=\"uk-width-1-3@s\">\r\n                        <label for=\"\">Permenant location Landmark</label>&nbsp;<i class=\"fas fa-map-marker\"></i>\r\n                        <input class=\"form-control form-control-sm\" [(ngModel)]=\"prof.landmark\" name=\"land\" type=\"text\"\r\n                            uk-tooltip=\"title:Permenant location Landmark;pos:top;\" placeholder=\"Landmark\">\r\n                    </div>\r\n                    <div class=\"uk-width-1-3@s\">\r\n                        <label for=\"\">Door# / Street name</label>&nbsp;<i class=\"fas fa-thumbtack\"></i>\r\n                        <input class=\"form-control form-control-sm\" [(ngModel)]=\"prof.door\" name=\"door\" type=\"text\"\r\n                            uk-tooltip=\"title:Door# / Street name;pos:top;\" placeholder=\"Door# / Street name\">\r\n                    </div>\r\n                    <div class=\"uk-width-1-3@s\">\r\n                        <label for=\"\">Locality / Apartment / Soceity</label>&nbsp;<i class=\"fas fa-search-location\"></i>\r\n                        <input class=\"form-control form-control-sm\" [(ngModel)]=\"prof.loc\" name=\"loc\" type=\"text\"\r\n                            uk-tooltip=\"title:Locality / Apartment / Soceity;pos:top;\"\r\n                            placeholder=\"Locality / Apartment / Soceity\">\r\n                    </div>\r\n                    <div class=\"uk-width-1-3@s\">\r\n                        <label for=\"\">State</label>&nbsp;<i class=\"fas fa-map-marked-alt\"></i>\r\n                        <input class=\"form-control form-control-sm\" [(ngModel)]=\"prof.state\" name=\"state\" type=\"text\"\r\n                            uk-tooltip=\"title:State;pos:top;\" placeholder=\"State\">\r\n                    </div>\r\n                    <div class=\"uk-width-1-3@s\">\r\n                        <label for=\"\">Country</label>&nbsp;<i class=\"fas fa-bookmark\"></i>\r\n                        <input class=\"form-control form-control-sm\" [(ngModel)]=\"prof.cty\" name=\"cty\" type=\"text\"\r\n                            uk-tooltip=\"title:Country;pos:top;\" placeholder=\"Country\">\r\n                    </div>\r\n                    <div class=\"uk-width-1-3@s\">\r\n                        <label for=\"\">Pincode</label>&nbsp;<i class=\"fas fa-list-ol\"></i>\r\n                        <input class=\"form-control form-control-sm\" [(ngModel)]=\"prof.pin\" name=\"pin\" type=\"number\"\r\n                            uk-tooltip=\"title:Pincode;pos:top;\" placeholder=\"Pincode\">\r\n                    </div>\r\n                    <button (click)=\"profile()\" class=\"uk-button uk-button-primary btn-block\">Set profile</button>\r\n                    <!-- {{prof|json}} -->\r\n                </form>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>";
     /***/
   },
 
@@ -2289,6 +2289,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           mobile: '',
           gender: 'male',
           bio: '',
+          update: '',
           dob: '',
           insta: '',
           feed: '',
@@ -2304,6 +2305,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           var prof = {
             username: window.localStorage.getItem('username')
           };
+          this.profile.update = window.localStorage.getItem('update');
 
           if (window.localStorage.getItem('update') === '0') {
             this.loc.userprofile(prof).subscribe(function (data) {
@@ -2312,12 +2314,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               _this9.profile.username = data[0]['username'];
               _this9.profile.email = data[0]['email'];
               _this9.profile.mobile = data[0]['mobile'];
+              _this9.profile.update = window.localStorage.getItem('update');
               _this9.profile._id = data[0]['_id'];
               _this9.profile.date = data[0]['date']; // this.eat('Sucess', 1);
             });
           } else {
             this.loc.getupdateuser(prof).subscribe(function (data) {
               _this9.profile = data[0];
+              _this9.profile.update = window.localStorage.getItem('update');
               _this9.instaname = data[0]['insta'];
             });
           }
@@ -2334,6 +2338,23 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           this.loc.updateuser(this.profile).subscribe(function (data) {
             _this10.loc.updataapps(prof).subscribe(function (d) {
               _this10.eat(data['msg'], 1);
+
+              window.localStorage.setItem('update', '1');
+            });
+          });
+        }
+      }, {
+        key: "doloadprofile",
+        value: function doloadprofile() {
+          var _this11 = this;
+
+          var prof = {
+            username: window.localStorage.getItem('username')
+          };
+          console.log(this.profile);
+          this.loc.doupdateuserdata(this.profile).subscribe(function (data) {
+            _this11.loc.updataapps(prof).subscribe(function (d) {
+              _this11.eat('Updated', 1);
 
               window.localStorage.setItem('update', '1');
             });
@@ -2361,26 +2382,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "profilo",
         value: function profilo(name) {
-          var _this11 = this;
+          var _this12 = this;
 
           this.loc.insta(this.instaname).subscribe(function (data) {
-            _this11.profile.insta = _this11.instaname;
-            _this11.instapay = data;
-            _this11.profile.img = _this11.instapay['graphql']['user']['profile_pic_url_hd'];
-            _this11.prof.fname = _this11.instapay['graphql']['user']['full_name'];
-            _this11.profile.bio = _this11.instapay['graphql']['user']['biography'];
+            _this12.profile.insta = _this12.instaname;
+            _this12.instapay = data;
+            _this12.profile.img = _this12.instapay['graphql']['user']['profile_pic_url_hd'];
+            _this12.prof.fname = _this12.instapay['graphql']['user']['full_name'];
+            _this12.profile.bio = _this12.instapay['graphql']['user']['biography'];
           });
         }
       }, {
         key: "profiles",
         value: function profiles() {
-          var _this12 = this;
+          var _this13 = this;
 
           this.loc.profile(this.prof).subscribe(function (data) {
             if (data['status'] === true) {
-              _this12.eat(data['msg'], 1);
+              _this13.eat(data['msg'], 1);
             } else {
-              _this12.eat(data['msg'], 2);
+              _this13.eat(data['msg'], 2);
             }
           });
         }
@@ -2860,6 +2881,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           return this.http.get('https://www.instagram.com/' + name + '/?__a=1');
         }
       }, {
+        key: "doupdateuserdata",
+        value: function doupdateuserdata(data) {
+          return this.http.post('https://backendpro.herokuapp.com/doupdateuserdata', data);
+        }
+      }, {
         key: "updateuser",
         value: function updateuser(data) {
           return this.http.post('https://backendpro.herokuapp.com/updateuser', data);
@@ -3070,58 +3096,58 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ShiftComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this13 = this;
+          var _this14 = this;
 
           this.loc.getYellow().subscribe(function (data) {
-            _this13.info = data; // console.log(this.info.length);
+            _this14.info = data; // console.log(this.info.length);
           });
         }
       }, {
         key: "logins",
         value: function logins() {
-          var _this14 = this;
+          var _this15 = this;
 
           this.enter = false;
           this.logdata = true;
           this.loc.usercheck(this.login).subscribe(function (ccc) {
             if (ccc['status'] === false) {
-              _this14.loc.login(_this14.login).subscribe(function (data) {
-                _this14.logdata = false;
+              _this15.loc.login(_this15.login).subscribe(function (data) {
+                _this15.logdata = false;
 
                 if (data['status'] === true) {
                   console.log(data, data['msg']);
 
-                  _this14.eat(data['msg'], 1);
+                  _this15.eat(data['msg'], 1);
 
-                  _this14.logdata = false;
+                  _this15.logdata = false;
                   window.localStorage.setItem("username", data['username']);
                   window.localStorage.setItem("logged", data['username']);
                   window.localStorage.setItem("update", data['update']);
                   window.localStorage.setItem("_id", data['_id']);
 
-                  _this14.router.navigate(['/userdata']);
+                  _this15.router.navigate(['/userdata']);
 
                   window.localStorage.setItem("state", "true");
                 } else {
-                  _this14.eat(data['msg'], 2);
+                  _this15.eat(data['msg'], 2);
 
-                  _this14.logdata = false;
-                  _this14.enter = true;
+                  _this15.logdata = false;
+                  _this15.enter = true;
                   window.localStorage.setItem("state", "false");
                 }
               });
             } else {
-              _this14.logdata = false;
-              _this14.enter = true;
+              _this15.logdata = false;
+              _this15.enter = true;
 
-              _this14.eat('Username not exists', 2);
+              _this15.eat('Username not exists', 2);
             }
           });
         }
       }, {
         key: "register",
         value: function register() {
-          var _this15 = this;
+          var _this16 = this;
 
           this.enter = false; // delete this.login.lucky;
           // delete this.login.phrase;
@@ -3129,32 +3155,32 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           this.logdata = true;
           this.loc.usercheck(this.login).subscribe(function (ccc) {
             if (ccc['status'] === true) {
-              if (_this15.login.password === _this15.login.cpassword) {
-                _this15.loc.register(_this15.login).subscribe(function (data) {
-                  _this15.logdata = undefined;
-                  _this15.enter = true;
-                  _this15.reg = true;
-                  _this15.regData = data['msg'];
+              if (_this16.login.password === _this16.login.cpassword) {
+                _this16.loc.register(_this16.login).subscribe(function (data) {
+                  _this16.logdata = undefined;
+                  _this16.enter = true;
+                  _this16.reg = true;
+                  _this16.regData = data['msg'];
 
                   if (data['status'] === true) {
-                    _this15.eat(data['msg'], 1);
+                    _this16.eat(data['msg'], 1);
                   } else {
-                    _this15.eat(data['msg'], 2);
+                    _this16.eat(data['msg'], 2);
                   }
                 });
               } else {
-                _this15.logdata = undefined;
-                _this15.enter = true;
-                _this15.reg = true;
+                _this16.logdata = undefined;
+                _this16.enter = true;
+                _this16.reg = true;
 
-                _this15.eat('Password not matched', 2);
+                _this16.eat('Password not matched', 2);
               }
             } else {
-              _this15.logdata = undefined;
-              _this15.enter = true;
-              _this15.reg = true;
+              _this16.logdata = undefined;
+              _this16.enter = true;
+              _this16.reg = true;
 
-              _this15.eat(ccc['msg'], 2);
+              _this16.eat(ccc['msg'], 2);
             }
           });
         }
@@ -3274,11 +3300,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(UnshiftComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this16 = this;
+          var _this17 = this;
 
           this.load = true;
           setTimeout(function () {
-            _this16.load = false;
+            _this17.load = false;
           }, 3000);
         }
       }]);
