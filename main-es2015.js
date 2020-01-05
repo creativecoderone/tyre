@@ -123,7 +123,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div id=\"snackbar\">{{msg}}</div>\r\n\r\n<!-- <h5>User profile</h5> -->\r\n<!-- <hr> -->\r\n<!-- {{profile|json}} -->\r\n\r\n<div class=\"row\">\r\n    <div class=\"col-md-6\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n                <h5>\r\n                    <i class=\"far fa-smile\"></i>&nbsp;{{profile?.username|uppercase}}\r\n                    <!-- <a > <i class=\"fas edit fa-edit\"></i></a> -->\r\n                </h5>\r\n                <img src=\"data:image/png;base64,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\"\r\n                    alt=\"\" class=\"userimg\">\r\n                <br>\r\n                <div class=\"uk-margin\">\r\n                    <label><i class=\"fas fa-envelope-square\"></i> <b> Email</b> </label>\r\n                    <input type=\"text\" [(ngModel)]=\"profile.email\" class=\"form-control form-control-sm\" readonly\r\n                        placeholder=\"Email\" name=\"ins\" id=\"\">\r\n                </div>\r\n                <!-- <h5 class=\"card-title\">\r\n                    <a [href]=\"'mailto:'+profile?.email\"><i class=\"fas fa-envelope-square\"></i> {{profile?.email}}</a>\r\n                </h5> -->\r\n                <div class=\"uk-margin\">\r\n                    <label><i class=\"fas fa-calendar-week\"></i> <b> Profile created on</b></label> <br>\r\n                    <input type=\"text\" [(ngModel)]=\"profile.date\" class=\"form-control form-control-sm\" readonly\r\n                        placeholder=\"Email\" name=\"ins\" id=\"\">\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <label><i class=\"fas fa-mobile\"></i> <b> Mobile</b></label> <br>\r\n                    <input type=\"text\" [(ngModel)]=\"profile.mobile\" class=\"form-control form-control-sm\" readonly\r\n                        placeholder=\"mobile\" name=\"ins\" id=\"\">\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <label><i class=\"fas fa-baby-carriage\"></i> <b> Property rented</b> </label>\r\n                    <input type=\"text\" class=\"form-control form-control-sm\" readonly placeholder=\"Property rented\"\r\n                        name=\"ins\" id=\"\">\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <label><i class=\"fas fa-border-none\"></i> <b> Property owned</b> </label>\r\n                    <input type=\"text\" class=\"form-control form-control-sm\" readonly placeholder=\"Property owned\"\r\n                        name=\"ins\" id=\"\">\r\n                </div>\r\n            </div>\r\n            <div class=\"card-footer text-muted\">\r\n                #{{profile?._id}}\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"col-md-6\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n                <h5 id=\"edit\" class=\"card-title\"> <a name=\"edit\"> Update user profile</a></h5>\r\n                <hr>\r\n                <div class=\"uk-margin\">\r\n                    <label><i class=\"fab fa-instagram\"></i> <b> Update with instagram </b> </label>\r\n                    <input type=\"text\" class=\"form-control form-control-sm\" placeholder=\"username\" name=\"ins\" id=\"\">\r\n                    <br>\r\n                    <button class=\"btn btn-outline-dark\">Update profile</button>\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <div class=\"uk-form-label\">Gender</div>\r\n                    <div class=\"uk-form-controls\">\r\n                        <label><input class=\"uk-radio\" type=\"radio\" name=\"radio1\"> Male </label> &nbsp;&nbsp;\r\n                        <label><input class=\"uk-radio\" type=\"radio\" name=\"radio1\"> Female</label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <div class=\"uk-form-label\">Date of birth</div>\r\n                    <input type=\"date\" class=\"form-control form-control-sm\" placeholder=\"Date of birth\" name=\"dob\"\r\n                        id=\"\">\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <div class=\"uk-form-label\">Bio</div>\r\n                    <textarea name=\"\" id=\"\" rows=\"4\" placeholder=\"Bio\" class=\"form-control form-control-sm\"></textarea>\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <div class=\"uk-form-label\">Feedback</div>\r\n                    <textarea name=\"\" id=\"\" rows=\"2\" placeholder=\"Feedback\"\r\n                        class=\"form-control form-control-sm\"></textarea>\r\n                </div>\r\n\r\n                <a href=\"#\" class=\"btn rr btn-primary\">Update</a>\r\n            </div>\r\n            <!-- <div class=\"card-footer text-muted\">\r\n                #{{profile?._id}}\r\n            </div> -->\r\n        </div>\r\n    </div>\r\n</div>\r\n<app-profile></app-profile>\r\n<!-- <div class=\"row\">\r\n    <div class=\"col-sm-6\">\r\n\r\n    </div>\r\n    <div class=\"col-sm-6\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n                <h5 class=\"card-title\">Dashboard</h5>\r\n                <p class=\"card-text\">With supporting text below as a natural lead-in to additional content.</p>\r\n                <a href=\"#\" class=\"btn rr btn-primary\">Go somewhere</a>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div> -->");
+/* harmony default export */ __webpack_exports__["default"] = ("<div id=\"snackbar\">{{msg}}</div>\r\n\r\n<!-- <h5>User profile</h5> -->\r\n<!-- <hr> -->\r\n<!-- {{profile|json}} -->\r\n\r\n<div class=\"row\">\r\n    <div class=\"col-md-6\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n                <h5>\r\n                    <i class=\"far fa-smile\"></i>&nbsp;{{profile?.username|uppercase}}\r\n                    <!-- <a > <i class=\"fas edit fa-edit\"></i></a> -->\r\n                </h5>\r\n                <img [src]=\"profile.img\" alt=\"\" class=\"userimg\">\r\n                <br>\r\n                <div class=\"uk-margin\">\r\n                    <label><i class=\"fas fa-envelope-square\"></i> <b> Email</b> </label>\r\n                    <input type=\"text\" [(ngModel)]=\"profile.email\" name=\"email\" class=\"form-control form-control-sm\"\r\n                        readonly placeholder=\"Email\" name=\"ins\" id=\"\">\r\n                </div>\r\n                <!-- <h5 class=\"card-title\">\r\n                    <a [href]=\"'mailto:'+profile?.email\"><i class=\"fas fa-envelope-square\"></i> {{profile?.email}}</a>\r\n                </h5> -->\r\n                <div class=\"uk-margin\">\r\n                    <label><i class=\"fas fa-calendar-week\"></i> <b> Profile created on</b></label> <br>\r\n                    <input type=\"text\" [(ngModel)]=\"profile.date\" class=\"form-control form-control-sm\" readonly\r\n                        placeholder=\"Email\" name=\"ins\" id=\"\">\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <label><i class=\"fas fa-mobile\"></i> <b> Mobile</b></label> <br>\r\n                    <input type=\"text\" [(ngModel)]=\"profile.mobile\" class=\"form-control form-control-sm\" readonly\r\n                        placeholder=\"mobile\" name=\"ins\" id=\"\">\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <label><i class=\"fas fa-baby-carriage\"></i> <b> Property rented</b> </label>\r\n                    <input type=\"text\" [(ngModel)]=\"profile.properties\" name=\"email\"\r\n                        class=\"form-control form-control-sm\" readonly placeholder=\"Property rented\" name=\"ins\" id=\"\">\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <label><i class=\"fas fa-border-none\"></i> <b> Property owned</b> </label>\r\n                    <input type=\"text\" [(ngModel)]=\"profile.owned\" name=\"email\" class=\"form-control form-control-sm\"\r\n                        readonly placeholder=\"Property owned\" name=\"ins\" id=\"\">\r\n                </div>\r\n            </div>\r\n            <div class=\"card-footer text-muted\">\r\n                #{{profile?._id}}\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"col-md-6\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n                <h5 id=\"edit\" class=\"card-title\"> <a name=\"edit\"> Update user profile</a></h5>\r\n                <hr>\r\n                <div class=\"uk-margin\">\r\n                    <label><i class=\"fab fa-instagram\"></i> <b> Update with instagram </b> </label>\r\n                    <input type=\"text\" [(ngModel)]=\"instaname\" class=\"form-control form-control-sm\"\r\n                        placeholder=\"username\" name=\"ins\" id=\"\">\r\n                    <br>\r\n                    <button (click)=\"profilo()\"  class=\"btn btn-sm rr btn-outline-dark\">Get profile</button>\r\n                    <!-- {{instapay|json}} -->\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <div class=\"uk-form-label\">Gender</div>\r\n                    <div class=\"uk-form-controls\">\r\n                        <label><input [checked]=\"profile.gender == 'male'\"  (click)=\"profile.gender = 'male'\" class=\"uk-radio\" type=\"radio\" name=\"radio1\">\r\n                            Male </label> &nbsp;&nbsp;\r\n                        <label><input [checked]=\"profile.gender == 'female'\" (click)=\"profile.gender = 'female'\" name=\"email\" class=\"uk-radio\" type=\"radio\"\r\n                                name=\"radio1\"> Female</label>\r\n                    </div>\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <div class=\"uk-form-label\">Date of birth</div>\r\n                    <input type=\"date\" [(ngModel)]=\"profile.dob\" name=\"email\" class=\"form-control form-control-sm\"\r\n                        placeholder=\"Date of birth\" name=\"dob\" id=\"\">\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <div class=\"uk-form-label\">Bio</div>\r\n                    <textarea name=\"\" [(ngModel)]=\"profile.bio\" name=\"bio\" id=\"\" rows=\"4\" placeholder=\"Bio\"\r\n                        class=\"form-control form-control-sm\"></textarea>\r\n                </div>\r\n                <div class=\"uk-margin\">\r\n                    <div class=\"uk-form-label\">Feedback</div>\r\n                    <textarea name=\"\" [(ngModel)]=\"profile.feed\" name=\"feed\" id=\"\" rows=\"2\" placeholder=\"Feedback\"\r\n                        class=\"form-control form-control-sm\"></textarea>\r\n                </div>\r\n\r\n                <button  (click)=\"loadprofile()\"  class=\"btn rr btn-primary\">Update</button>\r\n            </div>\r\n            <!-- <div class=\"card-footer text-muted\">\r\n                #{{profile?._id}}\r\n            </div> -->\r\n        </div>\r\n    </div>\r\n</div>\r\n<div class=\"row\">\r\n    <div class=\"col-md-12 card-left\">\r\n        <div class=\"card\" [ngClass]=\"(sidemenu==true)?'active_screen':'inactive_screen'\">\r\n            <div class=\"card-body\">\r\n                <h4>Your information</h4>\r\n                <!-- <i class=\"fas fa-chevron-down expand\" (mouseover)=\"sidemenu = !sidemenu\"\r\n                    (click)=\"sidemenu = !sidemenu\"></i> -->\r\n                <form class=\"uk-grid-small\" uk-grid>\r\n                    <div class=\"uk-width-1-1@s\">\r\n                        <label for=\"\">Profile name</label>&nbsp;<i class=\"fas fa-signature\"></i>\r\n                        <input class=\"form-control form-control-sm\" [(ngModel)]=\"prof.fname\" name=\"fname\" type=\"text\"\r\n                            uk-tooltip=\"title:First name;pos:top;\" placeholder=\"First name\">\r\n                    </div>\r\n\r\n                    <div class=\"uk-width-1-3@s\">\r\n                        <label for=\"\">Permenant location Landmark</label>&nbsp;<i class=\"fas fa-map-marker\"></i>\r\n                        <input class=\"form-control form-control-sm\" [(ngModel)]=\"prof.landmark\" name=\"land\" type=\"text\"\r\n                            uk-tooltip=\"title:Permenant location Landmark;pos:top;\" placeholder=\"Landmark\">\r\n                    </div>\r\n                    <div class=\"uk-width-1-3@s\">\r\n                        <label for=\"\">Door# / Street name</label>&nbsp;<i class=\"fas fa-thumbtack\"></i>\r\n                        <input class=\"form-control form-control-sm\" [(ngModel)]=\"prof.door\" name=\"door\" type=\"text\"\r\n                            uk-tooltip=\"title:Door# / Street name;pos:top;\" placeholder=\"Door# / Street name\">\r\n                    </div>\r\n                    <div class=\"uk-width-1-3@s\">\r\n                        <label for=\"\">Locality / Apartment / Soceity</label>&nbsp;<i class=\"fas fa-search-location\"></i>\r\n                        <input class=\"form-control form-control-sm\" [(ngModel)]=\"prof.loc\" name=\"loc\" type=\"text\"\r\n                            uk-tooltip=\"title:Locality / Apartment / Soceity;pos:top;\"\r\n                            placeholder=\"Locality / Apartment / Soceity\">\r\n                    </div>\r\n                    <div class=\"uk-width-1-3@s\">\r\n                        <label for=\"\">State</label>&nbsp;<i class=\"fas fa-map-marked-alt\"></i>\r\n                        <input class=\"form-control form-control-sm\" [(ngModel)]=\"prof.state\" name=\"state\" type=\"text\"\r\n                            uk-tooltip=\"title:State;pos:top;\" placeholder=\"State\">\r\n                    </div>\r\n                    <div class=\"uk-width-1-3@s\">\r\n                        <label for=\"\">Country</label>&nbsp;<i class=\"fas fa-bookmark\"></i>\r\n                        <input class=\"form-control form-control-sm\" [(ngModel)]=\"prof.cty\" name=\"cty\" type=\"text\"\r\n                            uk-tooltip=\"title:Country;pos:top;\" placeholder=\"Country\">\r\n                    </div>\r\n                    <div class=\"uk-width-1-3@s\">\r\n                        <label for=\"\">Pincode</label>&nbsp;<i class=\"fas fa-list-ol\"></i>\r\n                        <input class=\"form-control form-control-sm\" [(ngModel)]=\"prof.pin\" name=\"pin\" type=\"number\"\r\n                            uk-tooltip=\"title:Pincode;pos:top;\" placeholder=\"Pincode\">\r\n                    </div>\r\n                    <button (click)=\"profile()\"  class=\"uk-button uk-button-primary btn-block\">Set profile</button>\r\n                    <!-- {{prof|json}} -->\r\n                </form>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>");
 
 /***/ }),
 
@@ -624,6 +624,8 @@ let AppComponent = class AppComponent {
         // this.eat("Logged out", 1);
         window.localStorage.removeItem("logged");
         window.localStorage.removeItem("state");
+        window.localStorage.removeItem("username");
+        window.localStorage.removeItem("update");
         this.router.navigate(["/shift"]);
         this.states = false;
         this.scl = false;
@@ -1302,14 +1304,65 @@ let UserdataComponent = class UserdataComponent {
     constructor(loc, router) {
         this.loc = loc;
         this.router = router;
+        this.prof = {
+            fname: '',
+            lname: '',
+            land: 0,
+            door: 0,
+            loc: '',
+            state: '',
+            country: '',
+            pin: ''
+        };
+        this.profile = {
+            img: '',
+            email: '',
+            date: '',
+            username: '',
+            properties: '',
+            owned: '',
+            mobile: '',
+            gender: 'male',
+            bio: '',
+            dob: '',
+            insta: '',
+            feed: '',
+            _id: ''
+        };
     }
     ngOnInit() {
         const prof = {
-            username: window.localStorage.getItem('logged')
+            username: window.localStorage.getItem('username')
         };
-        this.loc.userprofile(prof).subscribe(data => {
-            this.profile = data[0];
-            // this.eat('Sucess', 1);
+        if (window.localStorage.getItem('update') === '0') {
+            this.loc.userprofile(prof).subscribe(data => {
+                // this.profile = data[0];
+                this.profile.img = 'https://cdn1.iconfinder.com/data/icons/mix-color-4/502/Untitled-1-512.png';
+                this.profile.username = data[0]['username'];
+                this.profile.email = data[0]['email'];
+                this.profile.mobile = data[0]['mobile'];
+                this.profile._id = data[0]['_id'];
+                this.profile.date = data[0]['date'];
+                // this.eat('Sucess', 1);
+            });
+        }
+        else {
+            this.loc.getupdateuser(prof).subscribe(data => {
+                this.profile = data[0];
+                this.instaname = data[0]['insta'];
+            });
+        }
+    }
+    loadprofile() {
+        const prof = {
+            username: window.localStorage.getItem('username')
+        };
+        console.log(this.profile);
+        this.loc.updateuser(this.profile).subscribe(data => {
+            this.loc.updataapps(prof).subscribe(d => {
+                this.eat(data['msg'], 1);
+                window.localStorage.setItem('update', '1');
+            });
         });
     }
     eat(msg, color) {
@@ -1328,6 +1381,25 @@ let UserdataComponent = class UserdataComponent {
         setTimeout(function () {
             x.className = x.className.replace("show", "");
         }, 5000);
+    }
+    profilo(name) {
+        this.loc.insta(this.instaname).subscribe(data => {
+            this.profile.insta = this.instaname;
+            this.instapay = data;
+            this.profile.img = this.instapay['graphql']['user']['profile_pic_url_hd'];
+            this.prof.fname = this.instapay['graphql']['user']['full_name'];
+            this.profile.bio = this.instapay['graphql']['user']['biography'];
+        });
+    }
+    profiles() {
+        this.loc.profile(this.prof).subscribe(data => {
+            if (data['status'] === true) {
+                this.eat(data['msg'], 1);
+            }
+            else {
+                this.eat(data['msg'], 2);
+            }
+        });
     }
 };
 UserdataComponent.ctorParameters = () => [
@@ -1594,8 +1666,20 @@ let LocalityService = class LocalityService {
     constructor(http) {
         this.http = http;
     }
+    insta(name) {
+        return this.http.get('https://www.instagram.com/' + name + '/?__a=1');
+    }
+    updateuser(data) {
+        return this.http.post('https://backendpro.herokuapp.com/updateuser', data);
+    }
     usercheck(data) {
         return this.http.post('https://backendpro.herokuapp.com/usercheck', data);
+    }
+    updataapps(data) {
+        return this.http.post('https://backendpro.herokuapp.com/updataapps', data);
+    }
+    getupdateuser(data) {
+        return this.http.post('https://backendpro.herokuapp.com/getupdateuser', data);
     }
     userprofile(data) {
         return this.http.post('https://backendpro.herokuapp.com/userprofile', data);
@@ -1709,7 +1793,8 @@ let ShiftComponent = class ShiftComponent {
             cpassword: '',
             mobile: "",
             email: "",
-            date: new Date()
+            date: new Date(),
+            update: 0
         };
         this.cpassword = "";
     }
@@ -1730,11 +1815,11 @@ let ShiftComponent = class ShiftComponent {
                         console.log(data, data['msg']);
                         this.eat(data['msg'], 1);
                         this.logdata = false;
-                        window.localStorage.setItem("logged", this.login.username);
+                        window.localStorage.setItem("username", data['username']);
+                        window.localStorage.setItem("logged", data['username']);
+                        window.localStorage.setItem("update", data['update']);
+                        window.localStorage.setItem("_id", data['_id']);
                         this.router.navigate(['/userdata']);
-                        // this.router.navigateByUrl('/profile',{skipLocationChange:true}).then(()=>{
-                        //   this.router.navigate([decodeURI(this.location.path())]);
-                        // })
                         window.localStorage.setItem("state", "true");
                     }
                     else {
