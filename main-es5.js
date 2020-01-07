@@ -171,7 +171,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"row\">\n    <div class=\"col-md-12 card-left\">\n        <div class=\"card\" [ngClass]=\"(sidemenu==true)?'active_screen':'inactive_screen'\">\n            <div class=\"card-body\">\n                <legend>Property information</legend>\n                <form class=\"uk-grid-small\" uk-grid>\n                    <div class=\"uk-width-1-1@s\">\n                        <div class=\"js-upload uk-placeholder uk-text-center\">\n                            <span uk-icon=\"icon: cloud-upload\"></span>\n                            <span class=\"uk-text-middle\">&nbsp;&nbsp;Attach image by dropping them here or</span>\n                            <div uk-form-custom>\n                                <input (change)=\"files($event)\" type=\"file\" multiple>\n                                <span class=\"uk-link\">&nbsp;selecting one</span>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Number of house mates</label>&nbsp;\n                        <input class=\"uk-input\" [(ngModel)]=\"prop.mates\" name=\"mates\" type=\"number\"\n                            uk-tooltip=\"title:Number of house mates;pos:top;\" placeholder=\"Number of house mates\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Accomadation available</label>&nbsp;\n                        <input class=\"uk-input\" [(ngModel)]=\"prop.acc\" name=\"acc\" type=\"number\"\n                            uk-tooltip=\"title:Accomadation available;pos:top;\" placeholder=\"Accomadation available\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Property landmark</label>&nbsp;<i class=\"fas fa-map-marker\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prop.landmark\" name=\"landmark\" type=\"text\"\n                            uk-tooltip=\"title:Property landmark;pos:top;\" placeholder=\"Property landmark\">\n                    </div>\n                    <div class=\"uk-width-1-1@s\">\n                        <label for=\"\">Property type</label>&nbsp;<i class=\"fas fa-compress\"></i>\n                        <select class=\"uk-select\" name=\"\" [(ngModel)]=\"prop.htype\" name=\"type\" id=\"\"\n                            uk-tooltip=\"title:Property type;pos:top;\" placeholder=\"Property type\">\n                            <option>\n                                <img src=\"https://image.flaticon.com/icons/svg/953/953503.svg\" alt=\"\" class=\"home\">\n                                House\n                            </option>\n                            <option>\n                                <img src=\"https://image.flaticon.com/icons/svg/953/953541.svg\" class=\"home\"\n                                    alt=\"\">Apartment\n                            </option>\n                            <option>\n                                <img src=\"https://image.flaticon.com/icons/svg/953/953546.svg\" class=\"home\"\n                                    alt=\"\">PG-Paying Guest\n                            </option>\n                            <option>\n                                <img src=\"https://image.flaticon.com/icons/svg/953/953482.svg\" class=\"home\"\n                                    alt=\"\">Hostel\n                            </option>\n                        </select>\n                    </div>\n                    <div class=\"uk-width-1-2@s\">\n                        <!-- <label for=\"\">Rent starts from</label>&nbsp;<i -->\n                        <!-- class=\"fas fa-step-backward\"></i>&nbsp;{{prop.starts}} -->\n                        <i class=\"fas rup fa-rupee-sign\"></i>\n                        <input type=\"text\" class=\"uk-input\" id=\"asaf\" [(ngModel)]=\"prop.starts\" name=\"starts\"\n                            uk-tooltip=\"title:Rent starts from;pos:top;\">\n                    </div>\n                    <div class=\"uk-width-1-2@s\">\n                        <i class=\"fas rup fa-rupee-sign\"></i>\n                        <!-- <span class=\"\">{{prop.starts - props.ends}}</span> -->\n                        <!-- <label for=\"\">Rent ends with</label>&nbsp;<i class=\"fas fa-step-forward\"></i>&nbsp;{{prop.ends}} -->\n                        <input type=\"text\" class=\"uk-input\" id=\"ssd\" [(ngModel)]=\"prop.ends\" name=\"ends\"\n                            uk-tooltip=\"title:Rent ends with;pos:top;\">\n                    </div>\n                    <div class=\"uk-width-1-2@s\">\n                        <label for=\"\">Rent starts from</label>&nbsp;<i class=\"fas fa-step-backward\"></i>&nbsp;\n                        <input type=\"range\" class=\"uk-range\" value=\"0\" id=\"asaf\" [(ngModel)]=\"prop.starts\" name=\"starts\"\n                            step=\"1000\" min=\"0\" max=\"10000\">\n                    </div>\n                    <div class=\"uk-width-1-2@s\">\n                        <label for=\"\">Rent ends with</label>&nbsp;<i class=\"fas fa-step-forward\"></i>&nbsp;\n                        <input type=\"range\" class=\"uk-range\" value=\"0\" id=\"ssd\" [(ngModel)]=\"prop.ends\" step=\"1000\"\n                            min=\"0\" max=\"10000\" name=\"ends\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Door# / Street name</label>&nbsp;<i class=\"fas fa-thumbtack\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prop.add\" name=\"add\" type=\"text\"\n                            uk-tooltip=\"title:Door# / Street name;pos:top;\" placeholder=\"Door# / Street name\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Locality / Apartment / Soceity</label>&nbsp;<i class=\"fas fa-search-location\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prop.loc\" name=\"loc\" type=\"text\"\n                            uk-tooltip=\"title:Locality / Apartment / Soceity;pos:top;\"\n                            placeholder=\"Locality / Apartment / Soceity\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">State</label>&nbsp;<i class=\"fas fa-map-marked-alt\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prop.state\" name=\"state\" type=\"text\"\n                            uk-tooltip=\"title:State;pos:top;\" placeholder=\"State\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Country</label>&nbsp;<i class=\"fas fa-bookmark\"></i>\n                        <input class=\"uk-input\" [(ngModel)]=\"prop.country\" name=\"country\" type=\"text\"\n                            uk-tooltip=\"title:Country;pos:top;\" placeholder=\"Country\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Pincode</label>&nbsp;<i class=\"fas fa-list-ol\"></i>\n                        <input class=\"uk-input\" type=\"number\" [(ngModel)]=\"prop.pin\" name=\"pin\"\n                            uk-tooltip=\"title:Pincode;pos:top;\" placeholder=\"Pincode\">\n                    </div>\n                    <div class=\"uk-width-1-3@s\">\n                        <label for=\"\">Owner type</label>&nbsp;<i class=\"fas fa-compress\"></i>\n                        <select class=\"uk-select\" name=\"\" [(ngModel)]=\"prop.type\" name=\"type\" id=\"\"\n                            uk-tooltip=\"title:Owner type;pos:top;\" placeholder=\"Owner type\">\n                            <option>First</option>\n                            <option>Second</option>\n                            <option>Broker</option>\n                            <option>NRI</option>\n                        </select>\n                    </div>\n                    <button (click)=\"props()\" class=\"uk-button uk-button-primary btn-block\">Set Property</button>\n                    <!-- {{prop|json}} -->\n                </form>\n            </div>\n        </div>\n    </div>\n</div>\n<div id=\"snackbar\">{{msg}}</div>";
+    __webpack_exports__["default"] = "<div class=\"row\">\n    <div class=\"col-md-12\" *ngIf=\"app == ''\">\n        <div class=\"row\">\n            <div class=\"col-md-4\"\n            uk-tooltip=\"title:A bachelor is an unmarried man who lives outside of their parents home;pos:bottom\"\n            >\n                <div class=\"card vf card-body\" (click)=\"app = 'one'\">\n                    <img src=\"https://image.flaticon.com/icons/svg/2439/2439671.svg\" alt=\"\" class=\"seti\">\n                    <br>\n                    Bachelor / Student / Freelancer\n                </div>\n            </div>\n            <div class=\"col-md-4\"\n            uk-tooltip=\"title:For family unmarried woman who lives outside of their parents home;pos:bottom\"\n            >\n                <div class=\"card vf card-body\" (click)=\"app = 'two'\">\n                    <img src=\"https://image.flaticon.com/icons/svg/2439/2439652.svg\" alt=\"\" class=\"seti\">\n                    <br>\n                    Family/ Womens\n                </div>\n            </div>\n            <div class=\"col-md-4\"\n            uk-tooltip=\"title:Workers who lives outside of their own home from other city / state / country;pos:bottom\">\n                <div class=\"card vf card-body\" (click)=\"app = 'three'\">\n                    <img src=\"https://image.flaticon.com/icons/svg/2439/2439618.svg\" alt=\"\" class=\"seti\">\n                    <br>\n                    Others\n                </div>\n            </div>\n        </div>\n    </div>\n    <app-one *ngIf=\"app == 'one'\"></app-one>\n    <app-two *ngIf=\"app == 'two'\"></app-two>\n    <app-three *ngIf=\"app == 'three'\"></app-three>\n</div>\n<div id=\"snackbar\">{{msg}}</div>\n<img *ngIf=\"app == 'one'\" (click)=\"app=''\" src=\"https://image.flaticon.com/icons/svg/2439/2439671.svg\" alt=\"\"\n    class=\"seti2\">\n<img *ngIf=\"app == 'two'\" (click)=\"app=''\" src=\"https://image.flaticon.com/icons/svg/2439/2439652.svg\" alt=\"\"\n    class=\"seti2\">\n<img *ngIf=\"app ==  'three'\" (click)=\"app=''\" src=\"https://image.flaticon.com/icons/svg/2439/2439618.svg\" alt=\"\"\n    class=\"seti2\">";
     /***/
   },
 
@@ -256,6 +256,66 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/room/one/one.component.html":
+  /*!***********************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/room/one/one.component.html ***!
+    \***********************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppRoomOneOneComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<br>\n<div class=\"col-md-12 card-left\">\n    <div class=\"card\" [ngClass]=\"(sidemenu==true)?'active_screen':'inactive_screen'\">\n        <div class=\"card-body\">\n            <legend>Bachelor / Student / freelancer</legend>\n            <form class=\"uk-grid-small\" uk-grid>\n                <div class=\"uk-width-1-1@s\">\n                    <div class=\"js-upload uk-placeholder uk-text-center\">\n                        <span uk-icon=\"icon: cloud-upload\"></span>\n                        <span class=\"uk-text-middle\">&nbsp;&nbsp;Attach image by dropping them here or</span>\n                        <div uk-form-custom>\n                            <input (change)=\"files($event)\" type=\"file\" multiple>\n                            <span class=\"uk-link\">&nbsp;selecting one</span>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Number of house mates</label>&nbsp;\n                    <input class=\"uk-input\" [(ngModel)]=\"prop.mates\" name=\"mates\" type=\"number\"\n                        uk-tooltip=\"title:Number of house mates;pos:top;\" placeholder=\"Number of house mates\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Accomadation available</label>&nbsp;\n                    <input class=\"uk-input\" [(ngModel)]=\"prop.acc\" name=\"acc\" type=\"number\"\n                        uk-tooltip=\"title:Accomadation available;pos:top;\" placeholder=\"Accomadation available\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Property landmark</label>&nbsp;<i class=\"fas fa-map-marker\"></i>\n                    <input class=\"uk-input\" [(ngModel)]=\"prop.landmark\" name=\"landmark\" type=\"text\"\n                        uk-tooltip=\"title:Property landmark;pos:top;\" placeholder=\"Property landmark\">\n                </div>\n                <div class=\"uk-width-1-1@s\">\n                    <label for=\"\">Property type</label>&nbsp;<i class=\"fas fa-compress\"></i>\n                    <select class=\"uk-select\" name=\"\" [(ngModel)]=\"prop.htype\" name=\"type\" id=\"\"\n                        uk-tooltip=\"title:Property type;pos:top;\" placeholder=\"Property type\">\n                        <option>\n                            <img src=\"https://image.flaticon.com/icons/svg/953/953503.svg\" alt=\"\" class=\"home\">\n                            House\n                        </option>\n                        <option>\n                            <img src=\"https://image.flaticon.com/icons/svg/953/953541.svg\" class=\"home\"\n                                alt=\"\">Apartment\n                        </option>\n                        <option>\n                            <img src=\"https://image.flaticon.com/icons/svg/953/953546.svg\" class=\"home\"\n                                alt=\"\">PG-Paying Guest\n                        </option>\n                        <option>\n                            <img src=\"https://image.flaticon.com/icons/svg/953/953482.svg\" class=\"home\"\n                                alt=\"\">Hostel\n                        </option>\n                    </select>\n                </div>\n\n                <!-- <div class=\"uk-width-1-2@s\">\n                    <div class=\"form-group\">\n                        <label for=\"exampleFormControlSelect2\">Additional lookups</label>\n                        <select multiple class=\"form-control\" id=\"exampleFormControlSelect2\">\n                            <option>Individual house</option>\n                            <option>Apartment</option>\n                            <option>Flat</option>\n                            <option>Villa</option>\n                            <option>PG</option>\n                        </select>\n                    </div>\n                </div> -->\n                <div class=\"uk-width-1-1@s\">\n                    <div class=\"form-group\">\n                        <label for=\"exampleFormControlTextarea1\">Additional information</label>\n                        <textarea class=\"form-control\" [(ngModel)]=\"prop.feed\" name=\"feed\"\n                            placeholder=\"Additional information\" id=\"exampleFormControlTextarea1\"\n                            rows=\"4\"></textarea>\n                    </div>\n                </div>\n                <br>\n                <div class=\"uk-width-1-2@s\">\n                    <!-- <label for=\"\">Rent starts from</label>&nbsp;<i -->\n                    <!-- class=\"fas fa-step-backward\"></i>&nbsp;{{prop.starts}} -->\n                    <i class=\"fas rup fa-rupee-sign\"></i>\n                    <input type=\"text\" class=\"uk-input\" id=\"asaf\" [(ngModel)]=\"prop.starts\" name=\"starts\"\n                        uk-tooltip=\"title:Rent starts from;pos:top;\">\n                </div>\n                <div class=\"uk-width-1-2@s\">\n                    <i class=\"fas rup fa-rupee-sign\"></i>\n                    <!-- <span class=\"\">{{prop.starts - props.ends}}</span> -->\n                    <!-- <label for=\"\">Rent ends with</label>&nbsp;<i class=\"fas fa-step-forward\"></i>&nbsp;{{prop.ends}} -->\n                    <input type=\"text\" class=\"uk-input\" id=\"ssd\" [(ngModel)]=\"prop.ends\" name=\"ends\"\n                        uk-tooltip=\"title:Rent ends with;pos:top;\">\n                </div>\n                <div class=\"uk-width-1-2@s\">\n                    <label for=\"\">Rent starts from</label>&nbsp;<i class=\"fas fa-step-backward\"></i>&nbsp;\n                    <input type=\"range\" class=\"uk-range\" value=\"0\" id=\"asaf\" [(ngModel)]=\"prop.starts\" name=\"starts\"\n                        step=\"1000\" min=\"0\" max=\"10000\">\n                </div>\n                <div class=\"uk-width-1-2@s\">\n                    <label for=\"\">Rent ends with</label>&nbsp;<i class=\"fas fa-step-forward\"></i>&nbsp;\n                    <input type=\"range\" class=\"uk-range\" value=\"0\" id=\"ssd\" [(ngModel)]=\"prop.ends\" step=\"1000\"\n                        min=\"0\" max=\"10000\" name=\"ends\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Door# / Street name</label>&nbsp;<i class=\"fas fa-thumbtack\"></i>\n                    <input class=\"uk-input\" [(ngModel)]=\"prop.add\" name=\"add\" type=\"text\"\n                        uk-tooltip=\"title:Door# / Street name;pos:top;\" placeholder=\"Door# / Street name\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Locality / Apartment / Soceity</label>&nbsp;<i class=\"fas fa-search-location\"></i>\n                    <input class=\"uk-input\" [(ngModel)]=\"prop.loc\" name=\"loc\" type=\"text\"\n                        uk-tooltip=\"title:Locality / Apartment / Soceity;pos:top;\"\n                        placeholder=\"Locality / Apartment / Soceity\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">State</label>&nbsp;<i class=\"fas fa-map-marked-alt\"></i>\n                    <input class=\"uk-input\" [(ngModel)]=\"prop.state\" name=\"state\" type=\"text\"\n                        uk-tooltip=\"title:State;pos:top;\" placeholder=\"State\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Country</label>&nbsp;<i class=\"fas fa-bookmark\"></i>\n                    <input class=\"uk-input\" [(ngModel)]=\"prop.country\" name=\"country\" type=\"text\"\n                        uk-tooltip=\"title:Country;pos:top;\" placeholder=\"Country\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Pincode</label>&nbsp;<i class=\"fas fa-list-ol\"></i>\n                    <input class=\"uk-input\" type=\"number\" [(ngModel)]=\"prop.pin\" name=\"pin\"\n                        uk-tooltip=\"title:Pincode;pos:top;\" placeholder=\"Pincode\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Owner type</label>&nbsp;<i class=\"fas fa-compress\"></i>\n                    <select class=\"uk-select\" name=\"\" [(ngModel)]=\"prop.type\" name=\"type\" id=\"\"\n                        uk-tooltip=\"title:Owner type;pos:top;\" placeholder=\"Owner type\">\n                        <option>First</option>\n                        <option>Second</option>\n                        <option>Broker</option>\n                        <option>NRI</option>\n                    </select>\n                </div>\n                <button (click)=\"props()\" class=\"uk-button uk-button-primary btn-block\">Set Property</button>\n                <!-- {{prop|json}} -->\n            </form>\n        </div>\n    </div>\n</div>\n<div id=\"snackbar\">{{msg}}</div>";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/room/three/three.component.html":
+  /*!***************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/room/three/three.component.html ***!
+    \***************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppRoomThreeThreeComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<br>\n<div class=\"col-md-12 card-left\">\n    <div class=\"card\" [ngClass]=\"(sidemenu==true)?'active_screen':'inactive_screen'\">\n        <div class=\"card-body\">\n            <legend>Others <small>Workers</small></legend>\n            <form class=\"uk-grid-small\" uk-grid>\n                <div class=\"uk-width-1-1@s\">\n                    <div class=\"js-upload uk-placeholder uk-text-center\">\n                        <span uk-icon=\"icon: cloud-upload\"></span>\n                        <span class=\"uk-text-middle\">&nbsp;&nbsp;Attach image by dropping them here or</span>\n                        <div uk-form-custom>\n                            <input (change)=\"files($event)\" type=\"file\" multiple>\n                            <span class=\"uk-link\">&nbsp;selecting one</span>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Number of house mates</label>&nbsp;\n                    <input class=\"uk-input\" [(ngModel)]=\"prop.mates\" name=\"mates\" type=\"number\"\n                        uk-tooltip=\"title:Number of house mates;pos:top;\" placeholder=\"Number of house mates\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Accomadation available</label>&nbsp;\n                    <input class=\"uk-input\" [(ngModel)]=\"prop.acc\" name=\"acc\" type=\"number\"\n                        uk-tooltip=\"title:Accomadation available;pos:top;\" placeholder=\"Accomadation available\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Property landmark</label>&nbsp;<i class=\"fas fa-map-marker\"></i>\n                    <input class=\"uk-input\" [(ngModel)]=\"prop.landmark\" name=\"landmark\" type=\"text\"\n                        uk-tooltip=\"title:Property landmark;pos:top;\" placeholder=\"Property landmark\">\n                </div>\n                <div class=\"uk-width-1-1@s\">\n                    <label for=\"\">Property type</label>&nbsp;<i class=\"fas fa-compress\"></i>\n                    <select class=\"uk-select\" name=\"\" [(ngModel)]=\"prop.htype\" name=\"type\" id=\"\"\n                        uk-tooltip=\"title:Property type;pos:top;\" placeholder=\"Property type\">\n                        <option>\n                            <img src=\"https://image.flaticon.com/icons/svg/953/953503.svg\" alt=\"\" class=\"home\">\n                            House\n                        </option>\n                        <option>\n                            <img src=\"https://image.flaticon.com/icons/svg/953/953541.svg\" class=\"home\"\n                                alt=\"\">Apartment\n                        </option>\n                        <option>\n                            <img src=\"https://image.flaticon.com/icons/svg/953/953546.svg\" class=\"home\"\n                                alt=\"\">PG-Paying Guest\n                        </option>\n                        <option>\n                            <img src=\"https://image.flaticon.com/icons/svg/953/953482.svg\" class=\"home\"\n                                alt=\"\">Hostel\n                        </option>\n                    </select>\n                </div>\n\n                <!-- <div class=\"uk-width-1-2@s\">\n                    <div class=\"form-group\">\n                        <label for=\"exampleFormControlSelect2\">Additional lookups</label>\n                        <select multiple class=\"form-control\" id=\"exampleFormControlSelect2\">\n                            <option>Individual house</option>\n                            <option>Apartment</option>\n                            <option>Flat</option>\n                            <option>Villa</option>\n                            <option>PG</option>\n                        </select>\n                    </div>\n                </div> -->\n                <div class=\"uk-width-1-1@s\">\n                    <div class=\"form-group\">\n                        <label for=\"exampleFormControlTextarea1\">Additional information</label>\n                        <textarea class=\"form-control\" [(ngModel)]=\"prop.feed\" name=\"feed\"\n                            placeholder=\"Additional information\" id=\"exampleFormControlTextarea1\"\n                            rows=\"4\"></textarea>\n                    </div>\n                </div>\n                <br>\n                <div class=\"uk-width-1-2@s\">\n                    <!-- <label for=\"\">Rent starts from</label>&nbsp;<i -->\n                    <!-- class=\"fas fa-step-backward\"></i>&nbsp;{{prop.starts}} -->\n                    <i class=\"fas rup fa-rupee-sign\"></i>\n                    <input type=\"text\" class=\"uk-input\" id=\"asaf\" [(ngModel)]=\"prop.starts\" name=\"starts\"\n                        uk-tooltip=\"title:Rent starts from;pos:top;\">\n                </div>\n                <div class=\"uk-width-1-2@s\">\n                    <i class=\"fas rup fa-rupee-sign\"></i>\n                    <!-- <span class=\"\">{{prop.starts - props.ends}}</span> -->\n                    <!-- <label for=\"\">Rent ends with</label>&nbsp;<i class=\"fas fa-step-forward\"></i>&nbsp;{{prop.ends}} -->\n                    <input type=\"text\" class=\"uk-input\" id=\"ssd\" [(ngModel)]=\"prop.ends\" name=\"ends\"\n                        uk-tooltip=\"title:Rent ends with;pos:top;\">\n                </div>\n                <div class=\"uk-width-1-2@s\">\n                    <label for=\"\">Rent starts from</label>&nbsp;<i class=\"fas fa-step-backward\"></i>&nbsp;\n                    <input type=\"range\" class=\"uk-range\" value=\"0\" id=\"asaf\" [(ngModel)]=\"prop.starts\" name=\"starts\"\n                        step=\"1000\" min=\"0\" max=\"10000\">\n                </div>\n                <div class=\"uk-width-1-2@s\">\n                    <label for=\"\">Rent ends with</label>&nbsp;<i class=\"fas fa-step-forward\"></i>&nbsp;\n                    <input type=\"range\" class=\"uk-range\" value=\"0\" id=\"ssd\" [(ngModel)]=\"prop.ends\" step=\"1000\"\n                        min=\"0\" max=\"10000\" name=\"ends\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Door# / Street name</label>&nbsp;<i class=\"fas fa-thumbtack\"></i>\n                    <input class=\"uk-input\" [(ngModel)]=\"prop.add\" name=\"add\" type=\"text\"\n                        uk-tooltip=\"title:Door# / Street name;pos:top;\" placeholder=\"Door# / Street name\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Locality / Apartment / Soceity</label>&nbsp;<i class=\"fas fa-search-location\"></i>\n                    <input class=\"uk-input\" [(ngModel)]=\"prop.loc\" name=\"loc\" type=\"text\"\n                        uk-tooltip=\"title:Locality / Apartment / Soceity;pos:top;\"\n                        placeholder=\"Locality / Apartment / Soceity\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">State</label>&nbsp;<i class=\"fas fa-map-marked-alt\"></i>\n                    <input class=\"uk-input\" [(ngModel)]=\"prop.state\" name=\"state\" type=\"text\"\n                        uk-tooltip=\"title:State;pos:top;\" placeholder=\"State\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Country</label>&nbsp;<i class=\"fas fa-bookmark\"></i>\n                    <input class=\"uk-input\" [(ngModel)]=\"prop.country\" name=\"country\" type=\"text\"\n                        uk-tooltip=\"title:Country;pos:top;\" placeholder=\"Country\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Pincode</label>&nbsp;<i class=\"fas fa-list-ol\"></i>\n                    <input class=\"uk-input\" type=\"number\" [(ngModel)]=\"prop.pin\" name=\"pin\"\n                        uk-tooltip=\"title:Pincode;pos:top;\" placeholder=\"Pincode\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Owner type</label>&nbsp;<i class=\"fas fa-compress\"></i>\n                    <select class=\"uk-select\" name=\"\" [(ngModel)]=\"prop.type\" name=\"type\" id=\"\"\n                        uk-tooltip=\"title:Owner type;pos:top;\" placeholder=\"Owner type\">\n                        <option>First</option>\n                        <option>Second</option>\n                        <option>Broker</option>\n                        <option>NRI</option>\n                    </select>\n                </div>\n                <button (click)=\"props()\" class=\"uk-button uk-button-primary btn-block\">Set Property</button>\n                <!-- {{prop|json}} -->\n            </form>\n        </div>\n    </div>\n</div><div id=\"snackbar\">{{msg}}</div>";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/room/two/two.component.html":
+  /*!***********************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/room/two/two.component.html ***!
+    \***********************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppRoomTwoTwoComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<br>\n<div class=\"col-md-12 card-left\">\n    <div class=\"card\" [ngClass]=\"(sidemenu==true)?'active_screen':'inactive_screen'\">\n        <div class=\"card-body\">\n            <legend>Family / womens <small>Individual</small></legend>\n            <form class=\"uk-grid-small\" uk-grid>\n                <div class=\"uk-width-1-1@s\">\n                    <div class=\"js-upload uk-placeholder uk-text-center\">\n                        <span uk-icon=\"icon: cloud-upload\"></span>\n                        <span class=\"uk-text-middle\">&nbsp;&nbsp;Attach image by dropping them here or</span>\n                        <div uk-form-custom>\n                            <input (change)=\"files($event)\" type=\"file\" multiple>\n                            <span class=\"uk-link\">&nbsp;selecting one</span>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Number of house mates</label>&nbsp;\n                    <input class=\"uk-input\" [(ngModel)]=\"prop.mates\" name=\"mates\" type=\"number\"\n                        uk-tooltip=\"title:Number of house mates;pos:top;\" placeholder=\"Number of house mates\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Accomadation available</label>&nbsp;\n                    <input class=\"uk-input\" [(ngModel)]=\"prop.acc\" name=\"acc\" type=\"number\"\n                        uk-tooltip=\"title:Accomadation available;pos:top;\" placeholder=\"Accomadation available\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Property landmark</label>&nbsp;<i class=\"fas fa-map-marker\"></i>\n                    <input class=\"uk-input\" [(ngModel)]=\"prop.landmark\" name=\"landmark\" type=\"text\"\n                        uk-tooltip=\"title:Property landmark;pos:top;\" placeholder=\"Property landmark\">\n                </div>\n                <div class=\"uk-width-1-1@s\">\n                    <label for=\"\">Property type</label>&nbsp;<i class=\"fas fa-compress\"></i>\n                    <select class=\"uk-select\" name=\"\" [(ngModel)]=\"prop.htype\" name=\"type\" id=\"\"\n                        uk-tooltip=\"title:Property type;pos:top;\" placeholder=\"Property type\">\n                        <option>\n                            <img src=\"https://image.flaticon.com/icons/svg/953/953503.svg\" alt=\"\" class=\"home\">\n                            House\n                        </option>\n                        <option>\n                            <img src=\"https://image.flaticon.com/icons/svg/953/953541.svg\" class=\"home\"\n                                alt=\"\">Apartment\n                        </option>\n                        <option>\n                            <img src=\"https://image.flaticon.com/icons/svg/953/953546.svg\" class=\"home\"\n                                alt=\"\">PG-Paying Guest\n                        </option>\n                        <option>\n                            <img src=\"https://image.flaticon.com/icons/svg/953/953482.svg\" class=\"home\"\n                                alt=\"\">Hostel\n                        </option>\n                    </select>\n                </div>\n\n                <!-- <div class=\"uk-width-1-2@s\">\n                    <div class=\"form-group\">\n                        <label for=\"exampleFormControlSelect2\">Additional lookups</label>\n                        <select multiple class=\"form-control\" id=\"exampleFormControlSelect2\">\n                            <option>Individual house</option>\n                            <option>Apartment</option>\n                            <option>Flat</option>\n                            <option>Villa</option>\n                            <option>PG</option>\n                        </select>\n                    </div>\n                </div> -->\n                <div class=\"uk-width-1-1@s\">\n                    <div class=\"form-group\">\n                        <label for=\"exampleFormControlTextarea1\">Additional information</label>\n                        <textarea class=\"form-control\" [(ngModel)]=\"prop.feed\" name=\"feed\"\n                            placeholder=\"Additional information\" id=\"exampleFormControlTextarea1\"\n                            rows=\"4\"></textarea>\n                    </div>\n                </div>\n                <br>\n                <div class=\"uk-width-1-2@s\">\n                    <!-- <label for=\"\">Rent starts from</label>&nbsp;<i -->\n                    <!-- class=\"fas fa-step-backward\"></i>&nbsp;{{prop.starts}} -->\n                    <i class=\"fas rup fa-rupee-sign\"></i>\n                    <input type=\"text\" class=\"uk-input\" id=\"asaf\" [(ngModel)]=\"prop.starts\" name=\"starts\"\n                        uk-tooltip=\"title:Rent starts from;pos:top;\">\n                </div>\n                <div class=\"uk-width-1-2@s\">\n                    <i class=\"fas rup fa-rupee-sign\"></i>\n                    <!-- <span class=\"\">{{prop.starts - props.ends}}</span> -->\n                    <!-- <label for=\"\">Rent ends with</label>&nbsp;<i class=\"fas fa-step-forward\"></i>&nbsp;{{prop.ends}} -->\n                    <input type=\"text\" class=\"uk-input\" id=\"ssd\" [(ngModel)]=\"prop.ends\" name=\"ends\"\n                        uk-tooltip=\"title:Rent ends with;pos:top;\">\n                </div>\n                <div class=\"uk-width-1-2@s\">\n                    <label for=\"\">Rent starts from</label>&nbsp;<i class=\"fas fa-step-backward\"></i>&nbsp;\n                    <input type=\"range\" class=\"uk-range\" value=\"0\" id=\"asaf\" [(ngModel)]=\"prop.starts\" name=\"starts\"\n                        step=\"1000\" min=\"0\" max=\"10000\">\n                </div>\n                <div class=\"uk-width-1-2@s\">\n                    <label for=\"\">Rent ends with</label>&nbsp;<i class=\"fas fa-step-forward\"></i>&nbsp;\n                    <input type=\"range\" class=\"uk-range\" value=\"0\" id=\"ssd\" [(ngModel)]=\"prop.ends\" step=\"1000\"\n                        min=\"0\" max=\"10000\" name=\"ends\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Door# / Street name</label>&nbsp;<i class=\"fas fa-thumbtack\"></i>\n                    <input class=\"uk-input\" [(ngModel)]=\"prop.add\" name=\"add\" type=\"text\"\n                        uk-tooltip=\"title:Door# / Street name;pos:top;\" placeholder=\"Door# / Street name\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Locality / Apartment / Soceity</label>&nbsp;<i class=\"fas fa-search-location\"></i>\n                    <input class=\"uk-input\" [(ngModel)]=\"prop.loc\" name=\"loc\" type=\"text\"\n                        uk-tooltip=\"title:Locality / Apartment / Soceity;pos:top;\"\n                        placeholder=\"Locality / Apartment / Soceity\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">State</label>&nbsp;<i class=\"fas fa-map-marked-alt\"></i>\n                    <input class=\"uk-input\" [(ngModel)]=\"prop.state\" name=\"state\" type=\"text\"\n                        uk-tooltip=\"title:State;pos:top;\" placeholder=\"State\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Country</label>&nbsp;<i class=\"fas fa-bookmark\"></i>\n                    <input class=\"uk-input\" [(ngModel)]=\"prop.country\" name=\"country\" type=\"text\"\n                        uk-tooltip=\"title:Country;pos:top;\" placeholder=\"Country\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Pincode</label>&nbsp;<i class=\"fas fa-list-ol\"></i>\n                    <input class=\"uk-input\" type=\"number\" [(ngModel)]=\"prop.pin\" name=\"pin\"\n                        uk-tooltip=\"title:Pincode;pos:top;\" placeholder=\"Pincode\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Owner type</label>&nbsp;<i class=\"fas fa-compress\"></i>\n                    <select class=\"uk-select\" name=\"\" [(ngModel)]=\"prop.type\" name=\"type\" id=\"\"\n                        uk-tooltip=\"title:Owner type;pos:top;\" placeholder=\"Owner type\">\n                        <option>First</option>\n                        <option>Second</option>\n                        <option>Broker</option>\n                        <option>NRI</option>\n                    </select>\n                </div>\n                <button (click)=\"props()\" class=\"uk-button uk-button-primary btn-block\">Set Property</button>\n                <!-- {{prop|json}} -->\n            </form>\n        </div>\n    </div>\n</div><div id=\"snackbar\">{{msg}}</div>";
+    /***/
+  },
+
+  /***/
   "./node_modules/raw-loader/dist/cjs.js!./src/app/shift/shift.component.html":
   /*!**********************************************************************************!*\
     !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/shift/shift.component.html ***!
@@ -311,7 +371,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<!-- {{profile|json}} -->\n<div class=\"container\">\n    <div class=\"car\">\n        <h5>Room looking for&nbsp;<i class=\"fas fa-home\"></i> </h5>\n        <hr>\n        <div class=\"card-\">\n            <div class=\"\" style=\"text-align: right;\">\n                <i class=\"fas fa-user\"></i>&nbsp;{{profile?.username}}\n            </div>\n            <form>\n                <div class=\"form-group\">\n                    <label for=\"exampleFormControlSelect1\">Room looking <span\n                            class=\"badge badge-warning\">Person</span></label>\n                    <select class=\"form-control\" id=\"exampleFormControlSelect1\">\n                        <option>1</option>\n                        <option>2</option>\n                        <option>3</option>\n                        <option>4</option>\n                        <option>5</option>\n                    </select>\n                </div>\n                <div class=\"row\">\n                    <div class=\"col-md-6\">\n                        <div class=\"form-group\">\n                            <label for=\"exampleFormControlSelect2\">Additional lookups</label>\n                            <select multiple class=\"form-control\" id=\"exampleFormControlSelect2\">\n                                <option>Individual house</option>\n                                <option>Apartment</option>\n                                <option>Flat</option>\n                                <option>Villa</option>\n                                <option>PG</option>\n                            </select>\n                        </div>\n                    </div>\n                    <div class=\"col-md-6\">\n                        <div class=\"form-group\">\n                            <label for=\"exampleFormControlTextarea1\">Additional information</label>\n                            <textarea class=\"form-control\" placeholder=\"Additional information\"\n                                id=\"exampleFormControlTextarea1\" rows=\"4\"></textarea>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"row\">\n                    <div class=\"col-md-6\">\n                        <label for=\"\">Rent starts from</label>&nbsp;\n                        <input type=\"text\" class=\"uk-input\" id=\"asaf\" [(ngModel)]=\"prop.starts\" name=\"starts\"\n                            uk-tooltip=\"title:Rent starts from;pos:top;\">\n                    </div>\n                    <div class=\"col-md-6\">\n                        <label for=\"\">Rent ends with</label>\n                        <input type=\"text\" class=\"uk-input\" id=\"ssd\" [(ngModel)]=\"prop.ends\" name=\"ends\"\n                            uk-tooltip=\"title:Rent ends with;pos:top;\">\n                    </div>\n                </div> <br>\n                <!-- <div class=\"uk-width-1-2@s\">\n                    <label for=\"\">Rent starts from</label>&nbsp;<i class=\"fas fa-step-backward\"></i>&nbsp;\n                    <input type=\"range\" class=\"uk-range\" value=\"0\" id=\"asaf\" [(ngModel)]=\"prop.starts\" name=\"starts\"\n                        step=\"1000\" min=\"0\" max=\"10000\">\n                </div>\n                <div class=\"uk-width-1-2@s\">\n                    <label for=\"\">Rent ends with</label>&nbsp;<i class=\"fas fa-step-forward\"></i>&nbsp;\n                    <input type=\"range\" class=\"uk-range\" value=\"0\" id=\"ssd\" [(ngModel)]=\"prop.ends\" step=\"1000\" min=\"0\"\n                        max=\"10000\" name=\"ends\">\n                </div> -->\n                <div class=\"row\">\n                    <div class=\"col-md-3\">\n                        <div class=\"form-group\">\n                            <label for=\"exampleFormControlInput1\">Email address</label>\n                            <input type=\"email\" name=\"ddki\" [(ngModel)]=\"profile.email\" readonly class=\"form-control\"\n                                id=\"exampleFormControlInput1\" placeholder=\"name@example.com\">\n                        </div>\n                    </div>\n                    <div class=\"col-md-3\">\n                        <div class=\"form-group\">\n                            <label for=\"exampleFormControlInput1\">Mobile number</label>\n                            <input type=\"number\" name=\"ddksi\" [(ngModel)]=\"profile.mobile\" readonly class=\"form-control\"\n                                id=\"exampleFormContf rolInput1\" placeholder=\"name@example.com\">\n                        </div>\n                    </div>\n                    <div class=\"col-md-3\">\n                        <div class=\"form-group\">\n                            <label for=\"exampleFormControlInput1\">Gender</label>\n                            <input type=\"text\" name=\"ddrwksi\" [(ngModel)]=\"profile.gender\" readonly class=\"form-control\"\n                                id=\"exampleFormdfControlInput1\" placeholder=\"name@example.com\">\n                        </div>\n                    </div>\n                    <div class=\"col-md-3\">\n                        <div class=\"form-group\">\n                            <label for=\"exampleFormControlInput1\">Fullname</label>\n                            <input type=\"text\" name=\"ddkersi\" [(ngModel)]=\"profile.fullname\" readonly\n                                class=\"form-control\" id=\"exampleFormContrsfolInput1\" placeholder=\"name@example.com\">\n                        </div>\n                    </div>\n                </div>\n                <!-- {{positions|json}} -->\n                <div class=\"form-group\">\n                    <input class=\"form-control\" type=\"text\" [(ngModel)]=\"search\" name=\"search\"\n                        placeholder=\"Enter city name\" id=\"\">\n                    <div class=\" cardss\" *ngIf=\"search.length > 1\">\n                        <span (click)=\"setLoc(citys)\" class=\"badge badge-primary\"\n                            *ngFor=\"let citys of city|filter:search; let i=index\">\n                            {{citys?.city}}\n                        </span>\n                    </div>\n                </div>\n                <div class=\"text-center\">\n                    <b>Search by city name and set</b>\n                    <br> -OR- <br>\n                    <h5>Geo <span (click)=\"getloc()\" class=\"badge badge-warning\">Get current location</span>\n                    </h5>\n                </div>\n                <div class=\"row\">\n\n                    <br>\n                    <div class=\"col-md-3\">\n                        <div class=\"form-group\">\n                            <label for=\"exampleFormControlInput1\">Latitude</label>\n                            <input type=\"number\" name=\"dwefdksi\" [(ngModel)]=\"positions.lat\" readonly\n                                class=\"form-control\" id=\"exampleFormConolInput1\" placeholder=\"name@example.com\">\n                        </div>\n                    </div>\n                    <div class=\"col-md-3\">\n                        <div class=\"form-group\">\n                            <label for=\"exampleFormControlInput1\">Latitude</label>\n                            <input type=\"number\" name=\"ddksssefsi\" [(ngModel)]=\"positions.lng\" readonly\n                                class=\"form-control\" id=\"exampleFormContf rolput1\" placeholder=\"name@example.com\">\n                        </div>\n                    </div>\n                    <div class=\"col-md-3\">\n                        <div class=\"form-group\">\n                            <label for=\"exampleFormControlInput1\">With in <small>KM's</small> </label>\n                            <select class=\"form-control\" id=\"exampleFormControlSelect1\">\n                                <option>5</option>\n                                <option>10</option>\n                                <option>15</option>\n                                <option>20</option>\n                                <option>Any</option>\n                            </select>\n                        </div>\n                    </div>\n                    <div class=\"col-md-3\">\n                        <div class=\"form-group\">\n                            <label for=\"exampleFormControlInput1\">Set the location</label>\n                            <button class=\"btn- btn btn-block btn-primary\">Set</button>\n                        </div>\n                    </div>\n                </div>\n\n                <div class=\"\">\n                    <button class=\"btn-md btn fds btn-outline-primary\">Post</button>\n                </div>\n            </form>\n            <div class=\"alert alert-info\" style=\"margin-top: 50px;\" *ngIf=\"pop\">\n                As per the Indian Goverment records\n                {{positions?.city}} has <b>\n                    {{positions?.population}}</b> Populations.\n            </div>\n            <br> <br> <br>\n            <hr class=\"uk-divider-icon\">\n        </div>\n    </div>\n</div>";
+    __webpack_exports__["default"] = "<!-- {{profile|json}} -->\n<div class=\"container\">\n    <div class=\"car\">\n        <h5>Room looking for&nbsp;<i class=\"fas fa-home\"></i> </h5>\n        <hr>\n        <div class=\"card-\">\n            <div class=\"\" style=\"text-align: right;\">\n                <i class=\"fas fa-user\"></i>&nbsp;{{profile?.username}}\n            </div>\n            <form>\n                <div class=\"form-group\">\n                    <label for=\"exampleFormControlSelect1\">Room looking <span\n                            class=\"badge badge-warning\">Person</span></label>\n                    <select class=\"form-control\" id=\"exampleFormControlSelect1\">\n                        <option>1</option>\n                        <option>2</option>\n                        <option>3</option>\n                        <option>4</option>\n                        <option>5</option>\n                    </select>\n                </div>\n\n                <!-- <div class=\"uk-width-1-2@s\">\n                    <label for=\"\">Rent starts from</label>&nbsp;<i class=\"fas fa-step-backward\"></i>&nbsp;\n                    <input type=\"range\" class=\"uk-range\" value=\"0\" id=\"asaf\" [(ngModel)]=\"prop.starts\" name=\"starts\"\n                        step=\"1000\" min=\"0\" max=\"10000\">\n                </div>\n                <div class=\"uk-width-1-2@s\">\n                    <label for=\"\">Rent ends with</label>&nbsp;<i class=\"fas fa-step-forward\"></i>&nbsp;\n                    <input type=\"range\" class=\"uk-range\" value=\"0\" id=\"ssd\" [(ngModel)]=\"prop.ends\" step=\"1000\" min=\"0\"\n                        max=\"10000\" name=\"ends\">\n                </div> -->\n\n                <!-- {{positions|json}} -->\n                <div class=\"form-group\">\n                    <input class=\"form-control\" type=\"text\" [(ngModel)]=\"search\" name=\"search\"\n                        placeholder=\"Search for major cities\" id=\"\">\n                    <div class=\" cardss\" *ngIf=\"search.length > 1\">\n                        <span (click)=\"setLoc(citys)\" class=\"badge badge-primary\"\n                            *ngFor=\"let citys of city|filter:search; let i=index\">\n                            {{citys?.city}}\n                        </span>\n                    </div>\n                </div>\n                <div class=\"alert alert-info\" *ngIf=\"pop\">\n                    As per the Indian Goverment records\n                    {{positions?.city}} has <b>\n                        {{positions?.population}}</b> Populations.\n                </div>\n                <div class=\"text-center\">\n                    <b>Search by city name and set</b>\n                    <br> -OR- <br>\n                    <h5>Geo <span (click)=\"getloc()\" class=\"badge badge-warning\">Get current location</span>\n                    </h5>\n                </div>\n\n                <div class=\"row\">\n                    <br>\n                    <div class=\"col-md-4\">\n                        <div class=\"form-group\">\n                            <label for=\"exampleFormControlInput1\">Latitude</label>\n                            <input type=\"number\" name=\"dwefdksi\" [(ngModel)]=\"positions.lat\" readonly\n                                class=\"form-control\" id=\"exampleFormConolInput1\" placeholder=\"name@example.com\">\n                        </div>\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"form-group\">\n                            <label for=\"exampleFormControlInput1\">Latitude</label>\n                            <input type=\"number\" name=\"ddksssefsi\" [(ngModel)]=\"positions.lng\" readonly\n                                class=\"form-control\" id=\"exampleFormContf rolput1\" placeholder=\"name@example.com\">\n                        </div>\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"form-group\">\n                            <label for=\"exampleFormControlInput1\">With in <small>KM's</small> </label>\n                            <select class=\"form-control\" id=\"exampleFormControlSelect1\">\n                                <option>5</option>\n                                <option>10</option>\n                                <option>15</option>\n                                <option>20</option>\n                                <option>Any</option>\n                            </select>\n                        </div>\n                    </div>\n                    <!-- <div class=\"col-md-3\">\n                        <div class=\"form-group\">\n                            <label for=\"exampleFormControlInput1\">Set the location</label>\n                            <button class=\"btn- btn btn-block btn-primary\">Set</button>\n                        </div>\n                    </div> -->\n                </div>\n\n                <div class=\"\">\n                    <button class=\"btn-md btn fds btn-outline-primary\">Find my room</button>\n                </div>\n            </form>\n            <br>\n            <hr class=\"uk-divider-icon\">\n            <div class=\"row\">\n                <div class=\"col-md-3\">\n                    <div class=\"form-group\">\n                        <label for=\"exampleFormControlInput1\">Email address</label>\n                        <input type=\"email\" name=\"ddki\" [(ngModel)]=\"profile.email\" readonly class=\"form-control\"\n                            id=\"exampleFormControlInput1\" placeholder=\"name@example.com\">\n                    </div>\n                </div>\n                <div class=\"col-md-3\">\n                    <div class=\"form-group\">\n                        <label for=\"exampleFormControlInput1\">Mobile number</label>\n                        <input type=\"number\" name=\"ddksi\" [(ngModel)]=\"profile.mobile\" readonly class=\"form-control\"\n                            id=\"exampleFormContf rolInput1\" placeholder=\"name@example.com\">\n                    </div>\n                </div>\n                <div class=\"col-md-3\">\n                    <div class=\"form-group\">\n                        <label for=\"exampleFormControlInput1\">Gender</label>\n                        <input type=\"text\" name=\"ddrwksi\" [(ngModel)]=\"profile.gender\" readonly class=\"form-control\"\n                            id=\"exampleFormdfControlInput1\" placeholder=\"name@example.com\">\n                    </div>\n                </div>\n                <div class=\"col-md-3\">\n                    <div class=\"form-group\">\n                        <label for=\"exampleFormControlInput1\">Fullname</label>\n                        <input type=\"text\" name=\"ddkersi\" [(ngModel)]=\"profile.fullname\" readonly class=\"form-control\"\n                            id=\"exampleFormContrsfolInput1\" placeholder=\"name@example.com\">\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>";
     /***/
   },
 
@@ -1417,13 +1477,31 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _wantroom_wantroom_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(
     /*! ./wantroom/wantroom.component */
     "./src/app/wantroom/wantroom.component.ts");
+    /* harmony import */
+
+
+    var _room_one_one_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(
+    /*! ./room/one/one.component */
+    "./src/app/room/one/one.component.ts");
+    /* harmony import */
+
+
+    var _room_two_two_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(
+    /*! ./room/two/two.component */
+    "./src/app/room/two/two.component.ts");
+    /* harmony import */
+
+
+    var _room_three_three_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(
+    /*! ./room/three/three.component */
+    "./src/app/room/three/three.component.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"], _lander_lander_component__WEBPACK_IMPORTED_MODULE_8__["LanderComponent"], _error_error_component__WEBPACK_IMPORTED_MODULE_9__["ErrorComponent"], _water_water_component__WEBPACK_IMPORTED_MODULE_10__["WaterComponent"], _application_locality_locality_component__WEBPACK_IMPORTED_MODULE_11__["LocalityComponent"], _shift_shift_component__WEBPACK_IMPORTED_MODULE_13__["ShiftComponent"], _unshift_unshift_component__WEBPACK_IMPORTED_MODULE_14__["UnshiftComponent"], _rental_rental_component__WEBPACK_IMPORTED_MODULE_16__["RentalComponent"], _application_property_property_component__WEBPACK_IMPORTED_MODULE_17__["PropertyComponent"], _application_profile_profile_component__WEBPACK_IMPORTED_MODULE_18__["ProfileComponent"], _application_property_info_property_info_component__WEBPACK_IMPORTED_MODULE_19__["PropertyInfoComponent"], _application_profile_info_profile_info_component__WEBPACK_IMPORTED_MODULE_20__["ProfileInfoComponent"], _application_disclaimer_disclaimer_component__WEBPACK_IMPORTED_MODULE_21__["DisclaimerComponent"], _application_userdata_userdata_component__WEBPACK_IMPORTED_MODULE_22__["UserdataComponent"], _wantroom_wantroom_component__WEBPACK_IMPORTED_MODULE_23__["WantroomComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"], _lander_lander_component__WEBPACK_IMPORTED_MODULE_8__["LanderComponent"], _error_error_component__WEBPACK_IMPORTED_MODULE_9__["ErrorComponent"], _water_water_component__WEBPACK_IMPORTED_MODULE_10__["WaterComponent"], _application_locality_locality_component__WEBPACK_IMPORTED_MODULE_11__["LocalityComponent"], _shift_shift_component__WEBPACK_IMPORTED_MODULE_13__["ShiftComponent"], _unshift_unshift_component__WEBPACK_IMPORTED_MODULE_14__["UnshiftComponent"], _rental_rental_component__WEBPACK_IMPORTED_MODULE_16__["RentalComponent"], _application_property_property_component__WEBPACK_IMPORTED_MODULE_17__["PropertyComponent"], _application_profile_profile_component__WEBPACK_IMPORTED_MODULE_18__["ProfileComponent"], _application_property_info_property_info_component__WEBPACK_IMPORTED_MODULE_19__["PropertyInfoComponent"], _application_profile_info_profile_info_component__WEBPACK_IMPORTED_MODULE_20__["ProfileInfoComponent"], _application_disclaimer_disclaimer_component__WEBPACK_IMPORTED_MODULE_21__["DisclaimerComponent"], _application_userdata_userdata_component__WEBPACK_IMPORTED_MODULE_22__["UserdataComponent"], _wantroom_wantroom_component__WEBPACK_IMPORTED_MODULE_23__["WantroomComponent"], _room_one_one_component__WEBPACK_IMPORTED_MODULE_24__["OneComponent"], _room_two_two_component__WEBPACK_IMPORTED_MODULE_25__["TwoComponent"], _room_three_three_component__WEBPACK_IMPORTED_MODULE_26__["ThreeComponent"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_6__["AppRoutingModule"], ng2_search_filter__WEBPACK_IMPORTED_MODULE_15__["Ng2SearchPipeModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"], ngx_clipboard__WEBPACK_IMPORTED_MODULE_5__["ClipboardModule"]],
       providers: [src_app_shared_locality_service__WEBPACK_IMPORTED_MODULE_12__["LocalityService"]],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]]
@@ -2117,7 +2195,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".rup {\n  position: absolute;\n  right: 0;\n  top: 0;\n  margin: 10px;\n}\n\n.home {\n  width: 30px;\n  margin: 5px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwbGljYXRpb24vcHJvcGVydHkvQzpcXFVzZXJzXFxBZG1pbmlzdHJhdG9yXFxEb2N1bWVudHNcXHJhY2Uvc3JjXFxhcHBcXGFwcGxpY2F0aW9uXFxwcm9wZXJ0eVxccHJvcGVydHkuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2FwcGxpY2F0aW9uL3Byb3BlcnR5L3Byb3BlcnR5LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksa0JBQUE7RUFDQSxRQUFBO0VBQ0EsTUFBQTtFQUNBLFlBQUE7QUNDSjs7QURDQTtFQUNJLFdBQUE7RUFDQSxXQUFBO0FDRUoiLCJmaWxlIjoic3JjL2FwcC9hcHBsaWNhdGlvbi9wcm9wZXJ0eS9wcm9wZXJ0eS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5ydXB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICByaWdodDogMDtcclxuICAgIHRvcDogMDtcclxuICAgIG1hcmdpbjogMTBweDtcclxufVxyXG4uaG9tZXtcclxuICAgIHdpZHRoOiAzMHB4O1xyXG4gICAgbWFyZ2luOiA1cHg7XHJcbn0iLCIucnVwIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICByaWdodDogMDtcbiAgdG9wOiAwO1xuICBtYXJnaW46IDEwcHg7XG59XG5cbi5ob21lIHtcbiAgd2lkdGg6IDMwcHg7XG4gIG1hcmdpbjogNXB4O1xufSJdfQ== */";
+    __webpack_exports__["default"] = ".rup {\n  position: absolute;\n  right: 0;\n  top: 0;\n  margin: 10px;\n}\n\n.home {\n  width: 30px;\n  margin: 5px;\n}\n\n.seti {\n  width: 35%;\n  margin: auto;\n  display: block;\n}\n\n.vf {\n  margin: 10px;\n  text-align: center;\n  font-weight: bold;\n}\n\n.seti2 {\n  position: absolute;\n  width: 35px;\n  border-radius: 100%;\n  border: 0.5px solid black;\n  right: 0;\n  top: 0;\n  padding: 5px;\n  margin: 15px;\n  background-color: white;\n  z-index: 1032;\n  cursor: pointer;\n  -webkit-animation: summa 1s ease-in-out;\n          animation: summa 1s ease-in-out;\n}\n\n@-webkit-keyframes summa {\n  from {\n    width: 50px;\n  }\n  to {\n    width: 35px;\n  }\n}\n\n@keyframes summa {\n  from {\n    width: 50px;\n  }\n  to {\n    width: 35px;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwbGljYXRpb24vcHJvcGVydHkvQzpcXFVzZXJzXFxBZG1pbmlzdHJhdG9yXFxEb2N1bWVudHNcXHJhY2Uvc3JjXFxhcHBcXGFwcGxpY2F0aW9uXFxwcm9wZXJ0eVxccHJvcGVydHkuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2FwcGxpY2F0aW9uL3Byb3BlcnR5L3Byb3BlcnR5LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQUE7RUFDQSxRQUFBO0VBQ0EsTUFBQTtFQUNBLFlBQUE7QUNDRjs7QURDQTtFQUNFLFdBQUE7RUFDQSxXQUFBO0FDRUY7O0FEQUE7RUFDRSxVQUFBO0VBQ0EsWUFBQTtFQUNBLGNBQUE7QUNHRjs7QURBQTtFQUNFLFlBQUE7RUFDQSxrQkFBQTtFQUNBLGlCQUFBO0FDR0Y7O0FEQUE7RUFDRSxrQkFBQTtFQUNBLFdBQUE7RUFDQSxtQkFBQTtFQUNBLHlCQUFBO0VBQ0EsUUFBQTtFQUNBLE1BQUE7RUFDQSxZQUFBO0VBQ0EsWUFBQTtFQUNBLHVCQUFBO0VBQ0EsYUFBQTtFQUNBLGVBQUE7RUFDQSx1Q0FBQTtVQUFBLCtCQUFBO0FDR0Y7O0FEQUE7RUFDRTtJQUNFLFdBQUE7RUNHRjtFRERBO0lBQ0UsV0FBQTtFQ0dGO0FBQ0Y7O0FEVEE7RUFDRTtJQUNFLFdBQUE7RUNHRjtFRERBO0lBQ0UsV0FBQTtFQ0dGO0FBQ0YiLCJmaWxlIjoic3JjL2FwcC9hcHBsaWNhdGlvbi9wcm9wZXJ0eS9wcm9wZXJ0eS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5ydXAge1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICByaWdodDogMDtcclxuICB0b3A6IDA7XHJcbiAgbWFyZ2luOiAxMHB4O1xyXG59XHJcbi5ob21lIHtcclxuICB3aWR0aDogMzBweDtcclxuICBtYXJnaW46IDVweDtcclxufVxyXG4uc2V0aSB7XHJcbiAgd2lkdGg6IDM1JTtcclxuICBtYXJnaW46IGF1dG87XHJcbiAgZGlzcGxheTogYmxvY2s7XHJcbn1cclxuXHJcbi52ZiB7XHJcbiAgbWFyZ2luOiAxMHB4O1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBmb250LXdlaWdodDogYm9sZDtcclxufVxyXG5cclxuLnNldGkyIHtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgd2lkdGg6IDM1cHg7XHJcbiAgYm9yZGVyLXJhZGl1czogMTAwJTtcclxuICBib3JkZXI6IDAuNXB4IHNvbGlkIGJsYWNrO1xyXG4gIHJpZ2h0OiAwO1xyXG4gIHRvcDogMDtcclxuICBwYWRkaW5nOiA1cHg7XHJcbiAgbWFyZ2luOiAxNXB4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xyXG4gIHotaW5kZXg6IDEwMzI7XHJcbiAgY3Vyc29yOiBwb2ludGVyO1xyXG4gIGFuaW1hdGlvbjogc3VtbWEgMXMgZWFzZS1pbi1vdXQ7XHJcbn1cclxuXHJcbkBrZXlmcmFtZXMgc3VtbWEge1xyXG4gIGZyb20ge1xyXG4gICAgd2lkdGg6IDUwcHg7XHJcbiAgfVxyXG4gIHRvIHtcclxuICAgIHdpZHRoOiAzNXB4O1xyXG4gIH1cclxufVxyXG4iLCIucnVwIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICByaWdodDogMDtcbiAgdG9wOiAwO1xuICBtYXJnaW46IDEwcHg7XG59XG5cbi5ob21lIHtcbiAgd2lkdGg6IDMwcHg7XG4gIG1hcmdpbjogNXB4O1xufVxuXG4uc2V0aSB7XG4gIHdpZHRoOiAzNSU7XG4gIG1hcmdpbjogYXV0bztcbiAgZGlzcGxheTogYmxvY2s7XG59XG5cbi52ZiB7XG4gIG1hcmdpbjogMTBweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LXdlaWdodDogYm9sZDtcbn1cblxuLnNldGkyIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB3aWR0aDogMzVweDtcbiAgYm9yZGVyLXJhZGl1czogMTAwJTtcbiAgYm9yZGVyOiAwLjVweCBzb2xpZCBibGFjaztcbiAgcmlnaHQ6IDA7XG4gIHRvcDogMDtcbiAgcGFkZGluZzogNXB4O1xuICBtYXJnaW46IDE1cHg7XG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICB6LWluZGV4OiAxMDMyO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIGFuaW1hdGlvbjogc3VtbWEgMXMgZWFzZS1pbi1vdXQ7XG59XG5cbkBrZXlmcmFtZXMgc3VtbWEge1xuICBmcm9tIHtcbiAgICB3aWR0aDogNTBweDtcbiAgfVxuICB0byB7XG4gICAgd2lkdGg6IDM1cHg7XG4gIH1cbn0iXX0= */";
     /***/
   },
 
@@ -2166,6 +2244,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, PropertyComponent);
 
         this.loc = loc;
+        this.app = '';
         this.prop = {
           mates: '',
           landmark: '',
@@ -2175,6 +2254,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           add: '',
           htype: '',
           state: '',
+          feed: '',
           country: '',
           pin: ''
         };
@@ -2817,6 +2897,420 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       /*! ./rental.component.scss */
       "./src/app/rental/rental.component.scss")).default]
     })], RentalComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/room/one/one.component.scss":
+  /*!*********************************************!*\
+    !*** ./src/app/room/one/one.component.scss ***!
+    \*********************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppRoomOneOneComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Jvb20vb25lL29uZS5jb21wb25lbnQuc2NzcyJ9 */";
+    /***/
+  },
+
+  /***/
+  "./src/app/room/one/one.component.ts":
+  /*!*******************************************!*\
+    !*** ./src/app/room/one/one.component.ts ***!
+    \*******************************************/
+
+  /*! exports provided: OneComponent */
+
+  /***/
+  function srcAppRoomOneOneComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "OneComponent", function () {
+      return OneComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var src_app_shared_locality_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! src/app/shared/locality.service */
+    "./src/app/shared/locality.service.ts");
+
+    var OneComponent =
+    /*#__PURE__*/
+    function () {
+      function OneComponent(loc) {
+        _classCallCheck(this, OneComponent);
+
+        this.loc = loc;
+        this.prop = {
+          mates: '',
+          landmark: '',
+          starts: 0,
+          acc: '',
+          ends: 0,
+          add: '',
+          htype: '',
+          state: '',
+          feed: '',
+          country: '',
+          pin: ''
+        };
+      }
+
+      _createClass(OneComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }, {
+        key: "props",
+        value: function props() {
+          var _this14 = this;
+
+          this.loc.property(this.prop).subscribe(function (data) {
+            if (data['status'] === true) {
+              _this14.eat(data['msg'], 1);
+            } else {
+              _this14.eat(data['msg'], 2);
+            }
+          });
+        }
+      }, {
+        key: "eat",
+        value: function eat(msg, color) {
+          this.msg = msg;
+          var x = document.getElementById("snackbar");
+
+          if (color === 1) {
+            x.style.backgroundColor = "#9ccc65";
+          } else if (color === 2) {
+            x.style.backgroundColor = "#ffc107";
+          } else {
+            x.style.backgroundColor = "#ef5350";
+          }
+
+          x.className = "show";
+          setTimeout(function () {
+            x.className = x.className.replace("show", "");
+          }, 5000);
+        }
+      }]);
+
+      return OneComponent;
+    }();
+
+    OneComponent.ctorParameters = function () {
+      return [{
+        type: src_app_shared_locality_service__WEBPACK_IMPORTED_MODULE_2__["LocalityService"]
+      }];
+    };
+
+    OneComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-one',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./one.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/room/one/one.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./one.component.scss */
+      "./src/app/room/one/one.component.scss")).default]
+    })], OneComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/room/three/three.component.scss":
+  /*!*************************************************!*\
+    !*** ./src/app/room/three/three.component.scss ***!
+    \*************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppRoomThreeThreeComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Jvb20vdGhyZWUvdGhyZWUuY29tcG9uZW50LnNjc3MifQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/room/three/three.component.ts":
+  /*!***********************************************!*\
+    !*** ./src/app/room/three/three.component.ts ***!
+    \***********************************************/
+
+  /*! exports provided: ThreeComponent */
+
+  /***/
+  function srcAppRoomThreeThreeComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ThreeComponent", function () {
+      return ThreeComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var src_app_shared_locality_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! src/app/shared/locality.service */
+    "./src/app/shared/locality.service.ts");
+
+    var ThreeComponent =
+    /*#__PURE__*/
+    function () {
+      function ThreeComponent(loc) {
+        _classCallCheck(this, ThreeComponent);
+
+        this.loc = loc;
+        this.prop = {
+          mates: '',
+          landmark: '',
+          starts: 0,
+          acc: '',
+          ends: 0,
+          add: '',
+          htype: '',
+          state: '',
+          feed: '',
+          country: '',
+          pin: ''
+        };
+      }
+
+      _createClass(ThreeComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }, {
+        key: "props",
+        value: function props() {
+          var _this15 = this;
+
+          this.loc.property(this.prop).subscribe(function (data) {
+            if (data['status'] === true) {
+              _this15.eat(data['msg'], 1);
+            } else {
+              _this15.eat(data['msg'], 2);
+            }
+          });
+        }
+      }, {
+        key: "eat",
+        value: function eat(msg, color) {
+          this.msg = msg;
+          var x = document.getElementById("snackbar");
+
+          if (color === 1) {
+            x.style.backgroundColor = "#9ccc65";
+          } else if (color === 2) {
+            x.style.backgroundColor = "#ffc107";
+          } else {
+            x.style.backgroundColor = "#ef5350";
+          }
+
+          x.className = "show";
+          setTimeout(function () {
+            x.className = x.className.replace("show", "");
+          }, 5000);
+        }
+      }]);
+
+      return ThreeComponent;
+    }();
+
+    ThreeComponent.ctorParameters = function () {
+      return [{
+        type: src_app_shared_locality_service__WEBPACK_IMPORTED_MODULE_2__["LocalityService"]
+      }];
+    };
+
+    ThreeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-three',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./three.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/room/three/three.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./three.component.scss */
+      "./src/app/room/three/three.component.scss")).default]
+    })], ThreeComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/room/two/two.component.scss":
+  /*!*********************************************!*\
+    !*** ./src/app/room/two/two.component.scss ***!
+    \*********************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppRoomTwoTwoComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Jvb20vdHdvL3R3by5jb21wb25lbnQuc2NzcyJ9 */";
+    /***/
+  },
+
+  /***/
+  "./src/app/room/two/two.component.ts":
+  /*!*******************************************!*\
+    !*** ./src/app/room/two/two.component.ts ***!
+    \*******************************************/
+
+  /*! exports provided: TwoComponent */
+
+  /***/
+  function srcAppRoomTwoTwoComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "TwoComponent", function () {
+      return TwoComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var src_app_shared_locality_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! src/app/shared/locality.service */
+    "./src/app/shared/locality.service.ts");
+
+    var TwoComponent =
+    /*#__PURE__*/
+    function () {
+      function TwoComponent(loc) {
+        _classCallCheck(this, TwoComponent);
+
+        this.loc = loc;
+        this.prop = {
+          mates: '',
+          landmark: '',
+          starts: 0,
+          acc: '',
+          ends: 0,
+          add: '',
+          htype: '',
+          state: '',
+          feed: '',
+          country: '',
+          pin: ''
+        };
+      }
+
+      _createClass(TwoComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }, {
+        key: "props",
+        value: function props() {
+          var _this16 = this;
+
+          this.loc.property(this.prop).subscribe(function (data) {
+            if (data['status'] === true) {
+              _this16.eat(data['msg'], 1);
+            } else {
+              _this16.eat(data['msg'], 2);
+            }
+          });
+        }
+      }, {
+        key: "eat",
+        value: function eat(msg, color) {
+          this.msg = msg;
+          var x = document.getElementById("snackbar");
+
+          if (color === 1) {
+            x.style.backgroundColor = "#9ccc65";
+          } else if (color === 2) {
+            x.style.backgroundColor = "#ffc107";
+          } else {
+            x.style.backgroundColor = "#ef5350";
+          }
+
+          x.className = "show";
+          setTimeout(function () {
+            x.className = x.className.replace("show", "");
+          }, 5000);
+        }
+      }]);
+
+      return TwoComponent;
+    }();
+
+    TwoComponent.ctorParameters = function () {
+      return [{
+        type: src_app_shared_locality_service__WEBPACK_IMPORTED_MODULE_2__["LocalityService"]
+      }];
+    };
+
+    TwoComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-two',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./two.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/room/two/two.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./two.component.scss */
+      "./src/app/room/two/two.component.scss")).default]
+    })], TwoComponent);
     /***/
   },
 
@@ -5297,58 +5791,58 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ShiftComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this14 = this;
+          var _this17 = this;
 
           this.loc.getYellow().subscribe(function (data) {
-            _this14.info = data; // console.log(this.info.length);
+            _this17.info = data; // console.log(this.info.length);
           });
         }
       }, {
         key: "logins",
         value: function logins() {
-          var _this15 = this;
+          var _this18 = this;
 
           this.enter = false;
           this.logdata = true;
           this.loc.usercheck(this.login).subscribe(function (ccc) {
             if (ccc['status'] === false) {
-              _this15.loc.login(_this15.login).subscribe(function (data) {
-                _this15.logdata = false;
+              _this18.loc.login(_this18.login).subscribe(function (data) {
+                _this18.logdata = false;
 
                 if (data['status'] === true) {
                   console.log(data, data['msg']);
 
-                  _this15.eat(data['msg'], 1);
+                  _this18.eat(data['msg'], 1);
 
-                  _this15.logdata = false;
+                  _this18.logdata = false;
                   window.localStorage.setItem("username", data['username']);
                   window.localStorage.setItem("logged", data['username']);
                   window.localStorage.setItem("update", data['update']);
                   window.localStorage.setItem("_id", data['_id']);
 
-                  _this15.router.navigate(['/userdata']);
+                  _this18.router.navigate(['/userdata']);
 
                   window.localStorage.setItem("state", "true");
                 } else {
-                  _this15.eat(data['msg'], 2);
+                  _this18.eat(data['msg'], 2);
 
-                  _this15.logdata = false;
-                  _this15.enter = true;
+                  _this18.logdata = false;
+                  _this18.enter = true;
                   window.localStorage.setItem("state", "false");
                 }
               });
             } else {
-              _this15.logdata = false;
-              _this15.enter = true;
+              _this18.logdata = false;
+              _this18.enter = true;
 
-              _this15.eat('Username not exists', 2);
+              _this18.eat('Username not exists', 2);
             }
           });
         }
       }, {
         key: "register",
         value: function register() {
-          var _this16 = this;
+          var _this19 = this;
 
           this.enter = false; // delete this.login.lucky;
           // delete this.login.phrase;
@@ -5356,32 +5850,32 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           this.logdata = true;
           this.loc.usercheck(this.login).subscribe(function (ccc) {
             if (ccc['status'] === true) {
-              if (_this16.login.password === _this16.login.cpassword) {
-                _this16.loc.register(_this16.login).subscribe(function (data) {
-                  _this16.logdata = undefined;
-                  _this16.enter = true;
-                  _this16.reg = true;
-                  _this16.regData = data['msg'];
+              if (_this19.login.password === _this19.login.cpassword) {
+                _this19.loc.register(_this19.login).subscribe(function (data) {
+                  _this19.logdata = undefined;
+                  _this19.enter = true;
+                  _this19.reg = true;
+                  _this19.regData = data['msg'];
 
                   if (data['status'] === true) {
-                    _this16.eat(data['msg'], 1);
+                    _this19.eat(data['msg'], 1);
                   } else {
-                    _this16.eat(data['msg'], 2);
+                    _this19.eat(data['msg'], 2);
                   }
                 });
               } else {
-                _this16.logdata = undefined;
-                _this16.enter = true;
-                _this16.reg = true;
+                _this19.logdata = undefined;
+                _this19.enter = true;
+                _this19.reg = true;
 
-                _this16.eat('Password not matched', 2);
+                _this19.eat('Password not matched', 2);
               }
             } else {
-              _this16.logdata = undefined;
-              _this16.enter = true;
-              _this16.reg = true;
+              _this19.logdata = undefined;
+              _this19.enter = true;
+              _this19.reg = true;
 
-              _this16.eat(ccc['msg'], 2);
+              _this19.eat(ccc['msg'], 2);
             }
           });
         }
@@ -5501,11 +5995,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(UnshiftComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this17 = this;
+          var _this20 = this;
 
           this.load = true;
           setTimeout(function () {
-            _this17.load = false;
+            _this20.load = false;
           }, 3000);
         }
       }]);
@@ -5632,7 +6126,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(WantroomComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this18 = this;
+          var _this21 = this;
 
           this.getloc();
           var prof = {
@@ -5642,11 +6136,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           if (window.localStorage.getItem('update') === '0') {
             this.loc.userprofile(prof).subscribe(function (data) {
-              _this18.profile = data[0]; // this.eat('Sucess', 1);
+              _this21.profile = data[0]; // this.eat('Sucess', 1);
             });
           } else {
             this.loc.getupdateuser(prof).subscribe(function (data) {
-              _this18.profile = data[0]; // this.profile.update = window.localStorage.getItem('update');
+              _this21.profile = data[0]; // this.profile.update = window.localStorage.getItem('update');
               // this.instaname = data[0]['insta'];
               // this.prof.fname = this.profile.fullname;
             });
@@ -5655,11 +6149,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getloc",
         value: function getloc() {
-          var _this19 = this;
+          var _this22 = this;
 
           this.loc.getPosition().then(function (data) {
             console.log(data);
-            _this19.positions = data; // this.loc.goord(this.positions['lat'], this.positions['lng']).subscribe(datas => {
+            _this22.positions = data;
+            _this22.pop = false; // this.loc.goord(this.positions['lat'], this.positions['lng']).subscribe(datas => {
             //   console.log(datas);
             // });
           });
