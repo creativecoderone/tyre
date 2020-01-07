@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"board\" [ngClass]=\"(extract==true)?'activate':'board'\">\n        <!--<button class=\"plus\" *ngIf=\"state\" >M</button>-->\n        <!--<i class=\"fas fa-plus-circle\"></i>-->\n        <br>\n        <br class=\"as-non-mob\">\n        <br class=\"as-non-mob\">\n        <div class=\"container\">\n                <router-outlet></router-outlet>\n        </div>\n</div>\n<nav class=\"navbar  as-non-mob fixed-top navbar-light bg-light\">\n        <a class=\"navbar-brand\">\n                <span>\n                        <span *ngIf=\"!open\" (click)=\"open = true\" (click)=\"openNav()\"> &#9776; &nbsp;</span></span>\n                Rental PRO</a>\n</nav>\n\n\n<div class=\"online as-mob\">\n        <div class=\"sidebar\" [ngClass]=\"(extract==true)?'activatesidebar':'sidebar'\">\n                <br>\n\n                <!--{{extract}}-->\n                <i class='fas fa-expand extract' *ngIf=\"extract\" (click)=\"extract = false\"></i>\n                <i class='fas fa-expand-arrows-alt extract' *ngIf=\"!extract\" (click)=\"extract = true\"></i> <br>\n                <a uk-tooltip=\"title:Dashboard;pos:right;\" [routerLink]=\"['/lander']\" *ngIf=\"state==true\"><i\n                                class='fas fa-braille'></i><span>\n                                Dashboard</span></a>\n                <a uk-tooltip=\"title:Locality;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/locality']\"><i\n                                class='fas fa-bullseye'></i><span>\n                                Locality</span></a>\n                <a uk-tooltip=\"title:Personal details;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/userdata']\"><i\n                                class='far fa-smile'></i><span>\n                                        Profile</span></a>\n                <!-- <a uk-tooltip=\"title:Profile;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/profile']\"><i\n                                class='fas fa-clipboard'></i><span>\n                                Profile</span></a> -->\n                <a uk-tooltip=\"title:Property;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/property']\"><i\n                                class='fas fa-cogs'></i><span>\n                                Property </span></a>\n                <a uk-tooltip=\"title:Property board;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/property-info']\"><i\n                                class='fas fa-home'></i><span>\n                                Property Board</span></a>\n                <a uk-tooltip=\"title:Profile board;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/profile-info']\"><i\n                                class='fas fa-clipboard'></i><span>\n                                Profile Board</span></a>\n                <a uk-tooltip=\"title:Disclaimer;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                        [routerLink]=\"['/disclaimer']\"><i class='fas fa-info'></i><span>\n                                &nbsp; Disclaimer</span></a>\n                <!-- <a uk-tooltip=\"title:Login / Register;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/shift']\"><i\n                                class='fas fa-users'></i><span> Login\n                                /\n                                Register</span></a>\n                <a uk-tooltip=\"title: Change password;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/unshift']\"><i\n                                class='fas fa-chart-line'></i><span>\n                                Change password</span></a> -->\n                <a uk-tooltip=\"title:Logout;pos:right;\" *ngIf=\"state==true\" (click)=\"logout()\"><i\n                                class='fas fa-user'></i><span>\n                                Logout</span></a>\n        </div>\n</div>\n<!--[routerLink]=\"['/lander']\"-->\n\n<!--7=77777777777777777777777777777777777777777777-->\n<div id=\"mySidebar\" class=\"sidebars\" style=\"font-size: 16px;\">\n        <a href=\"javascript:void(0)\" *ngIf=\"open\" class=\"closebtn\" (click)=\"closeNav()\">&times;</a>\n        <br>\n        <!--{{extract}}-->\n        <a uk-tooltip=\"title:Dashboard;pos:right;\" [routerLink]=\"['/lander']\" (click)=\"closeNav()\"\n                *ngIf=\"state==true\"><i class='fas fa-braille'></i><span>\n                        Dashboard</span></a>\n        <a uk-tooltip=\"title:Locality;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/locality']\"><i class='fas fa-bullseye'></i><span>\n                        Locality</span></a>\n        <a uk-tooltip=\"title:Personal details;pos:right;\" (click)=\"closeNav()\"  *ngIf=\"state==true\" [routerLink]=\"['/userdata']\"><i\n                        class='far fa-smile'></i><span>\n                        Profile</span></a>\n        <!-- <a uk-tooltip=\"title:Profile;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\" [routerLink]=\"['/profile']\"><i\n                        class='fas fa-clipboard'></i><span>\n                        Profile</span></a> -->\n        <a uk-tooltip=\"title:Property;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/property']\"><i class='fas fa-cogs'></i><span>\n                        Property </span></a>\n        <a uk-tooltip=\"title:Property board;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/property-info']\"><i class='fas fa-home'></i><span>\n                        Property Board</span></a>\n        <a uk-tooltip=\"title:Profile board;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/profile-info']\"><i class='fas fa-clipboard'></i><span>\n                        Profile Board</span></a>\n        <a uk-tooltip=\"title:Disclaimer;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/disclaimer']\"><i class='fas fa-clipboard'></i><span>\n                        Disclaimer</span></a>\n        <!-- <a uk-tooltip=\"title:Login / Register;pos:right;\" (click)=\"closeNav()\" [routerLink]=\"['/shift']\"\n                *ngIf=\"state==true\"><i class='fas fa-users'></i><span> Login\n                        /\n                        Register</span></a>\n        <a uk-tooltip=\"title: Change password;pos:right;\" (click)=\"closeNav()\" [routerLink]=\"['/unshift']\"\n                *ngIf=\"state==true\"><i class='fas fa-chart-line'></i><span>\n                        Change password</span></a> -->\n        <a uk-tooltip=\"title:Logout;pos:right;\" *ngIf=\"state==true\" (click)=\"closeNav()\" (click)=\"logout()\"><i\n                        class='fas fa-user'></i><span>\n                        Logout</span></a>\n\n</div>\n<div id=\"snackbar\">{{msg}}</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"board\" [ngClass]=\"(extract==true)?'activate':'board'\">\n        <!--<button class=\"plus\" *ngIf=\"state\" >M</button>-->\n        <!--<i class=\"fas fa-plus-circle\"></i>-->\n        <br>\n        <br class=\"as-non-mob\">\n        <br class=\"as-non-mob\">\n        <div class=\"container\">\n                <router-outlet></router-outlet>\n        </div>\n</div>\n<nav class=\"navbar  as-non-mob fixed-top navbar-light bg-light\">\n        <a class=\"navbar-brand\">\n                <span>\n                        <span *ngIf=\"!open\" (click)=\"open = true\" (click)=\"openNav()\"> &#9776; &nbsp;</span></span>\n                Rental PRO</a>\n</nav>\n\n\n<div class=\"online as-mob\">\n        <div class=\"sidebar\" [ngClass]=\"(extract==true)?'activatesidebar':'sidebar'\">\n                <br>\n\n                <!--{{extract}}-->\n                <i class='fas fa-expand extract' *ngIf=\"extract\" (click)=\"extract = false\"></i>\n                <i class='fas fa-expand-arrows-alt extract' *ngIf=\"!extract\" (click)=\"extract = true\"></i> <br>\n                <a uk-tooltip=\"title:Dashboard;pos:right;\" [routerLink]=\"['/lander']\" *ngIf=\"state==true\"><i\n                                class='fas fa-braille'></i><span>\n                                Dashboard</span></a>\n                <!-- <a uk-tooltip=\"title:Locality;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/locality']\"><i\n                                class='fas fa-bullseye'></i><span>\n                                Locality</span></a> -->\n                <a uk-tooltip=\"title:Locality;pos:right;\"  *ngIf=\"state==true\"\n                        [routerLink]=\"['/wantroom']\"><i class='fas fa-bullseye'></i><span>\n                                Find rooms</span></a>\n                <a uk-tooltip=\"title:Personal details;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/userdata']\"><i\n                                class='far fa-smile'></i><span>\n                                Profile</span></a>\n                <!-- <a uk-tooltip=\"title:Profile;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/profile']\"><i\n                                class='fas fa-clipboard'></i><span>\n                                Profile</span></a> -->\n                <a uk-tooltip=\"title:Property;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/property']\"><i\n                                class='fas fa-cogs'></i><span>\n                                Property </span></a>\n                <a uk-tooltip=\"title:Property board;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/property-info']\"><i\n                                class='fas fa-home'></i><span>\n                                Property Board</span></a>\n                <a uk-tooltip=\"title:Profile board;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/profile-info']\"><i\n                                class='fas fa-clipboard'></i><span>\n                                Profile Board</span></a>\n                <a uk-tooltip=\"title:Disclaimer;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                        [routerLink]=\"['/disclaimer']\"><i class='fas fa-info'></i><span>\n                                &nbsp; Disclaimer</span></a>\n                <!-- <a uk-tooltip=\"title:Login / Register;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/shift']\"><i\n                                class='fas fa-users'></i><span> Login\n                                /\n                                Register</span></a>\n                <a uk-tooltip=\"title: Change password;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/unshift']\"><i\n                                class='fas fa-chart-line'></i><span>\n                                Change password</span></a> -->\n                <a uk-tooltip=\"title:Logout;pos:right;\" *ngIf=\"state==true\" (click)=\"logout()\"><i\n                                class='fas fa-user'></i><span>\n                                Logout</span></a>\n        </div>\n</div>\n<!--[routerLink]=\"['/lander']\"-->\n\n<!--7=77777777777777777777777777777777777777777777-->\n<div id=\"mySidebar\" class=\"sidebars\" style=\"font-size: 16px;\">\n        <a href=\"javascript:void(0)\" *ngIf=\"open\" class=\"closebtn\" (click)=\"closeNav()\">&times;</a>\n        <br>\n        <!--{{extract}}-->\n        <a uk-tooltip=\"title:Dashboard;pos:right;\" [routerLink]=\"['/lander']\" (click)=\"closeNav()\"\n                *ngIf=\"state==true\"><i class='fas fa-braille'></i><span>\n                        Dashboard</span></a>\n        <!-- <a uk-tooltip=\"title:Locality;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/locality']\"><i class='fas fa-bullseye'></i><span>\n                        Locality</span></a> -->\n        <a uk-tooltip=\"title:Locality;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/wantroom']\"><i class='fas fa-bullseye'></i><span>\n                        Find rooms</span></a>\n        <a uk-tooltip=\"title:Personal details;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/userdata']\"><i class='far fa-smile'></i><span>\n                        Profile</span></a>\n        <!-- <a uk-tooltip=\"title:Profile;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\" [routerLink]=\"['/profile']\"><i\n                        class='fas fa-clipboard'></i><span>\n                        Profile</span></a> -->\n        <a uk-tooltip=\"title:Property;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/property']\"><i class='fas fa-cogs'></i><span>\n                        Property </span></a>\n        <a uk-tooltip=\"title:Property board;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/property-info']\"><i class='fas fa-home'></i><span>\n                        Property Board</span></a>\n        <a uk-tooltip=\"title:Profile board;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/profile-info']\"><i class='fas fa-clipboard'></i><span>\n                        Profile Board</span></a>\n        <a uk-tooltip=\"title:Disclaimer;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/disclaimer']\"><i class='fas fa-clipboard'></i><span>\n                        Disclaimer</span></a>\n        <!-- <a uk-tooltip=\"title:Login / Register;pos:right;\" (click)=\"closeNav()\" [routerLink]=\"['/shift']\"\n                *ngIf=\"state==true\"><i class='fas fa-users'></i><span> Login\n                        /\n                        Register</span></a>\n        <a uk-tooltip=\"title: Change password;pos:right;\" (click)=\"closeNav()\" [routerLink]=\"['/unshift']\"\n                *ngIf=\"state==true\"><i class='fas fa-chart-line'></i><span>\n                        Change password</span></a> -->\n        <a uk-tooltip=\"title:Logout;pos:right;\" *ngIf=\"state==true\" (click)=\"closeNav()\" (click)=\"logout()\"><i\n                        class='fas fa-user'></i><span>\n                        Logout</span></a>\n\n</div>\n<div id=\"snackbar\">{{msg}}</div>");
 
 /***/ }),
 
@@ -189,6 +189,19 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"board\">\n  <div class=\"road\">\n    <div class=\"viewboard as-mob\">\n      <h1>Change password&nbsp;<i class=\"fas fa-key\"></i> </h1>\n      <small class=\"small\">Please reset with your old crediantials</small>\n      <br> <br>\n      <!--<small class=\"subsmall\">For new user please register here</small>-->\n      <!--<img src=\"./assets/forget.gif\" class=\"imgc\" alt=\"\" width=\"20%;\" *ngIf=\"load\">-->\n      <img src=\"./assets/developer-dribbble.gif\" alt=\"\" class=\"imgc\">\n      <i href=\"#modal-center\" uk-toggle class=\"fas query fa-question-circle\"></i>\n    </div>\n    <div class=\"formboard\">\n      <br> \n      <form>\n        <fieldset class=\"uk-fieldset\">\n          <legend class=\"uk-legend\">Change Password&nbsp;<i class=\"fas fa-key\"></i></legend>\n          <div class=\"uk-margin\">\n            <label for=\"\"> <i class=\"fas fa-user\"></i> Username</label> <i uk-tooltip=\"title:Username;pos:left\" class=\"fas bgg fa-user\"></i>\n            <input class=\"uk-input\" [(ngModel)]=\"reset.username\" name=\"username\" type=\"text\" placeholder=\"Username\">\n          </div>\n          <div class=\"uk-margin\">\n            <label for=\"\"> <i class=\"fas  fa-key\"></i> Current Password</label> <i uk-tooltip=\"title:Current Password;pos:left\" class=\"fas bgg fa-key\"></i>\n            <input class=\"uk-input\" [(ngModel)]=\"reset.old\" name=\"password\" type=\"password\" placeholder=\"Current Password\">\n          </div>\n          <div class=\"uk-margin\">\n            <label for=\"\"> <i class=\"fas fa-key\"></i> New password</label> <i uk-tooltip=\"title:New password;pos:left\" class=\"fas bgg fa-key\"></i>\n            <input class=\"uk-input\" [(ngModel)]=\"reset.new\" name=\"new\" type=\"password\" placeholder=\"New password\">\n          </div>\n          <div class=\"uk-margin\">\n            <label for=\"\"> <i class=\"fas fa-key\"></i> Repeat password</label> <i uk-tooltip=\"title:Repeat password;pos:left\"\n              class=\"fas bgg fa-key\"></i>\n            <input class=\"uk-input\" [(ngModel)]=\"reset.re\" name=\"re\" type=\"password\" placeholder=\"Repeat password\">\n          </div>\n          <button class=\"btn-block uk-button uk-button-primary\" uk-tooltip=\"title:Change passwor;pos:bottom\">Change password</button>\n        </fieldset>\n      </form>\n    </div>\n  </div>\n</div>\n\n<div id=\"modal-center\" class=\"uk-flex-top\" uk-modal>\n  <div class=\"uk-modal-dialog uk-modal-body uk-margin-auto-vertical\">\n    <button style=\"background-color: white\" class=\"uk-modal-close-default\" type=\"button\" uk-close></button>\n    <legend>Change password</legend>\n    <small class=\"small\">Use atleast one Uppercase letter-   <b class=\"right\">  A-Z </b></small>\n    <br>\n    <small class=\"small\">Use atleast one Lowercase letter-    <b class=\"right\"> a-z</b> </small>\n    <br>\n    <small class=\"small\">Use atleast one number/digit character-  <b class=\"right\">  0-9</b> </small>\n    <br>\n    <small class=\"small\">Keep minimum of 8 charater combination length <b class=\"right\"> 8</b> </small>\n    <br>\n    <small class=\"small\">Use atleast one special character-  <b class=\"right\">  */&amp;-+=</b> </small> <br>\n    <img src=\"./assets/forget.gif\" style=\"width: 75%;margin: auto;display: block\" alt=\"\">\n  </div>\n</div>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/wantroom/wantroom.component.html":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/wantroom/wantroom.component.html ***!
+  \****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- {{profile|json}} -->\n<div class=\"container\">\n    <div class=\"car\">\n        <h5>Room looking for&nbsp;<i class=\"fas fa-home\"></i> </h5>\n        <hr>\n        <div class=\"card-\">\n            <div class=\"\" style=\"text-align: right;\">\n                <i class=\"fas fa-user\"></i>&nbsp;{{profile?.username}}\n            </div>\n            <form>\n                <div class=\"form-group\">\n                    <label for=\"exampleFormControlSelect1\">Room looking <span\n                            class=\"badge badge-warning\">Person</span></label>\n                    <select class=\"form-control\" id=\"exampleFormControlSelect1\">\n                        <option>1</option>\n                        <option>2</option>\n                        <option>3</option>\n                        <option>4</option>\n                        <option>5</option>\n                    </select>\n                </div>\n                <div class=\"row\">\n                    <div class=\"col-md-6\">\n                        <div class=\"form-group\">\n                            <label for=\"exampleFormControlSelect2\">Additional lookups</label>\n                            <select multiple class=\"form-control\" id=\"exampleFormControlSelect2\">\n                                <option>Individual house</option>\n                                <option>Apartment</option>\n                                <option>Flat</option>\n                                <option>Villa</option>\n                                <option>PG</option>\n                            </select>\n                        </div>\n                    </div>\n                    <div class=\"col-md-6\">\n                        <div class=\"form-group\">\n                            <label for=\"exampleFormControlTextarea1\">Additional information</label>\n                            <textarea class=\"form-control\" placeholder=\"Additional information\"\n                                id=\"exampleFormControlTextarea1\" rows=\"4\"></textarea>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"row\">\n                    <div class=\"col-md-6\">\n                        <label for=\"\">Rent starts from</label>&nbsp;\n                        <input type=\"text\" class=\"uk-input\" id=\"asaf\" [(ngModel)]=\"prop.starts\" name=\"starts\"\n                            uk-tooltip=\"title:Rent starts from;pos:top;\">\n                    </div>\n                    <div class=\"col-md-6\">\n                        <label for=\"\">Rent ends with</label>\n                        <input type=\"text\" class=\"uk-input\" id=\"ssd\" [(ngModel)]=\"prop.ends\" name=\"ends\"\n                            uk-tooltip=\"title:Rent ends with;pos:top;\">\n                    </div>\n                </div> <br>\n                <!-- <div class=\"uk-width-1-2@s\">\n                    <label for=\"\">Rent starts from</label>&nbsp;<i class=\"fas fa-step-backward\"></i>&nbsp;\n                    <input type=\"range\" class=\"uk-range\" value=\"0\" id=\"asaf\" [(ngModel)]=\"prop.starts\" name=\"starts\"\n                        step=\"1000\" min=\"0\" max=\"10000\">\n                </div>\n                <div class=\"uk-width-1-2@s\">\n                    <label for=\"\">Rent ends with</label>&nbsp;<i class=\"fas fa-step-forward\"></i>&nbsp;\n                    <input type=\"range\" class=\"uk-range\" value=\"0\" id=\"ssd\" [(ngModel)]=\"prop.ends\" step=\"1000\" min=\"0\"\n                        max=\"10000\" name=\"ends\">\n                </div> -->\n                <div class=\"row\">\n                    <div class=\"col-md-3\">\n                        <div class=\"form-group\">\n                            <label for=\"exampleFormControlInput1\">Email address</label>\n                            <input type=\"email\" name=\"ddki\" [(ngModel)]=\"profile.email\" readonly class=\"form-control\"\n                                id=\"exampleFormControlInput1\" placeholder=\"name@example.com\">\n                        </div>\n                    </div>\n                    <div class=\"col-md-3\">\n                        <div class=\"form-group\">\n                            <label for=\"exampleFormControlInput1\">Mobile number</label>\n                            <input type=\"number\" name=\"ddksi\" [(ngModel)]=\"profile.mobile\" readonly class=\"form-control\"\n                                id=\"exampleFormContf rolInput1\" placeholder=\"name@example.com\">\n                        </div>\n                    </div>\n                    <div class=\"col-md-3\">\n                        <div class=\"form-group\">\n                            <label for=\"exampleFormControlInput1\">Gender</label>\n                            <input type=\"text\" name=\"ddrwksi\" [(ngModel)]=\"profile.gender\" readonly class=\"form-control\"\n                                id=\"exampleFormdfControlInput1\" placeholder=\"name@example.com\">\n                        </div>\n                    </div>\n                    <div class=\"col-md-3\">\n                        <div class=\"form-group\">\n                            <label for=\"exampleFormControlInput1\">Fullname</label>\n                            <input type=\"text\" name=\"ddkersi\" [(ngModel)]=\"profile.fullname\" readonly\n                                class=\"form-control\" id=\"exampleFormContrsfolInput1\" placeholder=\"name@example.com\">\n                        </div>\n                    </div>\n                </div>\n                <!-- {{positions|json}} -->\n                <div class=\"form-group\">\n                    <input class=\"form-control\" type=\"text\" [(ngModel)]=\"search\" name=\"search\"\n                        placeholder=\"Enter city name\" id=\"\">\n                    <div class=\" cardss\" *ngIf=\"search.length > 1\">\n                        <span (click)=\"setLoc(citys)\" class=\"badge badge-primary\"\n                            *ngFor=\"let citys of city|filter:search; let i=index\">\n                            {{citys?.city}}\n                        </span>\n                    </div>\n                </div>\n                <div class=\"text-center\">\n                    <b>Search by city name and set</b>\n                    <br> -OR- <br>\n                    <h5>Geo <span (click)=\"getloc()\" class=\"badge badge-warning\">Get current location</span>\n                    </h5>\n                </div>\n                <div class=\"row\">\n\n                    <br>\n                    <div class=\"col-md-3\">\n                        <div class=\"form-group\">\n                            <label for=\"exampleFormControlInput1\">Latitude</label>\n                            <input type=\"number\" name=\"dwefdksi\" [(ngModel)]=\"positions.lat\" readonly\n                                class=\"form-control\" id=\"exampleFormConolInput1\" placeholder=\"name@example.com\">\n                        </div>\n                    </div>\n                    <div class=\"col-md-3\">\n                        <div class=\"form-group\">\n                            <label for=\"exampleFormControlInput1\">Latitude</label>\n                            <input type=\"number\" name=\"ddksssefsi\" [(ngModel)]=\"positions.lng\" readonly\n                                class=\"form-control\" id=\"exampleFormContf rolput1\" placeholder=\"name@example.com\">\n                        </div>\n                    </div>\n                    <div class=\"col-md-3\">\n                        <div class=\"form-group\">\n                            <label for=\"exampleFormControlInput1\">With in <small>KM's</small> </label>\n                            <select class=\"form-control\" id=\"exampleFormControlSelect1\">\n                                <option>5</option>\n                                <option>10</option>\n                                <option>15</option>\n                                <option>20</option>\n                                <option>Any</option>\n                            </select>\n                        </div>\n                    </div>\n                    <div class=\"col-md-3\">\n                        <div class=\"form-group\">\n                            <label for=\"exampleFormControlInput1\">Set the location</label>\n                            <button class=\"btn- btn btn-block btn-primary\">Set</button>\n                        </div>\n                    </div>\n                </div>\n\n                <div class=\"\">\n                    <button class=\"btn-md btn fds btn-outline-primary\">Post</button>\n                </div>\n            </form>\n            <div class=\"alert alert-info\" style=\"margin-top: 50px;\" *ngIf=\"pop\">\n                As per the Indian Goverment records\n                {{positions?.city}} has <b>\n                    {{positions?.population}}</b> Populations.\n            </div>\n            <br> <br> <br>\n            <hr class=\"uk-divider-icon\">\n        </div>\n    </div>\n</div>");
 
 /***/ }),
 
@@ -460,6 +473,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _guards_auth_guard_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./guards/auth-guard.service */ "./src/app/guards/auth-guard.service.ts");
 /* harmony import */ var _application_disclaimer_disclaimer_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./application/disclaimer/disclaimer.component */ "./src/app/application/disclaimer/disclaimer.component.ts");
 /* harmony import */ var _application_userdata_userdata_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./application/userdata/userdata.component */ "./src/app/application/userdata/userdata.component.ts");
+/* harmony import */ var _wantroom_wantroom_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./wantroom/wantroom.component */ "./src/app/wantroom/wantroom.component.ts");
+
 
 
 
@@ -490,6 +505,9 @@ const routes = [
     {
         path: "water",
         component: src_app_water_water_component__WEBPACK_IMPORTED_MODULE_4__["WaterComponent"]
+    }, {
+        path: "wantroom",
+        component: _wantroom_wantroom_component__WEBPACK_IMPORTED_MODULE_16__["WantroomComponent"]
     },
     {
         path: "locality",
@@ -701,13 +719,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_app_shared_locality_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! src/app/shared/locality.service */ "./src/app/shared/locality.service.ts");
 /* harmony import */ var _shift_shift_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./shift/shift.component */ "./src/app/shift/shift.component.ts");
 /* harmony import */ var _unshift_unshift_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./unshift/unshift.component */ "./src/app/unshift/unshift.component.ts");
-/* harmony import */ var _rental_rental_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./rental/rental.component */ "./src/app/rental/rental.component.ts");
-/* harmony import */ var _application_property_property_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./application/property/property.component */ "./src/app/application/property/property.component.ts");
-/* harmony import */ var _application_profile_profile_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./application/profile/profile.component */ "./src/app/application/profile/profile.component.ts");
-/* harmony import */ var _application_property_info_property_info_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./application/property-info/property-info.component */ "./src/app/application/property-info/property-info.component.ts");
-/* harmony import */ var _application_profile_info_profile_info_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./application/profile-info/profile-info.component */ "./src/app/application/profile-info/profile-info.component.ts");
-/* harmony import */ var _application_disclaimer_disclaimer_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./application/disclaimer/disclaimer.component */ "./src/app/application/disclaimer/disclaimer.component.ts");
-/* harmony import */ var _application_userdata_userdata_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./application/userdata/userdata.component */ "./src/app/application/userdata/userdata.component.ts");
+/* harmony import */ var ng2_search_filter__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ng2-search-filter */ "./node_modules/ng2-search-filter/ng2-search-filter.js");
+/* harmony import */ var _rental_rental_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./rental/rental.component */ "./src/app/rental/rental.component.ts");
+/* harmony import */ var _application_property_property_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./application/property/property.component */ "./src/app/application/property/property.component.ts");
+/* harmony import */ var _application_profile_profile_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./application/profile/profile.component */ "./src/app/application/profile/profile.component.ts");
+/* harmony import */ var _application_property_info_property_info_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./application/property-info/property-info.component */ "./src/app/application/property-info/property-info.component.ts");
+/* harmony import */ var _application_profile_info_profile_info_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./application/profile-info/profile-info.component */ "./src/app/application/profile-info/profile-info.component.ts");
+/* harmony import */ var _application_disclaimer_disclaimer_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./application/disclaimer/disclaimer.component */ "./src/app/application/disclaimer/disclaimer.component.ts");
+/* harmony import */ var _application_userdata_userdata_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./application/userdata/userdata.component */ "./src/app/application/userdata/userdata.component.ts");
+/* harmony import */ var _wantroom_wantroom_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./wantroom/wantroom.component */ "./src/app/wantroom/wantroom.component.ts");
+
+
 
 
 
@@ -742,15 +764,16 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _application_locality_locality_component__WEBPACK_IMPORTED_MODULE_11__["LocalityComponent"],
             _shift_shift_component__WEBPACK_IMPORTED_MODULE_13__["ShiftComponent"],
             _unshift_unshift_component__WEBPACK_IMPORTED_MODULE_14__["UnshiftComponent"],
-            _rental_rental_component__WEBPACK_IMPORTED_MODULE_15__["RentalComponent"],
-            _application_property_property_component__WEBPACK_IMPORTED_MODULE_16__["PropertyComponent"],
-            _application_profile_profile_component__WEBPACK_IMPORTED_MODULE_17__["ProfileComponent"],
-            _application_property_info_property_info_component__WEBPACK_IMPORTED_MODULE_18__["PropertyInfoComponent"],
-            _application_profile_info_profile_info_component__WEBPACK_IMPORTED_MODULE_19__["ProfileInfoComponent"],
-            _application_disclaimer_disclaimer_component__WEBPACK_IMPORTED_MODULE_20__["DisclaimerComponent"],
-            _application_userdata_userdata_component__WEBPACK_IMPORTED_MODULE_21__["UserdataComponent"]
+            _rental_rental_component__WEBPACK_IMPORTED_MODULE_16__["RentalComponent"],
+            _application_property_property_component__WEBPACK_IMPORTED_MODULE_17__["PropertyComponent"],
+            _application_profile_profile_component__WEBPACK_IMPORTED_MODULE_18__["ProfileComponent"],
+            _application_property_info_property_info_component__WEBPACK_IMPORTED_MODULE_19__["PropertyInfoComponent"],
+            _application_profile_info_profile_info_component__WEBPACK_IMPORTED_MODULE_20__["ProfileInfoComponent"],
+            _application_disclaimer_disclaimer_component__WEBPACK_IMPORTED_MODULE_21__["DisclaimerComponent"],
+            _application_userdata_userdata_component__WEBPACK_IMPORTED_MODULE_22__["UserdataComponent"],
+            _wantroom_wantroom_component__WEBPACK_IMPORTED_MODULE_23__["WantroomComponent"]
         ],
-        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_6__["AppRoutingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"], ngx_clipboard__WEBPACK_IMPORTED_MODULE_5__["ClipboardModule"]],
+        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_6__["AppRoutingModule"], ng2_search_filter__WEBPACK_IMPORTED_MODULE_15__["Ng2SearchPipeModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"], ngx_clipboard__WEBPACK_IMPORTED_MODULE_5__["ClipboardModule"]],
         providers: [src_app_shared_locality_service__WEBPACK_IMPORTED_MODULE_12__["LocalityService"]],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]]
     })
@@ -1639,6 +1662,2356 @@ RentalComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/shared/CITY.ts":
+/*!********************************!*\
+  !*** ./src/app/shared/CITY.ts ***!
+  \********************************/
+/*! exports provided: CITY */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CITY", function() { return CITY; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+
+const CITY = [
+    {
+        "city": "Mumbai",
+        "admin": "Mah\u0101r\u0101shtra",
+        "country": "India",
+        "population_proper": "12691836",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "18.987807",
+        "lng": "72.836447",
+        "population": "18978000"
+    },
+    {
+        "city": "Delhi",
+        "admin": "Delhi",
+        "country": "India",
+        "population_proper": "7633213",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "28.651952",
+        "lng": "77.231495",
+        "population": "15926000"
+    },
+    {
+        "city": "Kolkata",
+        "admin": "West Bengal",
+        "country": "India",
+        "population_proper": "4631392",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "22.562627",
+        "lng": "88.363044",
+        "population": "14787000"
+    },
+    {
+        "city": "Chennai",
+        "admin": "Tamil N\u0101du ",
+        "country": "India",
+        "population_proper": "4328063",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "13.084622",
+        "lng": "80.248357",
+        "population": "7163000"
+    },
+    {
+        "city": "Bengal\u016bru",
+        "admin": "Karn\u0101taka",
+        "country": "India",
+        "population_proper": "5104047",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "12.977063",
+        "lng": "77.587106",
+        "population": "6787000"
+    },
+    {
+        "city": "Hyderabad",
+        "admin": "Andhra Pradesh",
+        "country": "India",
+        "population_proper": "3597816",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "17.384052",
+        "lng": "78.456355",
+        "population": "6376000"
+    },
+    {
+        "city": "Ahmad\u0101b\u0101d",
+        "admin": "Gujar\u0101t",
+        "country": "India",
+        "population_proper": "3719710",
+        "iso2": "IN",
+        "capital": "minor",
+        "lat": "23.025793",
+        "lng": "72.587265",
+        "population": "5375000"
+    },
+    {
+        "city": "H\u0101ora",
+        "admin": "West Bengal",
+        "country": "India",
+        "population_proper": "1027672",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "22.576882",
+        "lng": "88.318566",
+        "population": "4841638"
+    },
+    {
+        "city": "Pune",
+        "admin": "Mah\u0101r\u0101shtra",
+        "country": "India",
+        "population_proper": "2935744",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "18.513271",
+        "lng": "73.849852",
+        "population": "4672000"
+    },
+    {
+        "city": "S\u016brat",
+        "admin": "Gujar\u0101t",
+        "country": "India",
+        "population_proper": "2894504",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "21.195944",
+        "lng": "72.830232",
+        "population": "3842000"
+    },
+    {
+        "city": "Mard\u0101npur",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "2823249",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "26.430066",
+        "lng": "80.267176",
+        "population": "3162000"
+    },
+    {
+        "city": "R\u0101mpura",
+        "admin": "R\u0101jasth\u0101n",
+        "country": "India",
+        "population_proper": "2711758",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "26.884682",
+        "lng": "75.789336",
+        "population": "2917000"
+    },
+    {
+        "city": "Lucknow",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "2472011",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "26.839281",
+        "lng": "80.923133",
+        "population": "2695000"
+    },
+    {
+        "city": "N\u0101ra",
+        "admin": "Mah\u0101r\u0101shtra",
+        "country": "India",
+        "population_proper": "2228018",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "21.203096",
+        "lng": "79.089284",
+        "population": "2454000"
+    },
+    {
+        "city": "Patna",
+        "admin": "Bih\u0101r",
+        "country": "India",
+        "population_proper": "1599920",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "25.615379",
+        "lng": "85.101027",
+        "population": "2158000"
+    },
+    {
+        "city": "Indore",
+        "admin": "Madhya Pradesh",
+        "country": "India",
+        "population_proper": "1837041",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "22.717736",
+        "lng": "75.85859",
+        "population": "2026000"
+    },
+    {
+        "city": "Vadodara",
+        "admin": "Gujar\u0101t",
+        "country": "India",
+        "population_proper": "1409476",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "22.299405",
+        "lng": "73.208119",
+        "population": "1756000"
+    },
+    {
+        "city": "Bhopal",
+        "admin": "Madhya Pradesh",
+        "country": "India",
+        "population_proper": "1599914",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "23.254688",
+        "lng": "77.402892",
+        "population": "1727000"
+    },
+    {
+        "city": "Coimbatore",
+        "admin": "Tamil N\u0101du ",
+        "country": "India",
+        "population_proper": "959823",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "11.005547",
+        "lng": "76.966122",
+        "population": "1696000"
+    },
+    {
+        "city": "Ludhi\u0101na",
+        "admin": "Punjab",
+        "country": "India",
+        "population_proper": "1545368",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "30.912042",
+        "lng": "75.853789",
+        "population": "1649000"
+    },
+    {
+        "city": "\u0100gra",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "1430055",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "27.187935",
+        "lng": "78.003944",
+        "population": "1592000"
+    },
+    {
+        "city": "Kaly\u0101n",
+        "admin": "Mah\u0101r\u0101shtra",
+        "country": "India",
+        "population_proper": "1576614",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "19.243703",
+        "lng": "73.135537",
+        "population": "1576614"
+    },
+    {
+        "city": "Vish\u0101khapatnam",
+        "admin": "Andhra Pradesh",
+        "country": "India",
+        "population_proper": "1063178",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "17.704052",
+        "lng": "83.297663",
+        "population": "1529000"
+    },
+    {
+        "city": "Kochi",
+        "admin": "Kerala",
+        "country": "India",
+        "population_proper": "604696",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "9.947743",
+        "lng": "76.253802",
+        "population": "1519000"
+    },
+    {
+        "city": "N\u0101sik",
+        "admin": "Mah\u0101r\u0101shtra",
+        "country": "India",
+        "population_proper": "1289497",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "19.999963",
+        "lng": "73.776887",
+        "population": "1473000"
+    },
+    {
+        "city": "Meerut",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "1223184",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "28.980018",
+        "lng": "77.706356",
+        "population": "1398000"
+    },
+    {
+        "city": "Far\u012bd\u0101b\u0101d",
+        "admin": "Hary\u0101na",
+        "country": "India",
+        "population_proper": "1394000",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "28.411236",
+        "lng": "77.313162",
+        "population": "1394000"
+    },
+    {
+        "city": "V\u0101r\u0101nasi",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "1164404",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "25.31774",
+        "lng": "83.005811",
+        "population": "1352000"
+    },
+    {
+        "city": "Gh\u0101zi\u0101b\u0101d",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "1199191",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "28.665353",
+        "lng": "77.439148",
+        "population": "1341000"
+    },
+    {
+        "city": "\u0100sansol",
+        "admin": "West Bengal",
+        "country": "India",
+        "population_proper": "1328000",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "23.683333",
+        "lng": "86.983333",
+        "population": "1328000"
+    },
+    {
+        "city": "Jamshedpur",
+        "admin": "Jharkhand",
+        "country": "India",
+        "population_proper": "616338",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "22.802776",
+        "lng": "86.185448",
+        "population": "1300000"
+    },
+    {
+        "city": "Madurai",
+        "admin": "Tamil N\u0101du ",
+        "country": "India",
+        "population_proper": "909908",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "9.917347",
+        "lng": "78.119622",
+        "population": "1294000"
+    },
+    {
+        "city": "Jabalpur",
+        "admin": "Madhya Pradesh",
+        "country": "India",
+        "population_proper": "1030168",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "23.174495",
+        "lng": "79.935903",
+        "population": "1285000"
+    },
+    {
+        "city": "R\u0101jkot",
+        "admin": "Gujar\u0101t",
+        "country": "India",
+        "population_proper": "1099882",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "22.291606",
+        "lng": "70.793217",
+        "population": "1260000"
+    },
+    {
+        "city": "Dhanb\u0101d",
+        "admin": "Jharkhand",
+        "country": "India",
+        "population_proper": "219636",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "23.801988",
+        "lng": "86.443244",
+        "population": "1246000"
+    },
+    {
+        "city": "Amritsar",
+        "admin": "Punjab",
+        "country": "India",
+        "population_proper": "1092450",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "31.622337",
+        "lng": "74.875335",
+        "population": "1212000"
+    },
+    {
+        "city": "Warangal",
+        "admin": "Andhra Pradesh",
+        "country": "India",
+        "population_proper": "865527",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "17.978423",
+        "lng": "79.600209",
+        "population": "1203853"
+    },
+    {
+        "city": "Allah\u0101b\u0101d",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "1073438",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "25.44478",
+        "lng": "81.843217",
+        "population": "1201000"
+    },
+    {
+        "city": "Sr\u012bnagar",
+        "admin": "Jammu and Kashm\u012br",
+        "country": "India",
+        "population_proper": "975857",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "34.085652",
+        "lng": "74.805553",
+        "population": "1140000"
+    },
+    {
+        "city": "Aurang\u0101b\u0101d",
+        "admin": "Mah\u0101r\u0101shtra",
+        "country": "India",
+        "population_proper": "1016441",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "19.880943",
+        "lng": "75.346739",
+        "population": "1113000"
+    },
+    {
+        "city": "Bhilai",
+        "admin": "Chhatt\u012bsgarh",
+        "country": "India",
+        "population_proper": "1097000",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "21.209188",
+        "lng": "81.428497",
+        "population": "1097000"
+    },
+    {
+        "city": "Sol\u0101pur",
+        "admin": "Mah\u0101r\u0101shtra",
+        "country": "India",
+        "population_proper": "961112",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "17.671523",
+        "lng": "75.910437",
+        "population": "1057000"
+    },
+    {
+        "city": "Ranchi",
+        "admin": "Jharkhand",
+        "country": "India",
+        "population_proper": "846454",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "23.347768",
+        "lng": "85.338564",
+        "population": "1044000"
+    },
+    {
+        "city": "Jodhpur",
+        "admin": "R\u0101jasth\u0101n",
+        "country": "India",
+        "population_proper": "921476",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "26.26841",
+        "lng": "73.005943",
+        "population": "995000"
+    },
+    {
+        "city": "Guw\u0101h\u0101ti",
+        "admin": "Assam",
+        "country": "India",
+        "population_proper": "17516",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "26.176076",
+        "lng": "91.762932",
+        "population": "983000"
+    },
+    {
+        "city": "Chandigarh",
+        "admin": "Chand\u012bgarh",
+        "country": "India",
+        "population_proper": "914371",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "30.736292",
+        "lng": "76.788398",
+        "population": "979000"
+    },
+    {
+        "city": "Gwalior",
+        "admin": "Madhya Pradesh",
+        "country": "India",
+        "population_proper": "882458",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "26.229825",
+        "lng": "78.173369",
+        "population": "978000"
+    },
+    {
+        "city": "Thiruvananthapuram",
+        "admin": "Kerala",
+        "country": "India",
+        "population_proper": "784153",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "8.485498",
+        "lng": "76.949238",
+        "population": "954000"
+    },
+    {
+        "city": "Tiruchchir\u0101ppalli",
+        "admin": "Tamil N\u0101du ",
+        "country": "India",
+        "population_proper": "775484",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "10.815499",
+        "lng": "78.696513",
+        "population": "951000"
+    },
+    {
+        "city": "Hubli",
+        "admin": "Karn\u0101taka",
+        "country": "India",
+        "population_proper": "792804",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "15.349955",
+        "lng": "75.138619",
+        "population": "890000"
+    },
+    {
+        "city": "Mysore",
+        "admin": "Karn\u0101taka",
+        "country": "India",
+        "population_proper": "868313",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "12.292664",
+        "lng": "76.638543",
+        "population": "887000"
+    },
+    {
+        "city": "Raipur",
+        "admin": "Chhatt\u012bsgarh",
+        "country": "India",
+        "population_proper": "679995",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "21.233333",
+        "lng": "81.633333",
+        "population": "875000"
+    },
+    {
+        "city": "Salem",
+        "admin": "Tamil N\u0101du ",
+        "country": "India",
+        "population_proper": "778396",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "11.651165",
+        "lng": "78.158672",
+        "population": "873000"
+    },
+    {
+        "city": "Bhubaneshwar",
+        "admin": "Odisha",
+        "country": "India",
+        "population_proper": "762243",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "20.272411",
+        "lng": "85.833853",
+        "population": "844000"
+    },
+    {
+        "city": "Kota",
+        "admin": "R\u0101jasth\u0101n",
+        "country": "India",
+        "population_proper": "763088",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "25.182544",
+        "lng": "75.839065",
+        "population": "827000"
+    },
+    {
+        "city": "Jh\u0101nsi",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "412927",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "25.458872",
+        "lng": "78.579943",
+        "population": "826494"
+    },
+    {
+        "city": "Bareilly",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "745435",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "28.347023",
+        "lng": "79.421934",
+        "population": "817000"
+    },
+    {
+        "city": "Al\u012bgarh",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "753207",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "27.881453",
+        "lng": "78.07464",
+        "population": "805000"
+    },
+    {
+        "city": "Bhiwandi",
+        "admin": "Mah\u0101r\u0101shtra",
+        "country": "India",
+        "population_proper": "707035",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "19.300229",
+        "lng": "73.058813",
+        "population": "795000"
+    },
+    {
+        "city": "Jammu",
+        "admin": "Jammu and Kashm\u012br",
+        "country": "India",
+        "population_proper": "465567",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "32.735686",
+        "lng": "74.869112",
+        "population": "791000"
+    },
+    {
+        "city": "Mor\u0101d\u0101b\u0101d",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "721139",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "28.838931",
+        "lng": "78.776838",
+        "population": "787000"
+    },
+    {
+        "city": "Mangalore",
+        "admin": "Karn\u0101taka",
+        "country": "India",
+        "population_proper": "417387",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "12.865371",
+        "lng": "74.842432",
+        "population": "776632"
+    },
+    {
+        "city": "Kolh\u0101pur",
+        "admin": "Mah\u0101r\u0101shtra",
+        "country": "India",
+        "population_proper": "561841",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "16.695633",
+        "lng": "74.231669",
+        "population": "750000"
+    },
+    {
+        "city": "Amr\u0101vati",
+        "admin": "Mah\u0101r\u0101shtra",
+        "country": "India",
+        "population_proper": "603837",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "20.933272",
+        "lng": "77.75152",
+        "population": "734451"
+    },
+    {
+        "city": "Dehra D\u016bn",
+        "admin": "Uttarakhand",
+        "country": "India",
+        "population_proper": "578420",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "30.324427",
+        "lng": "78.033922",
+        "population": "714223"
+    },
+    {
+        "city": "M\u0101legaon Camp",
+        "admin": "Mah\u0101r\u0101shtra",
+        "country": "India",
+        "population_proper": "435362",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "20.569974",
+        "lng": "74.515415",
+        "population": "690844"
+    },
+    {
+        "city": "Nellore",
+        "admin": "Andhra Pradesh",
+        "country": "India",
+        "population_proper": "404158",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "14.449918",
+        "lng": "79.986967",
+        "population": "678004"
+    },
+    {
+        "city": "Gop\u0101lpur",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "674246",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "26.735389",
+        "lng": "83.38064",
+        "population": "674246"
+    },
+    {
+        "city": "Shimoga",
+        "admin": "Karn\u0101taka",
+        "country": "India",
+        "population_proper": "319550",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "13.932424",
+        "lng": "75.572555",
+        "population": "654055"
+    },
+    {
+        "city": "Tirupp\u016br",
+        "admin": "Tamil N\u0101du ",
+        "country": "India",
+        "population_proper": "444543",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "11.104096",
+        "lng": "77.346402",
+        "population": "650000"
+    },
+    {
+        "city": "Raurkela",
+        "admin": "Odisha",
+        "country": "India",
+        "population_proper": "483629",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "22.224964",
+        "lng": "84.864143",
+        "population": "625831"
+    },
+    {
+        "city": "N\u0101nded",
+        "admin": "Mah\u0101r\u0101shtra",
+        "country": "India",
+        "population_proper": "550564",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "19.160227",
+        "lng": "77.314971",
+        "population": "623708"
+    },
+    {
+        "city": "Belgaum",
+        "admin": "Karn\u0101taka",
+        "country": "India",
+        "population_proper": "610189",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "15.862643",
+        "lng": "74.508534",
+        "population": "608756"
+    },
+    {
+        "city": "S\u0101ngli",
+        "admin": "Mah\u0101r\u0101shtra",
+        "country": "India",
+        "population_proper": "601214",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "16.856777",
+        "lng": "74.569196",
+        "population": "601214"
+    },
+    {
+        "city": "Ch\u0101nda",
+        "admin": "Mah\u0101r\u0101shtra",
+        "country": "India",
+        "population_proper": "328351",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "19.950758",
+        "lng": "79.295229",
+        "population": "595118"
+    },
+    {
+        "city": "Ajmer",
+        "admin": "R\u0101jasth\u0101n",
+        "country": "India",
+        "population_proper": "517911",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "26.452103",
+        "lng": "74.638667",
+        "population": "589985"
+    },
+    {
+        "city": "Cuttack",
+        "admin": "Odisha",
+        "country": "India",
+        "population_proper": "580000",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "20.522922",
+        "lng": "85.78813",
+        "population": "580000"
+    },
+    {
+        "city": "B\u012bkaner",
+        "admin": "R\u0101jasth\u0101n",
+        "country": "India",
+        "population_proper": "395908",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "28.017623",
+        "lng": "73.314955",
+        "population": "576015"
+    },
+    {
+        "city": "Bh\u0101vnagar",
+        "admin": "Gujar\u0101t",
+        "country": "India",
+        "population_proper": "464602",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "21.774455",
+        "lng": "72.152496",
+        "population": "554978"
+    },
+    {
+        "city": "Hisar",
+        "admin": "Hary\u0101na",
+        "country": "India",
+        "population_proper": "301249",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "29.153938",
+        "lng": "75.722944",
+        "population": "544829"
+    },
+    {
+        "city": "Bil\u0101spur",
+        "admin": "Chhatt\u012bsgarh",
+        "country": "India",
+        "population_proper": "330106",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "22.080046",
+        "lng": "82.155431",
+        "population": "543454"
+    },
+    {
+        "city": "Tirunelveli",
+        "admin": "Tamil N\u0101du ",
+        "country": "India",
+        "population_proper": "435844",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "8.725181",
+        "lng": "77.684519",
+        "population": "542200"
+    },
+    {
+        "city": "Gunt\u016br",
+        "admin": "Andhra Pradesh",
+        "country": "India",
+        "population_proper": "530577",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "16.299737",
+        "lng": "80.457293",
+        "population": "530577"
+    },
+    {
+        "city": "Shiliguri",
+        "admin": "West Bengal",
+        "country": "India",
+        "population_proper": "515574",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "26.710035",
+        "lng": "88.428512",
+        "population": "515574"
+    },
+    {
+        "city": "Ujjain",
+        "admin": "Madhya Pradesh",
+        "country": "India",
+        "population_proper": "457346",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "23.182387",
+        "lng": "75.776433",
+        "population": "513350"
+    },
+    {
+        "city": "Davangere",
+        "admin": "Karn\u0101taka",
+        "country": "India",
+        "population_proper": "435125",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "14.469237",
+        "lng": "75.92375",
+        "population": "503564"
+    },
+    {
+        "city": "Akola",
+        "admin": "Mah\u0101r\u0101shtra",
+        "country": "India",
+        "population_proper": "428857",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "20.709569",
+        "lng": "76.998103",
+        "population": "503502"
+    },
+    {
+        "city": "Sah\u0101ranpur",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "484873",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "29.967896",
+        "lng": "77.545221",
+        "population": "484873"
+    },
+    {
+        "city": "Gulbarga",
+        "admin": "Karn\u0101taka",
+        "country": "India",
+        "population_proper": "481478",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "17.335827",
+        "lng": "76.83757",
+        "population": "483615"
+    },
+    {
+        "city": "Bh\u0101tp\u0101ra",
+        "admin": "West Bengal",
+        "country": "India",
+        "population_proper": "483129",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "22.866431",
+        "lng": "88.401129",
+        "population": "483129"
+    },
+    {
+        "city": "Dh\u016blia",
+        "admin": "Mah\u0101r\u0101shtra",
+        "country": "India",
+        "population_proper": "366980",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "20.901299",
+        "lng": "74.777373",
+        "population": "479073"
+    },
+    {
+        "city": "Udaipur",
+        "admin": "R\u0101jasth\u0101n",
+        "country": "India",
+        "population_proper": "422784",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "24.57951",
+        "lng": "73.690508",
+        "population": "469737"
+    },
+    {
+        "city": "Bellary",
+        "admin": "Karn\u0101taka",
+        "country": "India",
+        "population_proper": "336681",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "15.142049",
+        "lng": "76.92398",
+        "population": "445388"
+    },
+    {
+        "city": "Tuticorin",
+        "admin": "Tamil N\u0101du ",
+        "country": "India",
+        "population_proper": "436094",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "8.805038",
+        "lng": "78.151884",
+        "population": "436094"
+    },
+    {
+        "city": "Kurnool",
+        "admin": "Andhra Pradesh",
+        "country": "India",
+        "population_proper": "278124",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "15.828865",
+        "lng": "78.036021",
+        "population": "424920"
+    },
+    {
+        "city": "Gaya",
+        "admin": "Bih\u0101r",
+        "country": "India",
+        "population_proper": "423692",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "24.796858",
+        "lng": "85.003852",
+        "population": "423692"
+    },
+    {
+        "city": "S\u012bkar",
+        "admin": "R\u0101jasth\u0101n",
+        "country": "India",
+        "population_proper": "237579",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "27.614778",
+        "lng": "75.138671",
+        "population": "400000"
+    },
+    {
+        "city": "Tumk\u016br",
+        "admin": "Karn\u0101taka",
+        "country": "India",
+        "population_proper": "307359",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "13.341358",
+        "lng": "77.102203",
+        "population": "399606"
+    },
+    {
+        "city": "Kollam",
+        "admin": "Kerala",
+        "country": "India",
+        "population_proper": "394163",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "8.881131",
+        "lng": "76.584694",
+        "population": "394163"
+    },
+    {
+        "city": "Ahmadnagar",
+        "admin": "Mah\u0101r\u0101shtra",
+        "country": "India",
+        "population_proper": "367140",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "19.094571",
+        "lng": "74.738432",
+        "population": "391760"
+    },
+    {
+        "city": "Bh\u012blw\u0101ra",
+        "admin": "R\u0101jasth\u0101n",
+        "country": "India",
+        "population_proper": "326431",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "25.347071",
+        "lng": "74.640812",
+        "population": "389911"
+    },
+    {
+        "city": "Niz\u0101m\u0101b\u0101d",
+        "admin": "Andhra Pradesh",
+        "country": "India",
+        "population_proper": "305438",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "18.673151",
+        "lng": "78.10008",
+        "population": "388505"
+    },
+    {
+        "city": "Parbhani",
+        "admin": "Mah\u0101r\u0101shtra",
+        "country": "India",
+        "population_proper": "289629",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "19.268553",
+        "lng": "76.770807",
+        "population": "378326"
+    },
+    {
+        "city": "Shillong",
+        "admin": "Megh\u0101laya",
+        "country": "India",
+        "population_proper": "354325",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "25.573987",
+        "lng": "91.896807",
+        "population": "375527"
+    },
+    {
+        "city": "L\u0101t\u016br",
+        "admin": "Mah\u0101r\u0101shtra",
+        "country": "India",
+        "population_proper": "348967",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "18.399487",
+        "lng": "76.584252",
+        "population": "374394"
+    },
+    {
+        "city": "R\u0101jap\u0101laiyam",
+        "admin": "Tamil N\u0101du ",
+        "country": "India",
+        "population_proper": "307959",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "9.451111",
+        "lng": "77.556121",
+        "population": "369991"
+    },
+    {
+        "city": "Bh\u0101galpur",
+        "admin": "Bih\u0101r",
+        "country": "India",
+        "population_proper": "361548",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "25.244462",
+        "lng": "86.971832",
+        "population": "361548"
+    },
+    {
+        "city": "Muzaffarnagar",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "349706",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "29.470914",
+        "lng": "77.703324",
+        "population": "349706"
+    },
+    {
+        "city": "Muzaffarpur",
+        "admin": "Bih\u0101r",
+        "country": "India",
+        "population_proper": "333200",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "26.122593",
+        "lng": "85.390553",
+        "population": "333200"
+    },
+    {
+        "city": "Mathura",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "330511",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "27.503501",
+        "lng": "77.672145",
+        "population": "330511"
+    },
+    {
+        "city": "Pati\u0101la",
+        "admin": "Punjab",
+        "country": "India",
+        "population_proper": "329224",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "30.336245",
+        "lng": "76.392199",
+        "population": "329224"
+    },
+    {
+        "city": "Saugor",
+        "admin": "Madhya Pradesh",
+        "country": "India",
+        "population_proper": "247333",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "23.838766",
+        "lng": "78.738738",
+        "population": "328240"
+    },
+    {
+        "city": "Brahmapur",
+        "admin": "Odisha",
+        "country": "India",
+        "population_proper": "324726",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "19.311514",
+        "lng": "84.792903",
+        "population": "324726"
+    },
+    {
+        "city": "Sh\u0101hb\u0101zpur",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "320434",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "27.874116",
+        "lng": "79.879327",
+        "population": "320434"
+    },
+    {
+        "city": "New Delhi",
+        "admin": "Delhi",
+        "country": "India",
+        "population_proper": "317797",
+        "iso2": "IN",
+        "capital": "primary",
+        "lat": "28.6",
+        "lng": "77.2",
+        "population": "317797"
+    },
+    {
+        "city": "Rohtak",
+        "admin": "Hary\u0101na",
+        "country": "India",
+        "population_proper": "317245",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "28.894473",
+        "lng": "76.589166",
+        "population": "317245"
+    },
+    {
+        "city": "Samlaip\u0101dar",
+        "admin": "Odisha",
+        "country": "India",
+        "population_proper": "162887",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "21.478072",
+        "lng": "83.990505",
+        "population": "310852"
+    },
+    {
+        "city": "Ratl\u0101m",
+        "admin": "Madhya Pradesh",
+        "country": "India",
+        "population_proper": "236843",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "23.330331",
+        "lng": "75.040315",
+        "population": "307229"
+    },
+    {
+        "city": "F\u012broz\u0101b\u0101d",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "306409",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "27.150917",
+        "lng": "78.397808",
+        "population": "306409"
+    },
+    {
+        "city": "R\u0101jahmundry",
+        "admin": "Andhra Pradesh",
+        "country": "India",
+        "population_proper": "304804",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "17.005171",
+        "lng": "81.777839",
+        "population": "304804"
+    },
+    {
+        "city": "Barddham\u0101n",
+        "admin": "West Bengal",
+        "country": "India",
+        "population_proper": "301725",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "23.255716",
+        "lng": "87.856906",
+        "population": "301725"
+    },
+    {
+        "city": "B\u012bdar",
+        "admin": "Karn\u0101taka",
+        "country": "India",
+        "population_proper": "204071",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "17.913309",
+        "lng": "77.530105",
+        "population": "300136"
+    },
+    {
+        "city": "Bamanpur\u012b",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "296418",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "28.804495",
+        "lng": "79.040305",
+        "population": "296418"
+    },
+    {
+        "city": "K\u0101kin\u0101da",
+        "admin": "Andhra Pradesh",
+        "country": "India",
+        "population_proper": "292923",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "16.960361",
+        "lng": "82.238086",
+        "population": "292923"
+    },
+    {
+        "city": "P\u0101n\u012bpat",
+        "admin": "Hary\u0101na",
+        "country": "India",
+        "population_proper": "292808",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "29.387471",
+        "lng": "76.968246",
+        "population": "292808"
+    },
+    {
+        "city": "Khammam",
+        "admin": "Andhra Pradesh",
+        "country": "India",
+        "population_proper": "170503",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "17.247672",
+        "lng": "80.143682",
+        "population": "290839"
+    },
+    {
+        "city": "Bhuj",
+        "admin": "Gujar\u0101t",
+        "country": "India",
+        "population_proper": "289429",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "23.253972",
+        "lng": "69.669281",
+        "population": "289429"
+    },
+    {
+        "city": "Kar\u012bmnagar",
+        "admin": "Andhra Pradesh",
+        "country": "India",
+        "population_proper": "228745",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "18.436738",
+        "lng": "79.13222",
+        "population": "288251"
+    },
+    {
+        "city": "Tirupati",
+        "admin": "Andhra Pradesh",
+        "country": "India",
+        "population_proper": "250821",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "13.635505",
+        "lng": "79.419888",
+        "population": "287035"
+    },
+    {
+        "city": "Hospet",
+        "admin": "Karn\u0101taka",
+        "country": "India",
+        "population_proper": "197846",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "15.269537",
+        "lng": "76.387103",
+        "population": "286007"
+    },
+    {
+        "city": "Chikka Mandya",
+        "admin": "Karn\u0101taka",
+        "country": "India",
+        "population_proper": "134845",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "12.545602",
+        "lng": "76.895078",
+        "population": "285034"
+    },
+    {
+        "city": "Alwar",
+        "admin": "R\u0101jasth\u0101n",
+        "country": "India",
+        "population_proper": "283228",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "27.566291",
+        "lng": "76.610202",
+        "population": "283228"
+    },
+    {
+        "city": "Aizawl",
+        "admin": "Mizoram",
+        "country": "India",
+        "population_proper": "265331",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "23.736701",
+        "lng": "92.714596",
+        "population": "283021"
+    },
+    {
+        "city": "Bij\u0101pur",
+        "admin": "Karn\u0101taka",
+        "country": "India",
+        "population_proper": "270870",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "16.827715",
+        "lng": "75.718988",
+        "population": "271064"
+    },
+    {
+        "city": "Imphal",
+        "admin": "Manipur",
+        "country": "India",
+        "population_proper": "223523",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "24.808053",
+        "lng": "93.944203",
+        "population": "264986"
+    },
+    {
+        "city": "Tharati Etawah",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "257448",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "26.758236",
+        "lng": "79.014875",
+        "population": "257448"
+    },
+    {
+        "city": "R\u0101ich\u016br",
+        "admin": "Karn\u0101taka",
+        "country": "India",
+        "population_proper": "225962",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "16.205459",
+        "lng": "77.35567",
+        "population": "255240"
+    },
+    {
+        "city": "Path\u0101nkot",
+        "admin": "Punjab",
+        "country": "India",
+        "population_proper": "174306",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "32.274842",
+        "lng": "75.652865",
+        "population": "253987"
+    },
+    {
+        "city": "Ch\u012br\u0101la",
+        "admin": "Andhra Pradesh",
+        "country": "India",
+        "population_proper": "87001",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "15.823849",
+        "lng": "80.352187",
+        "population": "253000"
+    },
+    {
+        "city": "Son\u012bpat",
+        "admin": "Hary\u0101na",
+        "country": "India",
+        "population_proper": "250521",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "28.994778",
+        "lng": "77.019375",
+        "population": "250521"
+    },
+    {
+        "city": "Mirz\u0101pur",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "233691",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "25.144902",
+        "lng": "82.565335",
+        "population": "245817"
+    },
+    {
+        "city": "H\u0101pur",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "242920",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "28.729845",
+        "lng": "77.780681",
+        "population": "242920"
+    },
+    {
+        "city": "Porbandar",
+        "admin": "Gujar\u0101t",
+        "country": "India",
+        "population_proper": "138872",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "21.641346",
+        "lng": "69.600868",
+        "population": "234684"
+    },
+    {
+        "city": "Bharatpur",
+        "admin": "R\u0101jasth\u0101n",
+        "country": "India",
+        "population_proper": "229384",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "27.215251",
+        "lng": "77.492786",
+        "population": "229384"
+    },
+    {
+        "city": "Puducherry",
+        "admin": "Puducherry",
+        "country": "India",
+        "population_proper": "227411",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "11.933812",
+        "lng": "79.829792",
+        "population": "227411"
+    },
+    {
+        "city": "Karn\u0101l",
+        "admin": "Hary\u0101na",
+        "country": "India",
+        "population_proper": "225049",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "29.691971",
+        "lng": "76.984483",
+        "population": "225049"
+    },
+    {
+        "city": "N\u0101gercoil",
+        "admin": "Tamil N\u0101du ",
+        "country": "India",
+        "population_proper": "213858",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "8.177313",
+        "lng": "77.43437",
+        "population": "224329"
+    },
+    {
+        "city": "Thanj\u0101v\u016br",
+        "admin": "Tamil N\u0101du ",
+        "country": "India",
+        "population_proper": "219571",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "10.785233",
+        "lng": "79.139093",
+        "population": "219571"
+    },
+    {
+        "city": "P\u0101li",
+        "admin": "R\u0101jasth\u0101n",
+        "country": "India",
+        "population_proper": "207394",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "25.775125",
+        "lng": "73.320611",
+        "population": "210103"
+    },
+    {
+        "city": "Agartala",
+        "admin": "Tripura",
+        "country": "India",
+        "population_proper": "203264",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "23.836049",
+        "lng": "91.279386",
+        "population": "203264"
+    },
+    {
+        "city": "Ongole",
+        "admin": "Andhra Pradesh",
+        "country": "India",
+        "population_proper": "172872",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "15.503565",
+        "lng": "80.044541",
+        "population": "202860"
+    },
+    {
+        "city": "Puri",
+        "admin": "Odisha",
+        "country": "India",
+        "population_proper": "201026",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "19.798254",
+        "lng": "85.824938",
+        "population": "201026"
+    },
+    {
+        "city": "Dindigul",
+        "admin": "Tamil N\u0101du ",
+        "country": "India",
+        "population_proper": "200797",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "10.362853",
+        "lng": "77.975827",
+        "population": "200797"
+    },
+    {
+        "city": "Haldia",
+        "admin": "West Bengal",
+        "country": "India",
+        "population_proper": "200762",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "22.025278",
+        "lng": "88.058333",
+        "population": "200762"
+    },
+    {
+        "city": "Bulandshahr",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "198612",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "28.403922",
+        "lng": "77.857731",
+        "population": "198612"
+    },
+    {
+        "city": "Purnea",
+        "admin": "Bih\u0101r",
+        "country": "India",
+        "population_proper": "198453",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "25.776703",
+        "lng": "87.473655",
+        "population": "198453"
+    },
+    {
+        "city": "Proddat\u016br",
+        "admin": "Andhra Pradesh",
+        "country": "India",
+        "population_proper": "177797",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "14.7502",
+        "lng": "78.548129",
+        "population": "197451"
+    },
+    {
+        "city": "Gurgaon",
+        "admin": "Hary\u0101na",
+        "country": "India",
+        "population_proper": "197340",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "28.460105",
+        "lng": "77.026352",
+        "population": "197340"
+    },
+    {
+        "city": "Kh\u0101n\u0101pur",
+        "admin": "Mah\u0101r\u0101shtra",
+        "country": "India",
+        "population_proper": "197233",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "21.273716",
+        "lng": "76.117376",
+        "population": "197233"
+    },
+    {
+        "city": "Machil\u012bpatnam",
+        "admin": "Andhra Pradesh",
+        "country": "India",
+        "population_proper": "192827",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "16.187466",
+        "lng": "81.13888",
+        "population": "192827"
+    },
+    {
+        "city": "Bhiw\u0101ni",
+        "admin": "Hary\u0101na",
+        "country": "India",
+        "population_proper": "190855",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "28.793044",
+        "lng": "76.13968",
+        "population": "190855"
+    },
+    {
+        "city": "Nandy\u0101l",
+        "admin": "Andhra Pradesh",
+        "country": "India",
+        "population_proper": "165337",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "15.477994",
+        "lng": "78.483605",
+        "population": "188654"
+    },
+    {
+        "city": "Bhus\u0101val",
+        "admin": "Mah\u0101r\u0101shtra",
+        "country": "India",
+        "population_proper": "172366",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "21.043649",
+        "lng": "75.785058",
+        "population": "183001"
+    },
+    {
+        "city": "Bharauri",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "182218",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "27.598203",
+        "lng": "81.694709",
+        "population": "182218"
+    },
+    {
+        "city": "Tonk",
+        "admin": "R\u0101jasth\u0101n",
+        "country": "India",
+        "population_proper": "151331",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "26.168672",
+        "lng": "75.786111",
+        "population": "181734"
+    },
+    {
+        "city": "Sirsa",
+        "admin": "Hary\u0101na",
+        "country": "India",
+        "population_proper": "160129",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "29.534893",
+        "lng": "75.028981",
+        "population": "181639"
+    },
+    {
+        "city": "Vizianagaram",
+        "admin": "Andhra Pradesh",
+        "country": "India",
+        "population_proper": "1194",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "18.11329",
+        "lng": "83.397743",
+        "population": "179358"
+    },
+    {
+        "city": "Vellore",
+        "admin": "Tamil N\u0101du ",
+        "country": "India",
+        "population_proper": "177081",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "12.905769",
+        "lng": "79.137104",
+        "population": "177081"
+    },
+    {
+        "city": "Alappuzha",
+        "admin": "Kerala",
+        "country": "India",
+        "population_proper": "176783",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "9.494647",
+        "lng": "76.331108",
+        "population": "176783"
+    },
+    {
+        "city": "Shimla",
+        "admin": "Him\u0101chal Pradesh",
+        "country": "India",
+        "population_proper": "173503",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "31.104423",
+        "lng": "77.166623",
+        "population": "173503"
+    },
+    {
+        "city": "Hindupur",
+        "admin": "Andhra Pradesh",
+        "country": "India",
+        "population_proper": "133298",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "13.828065",
+        "lng": "77.491425",
+        "population": "168312"
+    },
+    {
+        "city": "B\u0101ram\u016bla",
+        "admin": "Jammu and Kashm\u012br",
+        "country": "India",
+        "population_proper": "77276",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "34.209004",
+        "lng": "74.342853",
+        "population": "167986"
+    },
+    {
+        "city": "Bakshpur",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "166480",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "25.894283",
+        "lng": "80.792104",
+        "population": "166480"
+    },
+    {
+        "city": "Dibrugarh",
+        "admin": "Assam",
+        "country": "India",
+        "population_proper": "122155",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "27.479888",
+        "lng": "94.90837",
+        "population": "166366"
+    },
+    {
+        "city": "Said\u0101pur",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "164435",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "27.598784",
+        "lng": "80.75089",
+        "population": "164435"
+    },
+    {
+        "city": "Navs\u0101ri",
+        "admin": "Gujar\u0101t",
+        "country": "India",
+        "population_proper": "163000",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "20.85",
+        "lng": "72.916667",
+        "population": "163000"
+    },
+    {
+        "city": "Budaun",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "161555",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "28.038114",
+        "lng": "79.126677",
+        "population": "161555"
+    },
+    {
+        "city": "Cuddalore",
+        "admin": "Tamil N\u0101du ",
+        "country": "India",
+        "population_proper": "158569",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "11.746289",
+        "lng": "79.764362",
+        "population": "158569"
+    },
+    {
+        "city": "Har\u012bpur",
+        "admin": "Punjab",
+        "country": "India",
+        "population_proper": "158142",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "31.463218",
+        "lng": "75.986418",
+        "population": "158142"
+    },
+    {
+        "city": "Krishn\u0101puram",
+        "admin": "Tamil N\u0101du ",
+        "country": "India",
+        "population_proper": "155029",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "12.869617",
+        "lng": "79.719469",
+        "population": "155029"
+    },
+    {
+        "city": "Fyz\u0101b\u0101d",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "153047",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "26.775486",
+        "lng": "82.150182",
+        "population": "153047"
+    },
+    {
+        "city": "Silchar",
+        "admin": "Assam",
+        "country": "India",
+        "population_proper": "152393",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "24.827327",
+        "lng": "92.797868",
+        "population": "152393"
+    },
+    {
+        "city": "Amb\u0101la",
+        "admin": "Hary\u0101na",
+        "country": "India",
+        "population_proper": "146787",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "30.360993",
+        "lng": "76.797819",
+        "population": "146787"
+    },
+    {
+        "city": "Krishnanagar",
+        "admin": "West Bengal",
+        "country": "India",
+        "population_proper": "145926",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "23.405761",
+        "lng": "88.490733",
+        "population": "145926"
+    },
+    {
+        "city": "Kol\u0101r",
+        "admin": "Karn\u0101taka",
+        "country": "India",
+        "population_proper": "126441",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "13.137679",
+        "lng": "78.129989",
+        "population": "144625"
+    },
+    {
+        "city": "Kumbakonam",
+        "admin": "Tamil N\u0101du ",
+        "country": "India",
+        "population_proper": "139264",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "10.959789",
+        "lng": "79.377472",
+        "population": "139264"
+    },
+    {
+        "city": "Tiruvann\u0101malai",
+        "admin": "Tamil N\u0101du ",
+        "country": "India",
+        "population_proper": "138243",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "12.230204",
+        "lng": "79.072954",
+        "population": "138243"
+    },
+    {
+        "city": "P\u012blibh\u012bt",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "131008",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "28.631245",
+        "lng": "79.804362",
+        "population": "131008"
+    },
+    {
+        "city": "Abohar",
+        "admin": "Punjab",
+        "country": "India",
+        "population_proper": "130603",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "30.144533",
+        "lng": "74.19552",
+        "population": "130603"
+    },
+    {
+        "city": "Port Blair",
+        "admin": "Andaman and Nicobar Islands",
+        "country": "India",
+        "population_proper": "112050",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "11.666667",
+        "lng": "92.75",
+        "population": "127562"
+    },
+    {
+        "city": "Al\u012bpur Du\u0101r",
+        "admin": "West Bengal",
+        "country": "India",
+        "population_proper": "127342",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "26.4835",
+        "lng": "89.522855",
+        "population": "127342"
+    },
+    {
+        "city": "Hat\u012bsa",
+        "admin": "Uttar Pradesh",
+        "country": "India",
+        "population_proper": "126882",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "27.592698",
+        "lng": "78.013843",
+        "population": "126882"
+    },
+    {
+        "city": "V\u0101lp\u0101rai",
+        "admin": "Tamil N\u0101du ",
+        "country": "India",
+        "population_proper": "90353",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "10.325163",
+        "lng": "76.955299",
+        "population": "114308"
+    },
+    {
+        "city": "Aurang\u0101b\u0101d",
+        "admin": "Bih\u0101r",
+        "country": "India",
+        "population_proper": "95929",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "24.752037",
+        "lng": "84.374202",
+        "population": "95929"
+    },
+    {
+        "city": "Kohima",
+        "admin": "N\u0101g\u0101land",
+        "country": "India",
+        "population_proper": "92113",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "25.674673",
+        "lng": "94.110988",
+        "population": "92113"
+    },
+    {
+        "city": "Gangtok",
+        "admin": "Sikkim",
+        "country": "India",
+        "population_proper": "30700",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "27.325739",
+        "lng": "88.612155",
+        "population": "77900"
+    },
+    {
+        "city": "Kar\u016br",
+        "admin": "Tamil N\u0101du ",
+        "country": "India",
+        "population_proper": "76915",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "10.960277",
+        "lng": "78.076753",
+        "population": "76915"
+    },
+    {
+        "city": "Jorh\u0101t",
+        "admin": "Assam",
+        "country": "India",
+        "population_proper": "69033",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "26.757509",
+        "lng": "94.203055",
+        "population": "69033"
+    },
+    {
+        "city": "Panaji",
+        "admin": "Goa",
+        "country": "India",
+        "population_proper": "65586",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "15.498289",
+        "lng": "73.824541",
+        "population": "65586"
+    },
+    {
+        "city": "Saidpur",
+        "admin": "Jammu and Kashm\u012br",
+        "country": "India",
+        "population_proper": "58416",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "34.318174",
+        "lng": "74.457093",
+        "population": "63035"
+    },
+    {
+        "city": "Tezpur",
+        "admin": "Assam",
+        "country": "India",
+        "population_proper": "58851",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "26.633333",
+        "lng": "92.8",
+        "population": "58851"
+    },
+    {
+        "city": "Itanagar",
+        "admin": "Arun\u0101chal Pradesh",
+        "country": "India",
+        "population_proper": "44971",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "27.102349",
+        "lng": "93.692047",
+        "population": "44971"
+    },
+    {
+        "city": "Daman",
+        "admin": "Dam\u0101n and Diu",
+        "country": "India",
+        "population_proper": "39737",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "20.414315",
+        "lng": "72.83236",
+        "population": "39737"
+    },
+    {
+        "city": "Silvassa",
+        "admin": "D\u0101dra and Nagar Haveli",
+        "country": "India",
+        "population_proper": "27359",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "20.273855",
+        "lng": "72.996728",
+        "population": "27359"
+    },
+    {
+        "city": "Diu",
+        "admin": "Dam\u0101n and Diu",
+        "country": "India",
+        "population_proper": "23779",
+        "iso2": "IN",
+        "capital": "",
+        "lat": "20.715115",
+        "lng": "70.987952",
+        "population": "23779"
+    },
+    {
+        "city": "Dispur",
+        "admin": "Assam",
+        "country": "India",
+        "population_proper": "16140",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "26.135638",
+        "lng": "91.800688",
+        "population": "16140"
+    },
+    {
+        "city": "Kavaratti",
+        "admin": "Lakshadweep",
+        "country": "India",
+        "population_proper": "10688",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "10.566667",
+        "lng": "72.616667",
+        "population": "10688"
+    },
+    {
+        "city": "Calicut",
+        "admin": "Kerala",
+        "country": "India",
+        "population_proper": "",
+        "iso2": "IN",
+        "capital": "minor",
+        "lat": "11.248016",
+        "lng": "75.780402",
+        "population": ""
+    },
+    {
+        "city": "Kagazn\u0101g\u0101r",
+        "admin": "Andhra Pradesh",
+        "country": "India",
+        "population_proper": "",
+        "iso2": "IN",
+        "capital": "minor",
+        "lat": "19.331589",
+        "lng": "79.466051",
+        "population": ""
+    },
+    {
+        "city": "Jaipur",
+        "admin": "R\u0101jasth\u0101n",
+        "country": "India",
+        "population_proper": "",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "26.913312",
+        "lng": "75.787872",
+        "population": ""
+    },
+    {
+        "city": "Ghandinagar",
+        "admin": "Gujar\u0101t",
+        "country": "India",
+        "population_proper": "",
+        "iso2": "IN",
+        "capital": "admin",
+        "lat": "23.216667",
+        "lng": "72.683333",
+        "population": ""
+    },
+    {
+        "city": "Panchkula",
+        "admin": "Hary\u0101na",
+        "country": "India",
+        "population_proper": "",
+        "iso2": "IN",
+        "capital": "minor",
+        "lat": "30.691512",
+        "lng": "76.853736",
+        "population": ""
+    }
+];
+
+
+/***/ }),
+
 /***/ "./src/app/shared/auths.service.ts":
 /*!*****************************************!*\
   !*** ./src/app/shared/auths.service.ts ***!
@@ -1988,6 +4361,119 @@ UnshiftComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./unshift.component.scss */ "./src/app/unshift/unshift.component.scss")).default]
     })
 ], UnshiftComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/wantroom/wantroom.component.scss":
+/*!**************************************************!*\
+  !*** ./src/app/wantroom/wantroom.component.scss ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".fds {\n  float: right;\n}\n\n.badge {\n  cursor: pointer;\n  margin: 4px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvd2FudHJvb20vQzpcXFVzZXJzXFxBZG1pbmlzdHJhdG9yXFxEb2N1bWVudHNcXHJhY2Uvc3JjXFxhcHBcXHdhbnRyb29tXFx3YW50cm9vbS5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvd2FudHJvb20vd2FudHJvb20uY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxZQUFBO0FDQ0Y7O0FEQ0E7RUFDRSxlQUFBO0VBQ0EsV0FBQTtBQ0VGIiwiZmlsZSI6InNyYy9hcHAvd2FudHJvb20vd2FudHJvb20uY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZmRzIHtcclxuICBmbG9hdDogcmlnaHQ7XHJcbn1cclxuLmJhZGdlIHtcclxuICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgbWFyZ2luOiA0cHg7XHJcbn1cclxuXHJcbi5jYXJkc3Mge1xyXG4vLyAgIGhlaWdodDogMTUwcHg7XHJcbi8vICAgb3ZlcmZsb3c6IGF1dG87XHJcbn1cclxuIiwiLmZkcyB7XG4gIGZsb2F0OiByaWdodDtcbn1cblxuLmJhZGdlIHtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICBtYXJnaW46IDRweDtcbn0iXX0= */");
+
+/***/ }),
+
+/***/ "./src/app/wantroom/wantroom.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/wantroom/wantroom.component.ts ***!
+  \************************************************/
+/*! exports provided: WantroomComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WantroomComponent", function() { return WantroomComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _shared_locality_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../shared/locality.service */ "./src/app/shared/locality.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _shared_CITY__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../shared/CITY */ "./src/app/shared/CITY.ts");
+
+
+
+
+
+let WantroomComponent = class WantroomComponent {
+    constructor(loc, router) {
+        this.loc = loc;
+        this.router = router;
+        this.prop = {
+            starts: 0,
+            ends: 0
+        };
+        this.profile = {
+            img: '',
+            email: '',
+            date: '',
+            fullname: '',
+            username: '',
+            properties: '',
+            owned: '',
+            mobile: '',
+            gender: 'male',
+            bio: '',
+            update: '',
+            dob: '',
+            insta: '',
+            feed: '',
+            _id: ''
+        };
+        this.search = '';
+        this.city = _shared_CITY__WEBPACK_IMPORTED_MODULE_4__["CITY"];
+        this.pop = false;
+    }
+    ngOnInit() {
+        this.getloc();
+        const prof = {
+            username: window.localStorage.getItem('username')
+        };
+        this.username = window.localStorage.getItem('username');
+        if (window.localStorage.getItem('update') === '0') {
+            this.loc.userprofile(prof).subscribe(data => {
+                this.profile = data[0];
+                // this.eat('Sucess', 1);
+            });
+        }
+        else {
+            this.loc.getupdateuser(prof).subscribe(data => {
+                this.profile = data[0];
+                // this.profile.update = window.localStorage.getItem('update');
+                // this.instaname = data[0]['insta'];
+                // this.prof.fname = this.profile.fullname;
+            });
+        }
+    }
+    getloc() {
+        this.loc.getPosition().then(data => {
+            console.log(data);
+            this.positions = data;
+            // this.loc.goord(this.positions['lat'], this.positions['lng']).subscribe(datas => {
+            //   console.log(datas);
+            // });
+        });
+    }
+    setLoc(pos) {
+        this.positions = pos;
+        this.pop = true;
+    }
+};
+WantroomComponent.ctorParameters = () => [
+    { type: _shared_locality_service__WEBPACK_IMPORTED_MODULE_2__["LocalityService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] }
+];
+WantroomComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-wantroom',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./wantroom.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/wantroom/wantroom.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./wantroom.component.scss */ "./src/app/wantroom/wantroom.component.scss")).default]
+    })
+], WantroomComponent);
 
 
 
