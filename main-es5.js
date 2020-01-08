@@ -51,7 +51,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"board\" [ngClass]=\"(extract==true)?'activate':'board'\">\n        <!--<button class=\"plus\" *ngIf=\"state\" >M</button>-->\n        <!--<i class=\"fas fa-plus-circle\"></i>-->\n        <br>\n        <br class=\"as-non-mob\">\n        <br class=\"as-non-mob\">\n        <div class=\"container\">\n                <router-outlet></router-outlet>\n        </div>\n</div>\n<nav class=\"navbar  as-non-mob fixed-top navbar-light bg-light\">\n        <a class=\"navbar-brand\">\n                <span>\n                        <span *ngIf=\"!open\" (click)=\"open = true\" (click)=\"openNav()\"> &#9776; &nbsp;</span></span>\n                Rental PRO</a>\n</nav>\n\n\n<div class=\"online as-mob\">\n        <div class=\"sidebar\" [ngClass]=\"(extract==true)?'activatesidebar':'sidebar'\">\n                <br>\n\n                <!--{{extract}}-->\n                <i class='fas fa-expand extract' *ngIf=\"extract\" (click)=\"extract = false\"></i>\n                <i class='fas fa-expand-arrows-alt extract' *ngIf=\"!extract\" (click)=\"extract = true\"></i> <br>\n                <a uk-tooltip=\"title:Dashboard;pos:right;\" [routerLink]=\"['/lander']\" *ngIf=\"state==true\"><i\n                                class='fas fa-braille'></i><span>\n                                Dashboard</span></a>\n                <!-- <a uk-tooltip=\"title:Locality;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/locality']\"><i\n                                class='fas fa-bullseye'></i><span>\n                                Locality</span></a> -->\n                <a uk-tooltip=\"title:Locality;pos:right;\"  *ngIf=\"state==true\"\n                        [routerLink]=\"['/wantroom']\"><i class='fas fa-bullseye'></i><span>\n                                Find rooms</span></a>\n                <a uk-tooltip=\"title:Personal details;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/userdata']\"><i\n                                class='far fa-smile'></i><span>\n                                Profile</span></a>\n                <!-- <a uk-tooltip=\"title:Profile;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/profile']\"><i\n                                class='fas fa-clipboard'></i><span>\n                                Profile</span></a> -->\n                <a uk-tooltip=\"title:Property;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/property']\"><i\n                                class='fas fa-cogs'></i><span>\n                                Property </span></a>\n                <a uk-tooltip=\"title:Property board;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/property-info']\"><i\n                                class='fas fa-home'></i><span>\n                                Property Board</span></a>\n                <a uk-tooltip=\"title:Profile board;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/profile-info']\"><i\n                                class='fas fa-bell'></i><span>\n                                Request Board</span></a>\n                <a uk-tooltip=\"title:Disclaimer;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                        [routerLink]=\"['/disclaimer']\"><i class='fas fa-info-circle'></i><span>\n                                &nbsp; Disclaimer</span></a>\n                <!-- <a uk-tooltip=\"title:Login / Register;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/shift']\"><i\n                                class='fas fa-users'></i><span> Login\n                                /\n                                Register</span></a>\n                <a uk-tooltip=\"title: Change password;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/unshift']\"><i\n                                class='fas fa-chart-line'></i><span>\n                                Change password</span></a> -->\n                <a uk-tooltip=\"title:Logout;pos:right;\" *ngIf=\"state==true\" (click)=\"logout()\"><i\n                                class='fas fa-user'></i><span>\n                                Logout</span></a>\n        </div>\n</div>\n<!--[routerLink]=\"['/lander']\"-->\n\n<!--7=77777777777777777777777777777777777777777777-->\n<div id=\"mySidebar\" class=\"sidebars\" style=\"font-size: 16px;\">\n        <a href=\"javascript:void(0)\" *ngIf=\"open\" class=\"closebtn\" (click)=\"closeNav()\">&times;</a>\n        <br>\n        <!--{{extract}}-->\n        <a uk-tooltip=\"title:Dashboard;pos:right;\" [routerLink]=\"['/lander']\" (click)=\"closeNav()\"\n                *ngIf=\"state==true\"><i class='fas fa-braille'></i><span>\n                        Dashboard</span></a>\n        <!-- <a uk-tooltip=\"title:Locality;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/locality']\"><i class='fas fa-bullseye'></i><span>\n                        Locality</span></a> -->\n        <a uk-tooltip=\"title:Locality;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/wantroom']\"><i class='fas fa-bullseye'></i><span>\n                        Find rooms</span></a>\n        <a uk-tooltip=\"title:Personal details;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/userdata']\"><i class='far fa-smile'></i><span>\n                        Profile</span></a>\n        <!-- <a uk-tooltip=\"title:Profile;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\" [routerLink]=\"['/profile']\"><i\n                        class='fas fa-clipboard'></i><span>\n                        Profile</span></a> -->\n        <a uk-tooltip=\"title:Property;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/property']\"><i class='fas fa-cogs'></i><span>\n                        Property </span></a>\n        <a uk-tooltip=\"title:Property board;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/property-info']\"><i class='fas fa-home'></i><span>\n                        Property Board</span></a>\n        <a uk-tooltip=\"title:Profile board;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/profile-info']\"><i class='fas fa-bell'></i><span>\n                        Request Board</span></a>\n        <a uk-tooltip=\"title:Disclaimer;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/disclaimer']\"><i class='fas fa-info-circle'></i><span>\n                        Disclaimer</span></a>\n        <!-- <a uk-tooltip=\"title:Login / Register;pos:right;\" (click)=\"closeNav()\" [routerLink]=\"['/shift']\"\n                *ngIf=\"state==true\"><i class='fas fa-users'></i><span> Login\n                        /\n                        Register</span></a>\n        <a uk-tooltip=\"title: Change password;pos:right;\" (click)=\"closeNav()\" [routerLink]=\"['/unshift']\"\n                *ngIf=\"state==true\"><i class='fas fa-chart-line'></i><span>\n                        Change password</span></a> -->\n        <a uk-tooltip=\"title:Logout;pos:right;\" *ngIf=\"state==true\" (click)=\"closeNav()\" (click)=\"logout()\"><i\n                        class='fas fa-user'></i><span>\n                        Logout</span></a>\n\n</div>\n<div id=\"snackbar\">{{msg}}</div>";
+    __webpack_exports__["default"] = "<div class=\"board\" [ngClass]=\"(extract==true)?'activate':'board'\">\n        <!--<button class=\"plus\" *ngIf=\"state\" >M</button>-->\n        <!--<i class=\"fas fa-plus-circle\"></i>-->\n        <br>\n        <br class=\"as-non-mob\">\n        <br class=\"as-non-mob\">\n        <div class=\"container\">\n                <router-outlet></router-outlet>\n        </div>\n</div>\n<nav class=\"navbar  as-non-mob fixed-top navbar-light bg-light\">\n        <a class=\"navbar-brand\">\n                <span>\n                        <span *ngIf=\"!open\" (click)=\"open = true\" (click)=\"openNav()\"> &#9776; &nbsp;</span></span>\n                Rental PRO</a>\n</nav>\n\n\n<div class=\"online as-mob\">\n        <div class=\"sidebar\" [ngClass]=\"(extract==true)?'activatesidebar':'sidebar'\">\n                <br>\n\n                <!--{{extract}}-->\n                <i class='fas fa-expand extract' *ngIf=\"extract\" (click)=\"extract = false\"></i>\n                <i class='fas fa-expand-arrows-alt extract' *ngIf=\"!extract\" (click)=\"extract = true\"></i> <br>\n                <a uk-tooltip=\"title:Dashboard;pos:right;\" [routerLink]=\"['/lander']\" *ngIf=\"state==true\"><i\n                                class='fas fa-braille'></i><span>\n                                Dashboard</span></a>\n                <!-- <a uk-tooltip=\"title:Locality;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/locality']\"><i\n                                class='fas fa-bullseye'></i><span>\n                                Locality</span></a> -->\n                <a uk-tooltip=\"title:Locality;pos:right;\"  *ngIf=\"state==true\"\n                        [routerLink]=\"['/wantroom']\"><i class='fas fa-bullseye'></i><span>\n                                Find rooms</span></a>\n                <a uk-tooltip=\"title:Personal details;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/userdata']\"><i\n                                class='far fa-smile'></i><span>\n                                Profile</span></a>\n                <!-- <a uk-tooltip=\"title:Profile;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/profile']\"><i\n                                class='fas fa-clipboard'></i><span>\n                                Profile</span></a> -->\n                <a uk-tooltip=\"title:Property;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/property']\"><i\n                                class='fas fa-cogs'></i><span>\n                                Property </span></a>\n                <a uk-tooltip=\"title:Property board;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/property-info']\"><i\n                                class='fas fa-home'></i><span>\n                                Property Board</span></a>\n                <a uk-tooltip=\"title:Profile board;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/profile-info']\"><i\n                                class='fas fa-bell'></i><span>\n                                Request Board</span></a>\n                <a uk-tooltip=\"title:Disclaimer;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                        [routerLink]=\"['/disclaimer']\"><i class='fas fa-info-circle'></i><span>\n                                &nbsp;Disclaimer</span></a>\n                <!-- <a uk-tooltip=\"title:Login / Register;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/shift']\"><i\n                                class='fas fa-users'></i><span> Login\n                                /\n                                Register</span></a>\n                <a uk-tooltip=\"title: Change password;pos:right;\" *ngIf=\"state==true\" [routerLink]=\"['/unshift']\"><i\n                                class='fas fa-chart-line'></i><span>\n                                Change password</span></a> -->\n                <a uk-tooltip=\"title:Logout;pos:right;\" *ngIf=\"state==true\" (click)=\"logout()\"><i\n                                class='fas fa-user'></i><span>\n                                Logout</span></a>\n        </div>\n</div>\n<!--[routerLink]=\"['/lander']\"-->\n\n<!--7=77777777777777777777777777777777777777777777-->\n<div id=\"mySidebar\" class=\"sidebars\" style=\"font-size: 16px;\">\n        <a href=\"javascript:void(0)\" *ngIf=\"open\" class=\"closebtn\" (click)=\"closeNav()\">&times;</a>\n        <br>\n        <!--{{extract}}-->\n        <a uk-tooltip=\"title:Dashboard;pos:right;\" [routerLink]=\"['/lander']\" (click)=\"closeNav()\"\n                *ngIf=\"state==true\"><i class='fas fa-braille'></i><span>\n                        Dashboard</span></a>\n        <!-- <a uk-tooltip=\"title:Locality;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/locality']\"><i class='fas fa-bullseye'></i><span>\n                        Locality</span></a> -->\n        <a uk-tooltip=\"title:Locality;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/wantroom']\"><i class='fas fa-bullseye'></i><span>\n                        Find rooms</span></a>\n        <a uk-tooltip=\"title:Personal details;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/userdata']\"><i class='far fa-smile'></i><span>\n                        Profile</span></a>\n        <!-- <a uk-tooltip=\"title:Profile;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\" [routerLink]=\"['/profile']\"><i\n                        class='fas fa-clipboard'></i><span>\n                        Profile</span></a> -->\n        <a uk-tooltip=\"title:Property;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/property']\"><i class='fas fa-cogs'></i><span>\n                        Property </span></a>\n        <a uk-tooltip=\"title:Property board;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/property-info']\"><i class='fas fa-home'></i><span>\n                        Property Board</span></a>\n        <a uk-tooltip=\"title:Profile board;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/profile-info']\"><i class='fas fa-bell'></i><span>\n                        Request Board</span></a>\n        <a uk-tooltip=\"title:Disclaimer;pos:right;\" (click)=\"closeNav()\" *ngIf=\"state==true\"\n                [routerLink]=\"['/disclaimer']\"><i class='fas fa-info-circle'></i><span>\n                        Disclaimer</span></a>\n        <!-- <a uk-tooltip=\"title:Login / Register;pos:right;\" (click)=\"closeNav()\" [routerLink]=\"['/shift']\"\n                *ngIf=\"state==true\"><i class='fas fa-users'></i><span> Login\n                        /\n                        Register</span></a>\n        <a uk-tooltip=\"title: Change password;pos:right;\" (click)=\"closeNav()\" [routerLink]=\"['/unshift']\"\n                *ngIf=\"state==true\"><i class='fas fa-chart-line'></i><span>\n                        Change password</span></a> -->\n        <a uk-tooltip=\"title:Logout;pos:right;\" *ngIf=\"state==true\" (click)=\"closeNav()\" (click)=\"logout()\"><i\n                        class='fas fa-user'></i><span>\n                        Logout</span></a>\n\n</div>\n<div id=\"snackbar\">{{msg}}</div>";
     /***/
   },
 
@@ -151,7 +151,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<h5>Property dashboard <i class=\"fas fa-home\"></i> </h5>\n\n<!-- {{props|json}} - -->\n<hr>\n<div class=\"form-group\">\n    <input class=\"form-control\" type=\"text\" [(ngModel)]=\"search\" name=\"search\" placeholder=\"Search Property\" id=\"\">\n</div>\n\n<div class=\"row\">\n    <div class=\"col-md-6\" *ngFor=\"let item of props|filter:search; let i=index\">\n        <div class=\"card\" style=\"margin: 5px 0px;\">\n            <div class=\"cardbody\">\n                <img src=\"https://image.flaticon.com/icons/svg/953/953503.svg\" *ngIf=\"item?.htype=='House'\" alt=\"\"\n                    class=\"home\">\n                <img src=\"https://image.flaticon.com/icons/svg/953/953541.svg\" *ngIf=\"item?.htype=='Apartment'\"\n                    class=\"home\" alt=\"\">\n                <img src=\"https://image.flaticon.com/icons/svg/953/953546.svg\" *ngIf=\"item?.htype=='PG-Paying Guest'\"\n                    class=\"home\" alt=\"\">\n                <img src=\"https://image.flaticon.com/icons/svg/953/953482.svg\" *ngIf=\"item?.htype=='Hostel'\"\n                    class=\"home\" alt=\"\">\n                <div class=\"adds\">\n                    <i uk-tooltip=\"title:Propertier;pos:right\" class=\"fas fa-user-circle\"></i>\n                    <i uk-tooltip=\"title:Request;pos:right\" class=\"fas fa-plus-circle\"></i>\n                    <i uk-tooltip=\"title:More info;pos:right\"  class=\"fas fa-info-circle\"></i>\n                </div>\n                <table class=\"uk-table\">\n                    <div class=\"owner\">\n                        <span class=\"badge  badge-primary\">{{item?.loc}}</span>\n                        <span class=\"badge  badge-primary\">{{item?.type}}</span>\n                        <span class=\"badge badge-primary\">{{item?.pin}}</span>\n                    </div>\n                    <tr>\n                        <td colspan=\"2\">\n                            Accomodation for<b> {{item?.mates}} </b> out of <b>\n                                {{item?.acc}} </b> managed by <b>\n                            </b> owner.\n                        </td>\n                    </tr>\n                    <tr>\n                        <td colspan=\"2\">\n                            <i class=\"fas fa-map-signs\"></i>&nbsp;&nbsp;{{item?.add}} <br>\n                            <i class=\"fas fa-map-pin\"></i>&nbsp;&nbsp;&nbsp;{{item?.state}} <br>\n                            <i class=\"fas fa-map-marked-alt\"></i>&nbsp;&nbsp;{{item?.country}} <br>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td>\n                            <b>\n                                <i class=\"fas fa-rupee-sign\"></i>&nbsp;{{item?.starts}} - <i\n                                    class=\"fas fa-rupee-sign\"></i>&nbsp;{{item?.ends}} </b>\n                        </td>\n                    </tr>\n                </table>\n            </div>\n        </div>\n    </div>\n</div>\n<div id=\"snackbar\">{{msg}}</div>";
+    __webpack_exports__["default"] = "<h5>Property dashboard <i class=\"fas fa-home\"></i> </h5>\n\n<!-- {{props|json}} - -->\n<hr>\n<div class=\"form-group\">\n    <input class=\"form-control\" type=\"text\" [(ngModel)]=\"search\" name=\"search\" placeholder=\"Search Property\" id=\"\">\n</div>\n\n<div class=\"row\">\n    <div class=\"col-md-6\" *ngFor=\"let item of props|filter:search; let i=index\">\n        <div class=\"card\" style=\"margin: 5px 0px;\">\n            <div class=\"cardbody\">\n                <img src=\"https://image.flaticon.com/icons/svg/953/953503.svg\" *ngIf=\"item?.htype=='House'\" alt=\"\"\n                    class=\"home\">\n                <img src=\"https://image.flaticon.com/icons/svg/953/953541.svg\" *ngIf=\"item?.htype=='Apartment'\"\n                    class=\"home\" alt=\"\">\n                <img src=\"https://image.flaticon.com/icons/svg/953/953546.svg\" *ngIf=\"item?.htype=='PG-Paying Guest'\"\n                    class=\"home\" alt=\"\">\n                <img src=\"https://image.flaticon.com/icons/svg/953/953482.svg\" *ngIf=\"item?.htype=='Hostel'\"\n                    class=\"home\" alt=\"\">\n                <div class=\"adds\">\n                    <i uk-toggle=\"target:#userinfo\" (click)=\"users= item\" uk-tooltip=\"title:Propertier;pos:right\"\n                        class=\"fas fa-user-circle\"></i>\n                    <i (click)=\"eat('Request sent',1)\" uk-tooltip=\"title:Request;pos:right\"\n                        class=\"fas fa-plus-circle\"></i>\n                    <i (click)=\"eat('Will update soon',2)\" uk-tooltip=\"title:More info;pos:right\"\n                        class=\"fas fa-info-circle\"></i>\n                </div>\n                <table class=\"uk-table\">\n                    <div class=\"owner\">\n                        <span class=\"badge  badge-primary\">{{item?.loc}}</span>\n                        <span class=\"badge  badge-primary\">{{item?.type}}</span>\n                        <span class=\"badge badge-primary\">{{item?.pin}}</span>\n                    </div>\n                    <tr>\n                        <td colspan=\"2\">\n                            Accomodation for<b> {{item?.mates}} </b> out of <b>\n                                {{item?.acc}} </b> managed by <b>\n                            </b> owner.\n                        </td>\n                    </tr>\n                    <tr>\n                        <td colspan=\"2\">\n                            <i class=\"fas fa-map-signs\"></i>&nbsp;&nbsp;{{item?.add}} <br>\n                            <i class=\"fas fa-map-pin\"></i>&nbsp;&nbsp;&nbsp;{{item?.state}} <br>\n                            <i class=\"fas fa-map-marked-alt\"></i>&nbsp;&nbsp;{{item?.country}} <br>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td>\n                            <b>\n                                <i class=\"fas fa-rupee-sign\"></i>&nbsp;{{item?.starts}} - <i\n                                    class=\"fas fa-rupee-sign\"></i>&nbsp;{{item?.ends}} </b>\n                        </td>\n                    </tr>\n                </table>\n            </div>\n        </div>\n    </div>\n</div>\n<div id=\"snackbar\">{{msg}}</div>\n\n\n<!-- This is the modal -->\n\n<div id=\"userinfo\" class=\"uk-flex-top\" uk-modal>\n    <div class=\"uk-modal-dialog uk-modal-body uk-margin-auto-vertical\">\n        <p class=\"uk-modal-title\">Propertier</p>\n        <hr>\n        <h3> {{users?.profile?.fullname}}\n        </h3>\n        <h6><a [href]=\"user?.profile?.email\"><i class=\"far fa-envelope\"></i></a> {{users?.profile?.email}}</h6>\n        <h6><i class=\"fas fa-phone\"></i> {{users?.profile?.mobile}}</h6>\n    </div>\n</div>";
     /***/
   },
 
@@ -271,7 +271,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = " <div class=\"col-md-12 card-left\">\n    <div class=\" \" [ngClass]=\"(sidemenu==true)?'active_screen':'inactive_screen'\">\n        <div class=\" \">\n            <legend>Bachelor / students <small>Individual</small></legend>\n            <form class=\"uk-grid-small\" uk-grid>\n                <div class=\"uk-width-1-1@s\">\n                    <div class=\"js-upload uk-placeholder uk-text-center\">\n                        <span uk-icon=\"icon: cloud-upload\"></span>\n                        <span class=\"uk-text-middle\">&nbsp;&nbsp;Attach image by dropping them here or</span>\n                        <div uk-form-custom>\n                            <input (change)=\"files($event)\" type=\"file\" multiple>\n                            <span class=\"uk-link\">&nbsp;selecting one</span>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Number of house mates</label>&nbsp;\n                    <input class=\"form-control\" [(ngModel)]=\"prop.mates\" name=\"mates\" type=\"number\"\n                        uk-tooltip=\"title:Number of house mates;pos:top;\" placeholder=\"Number of house mates\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Accomadation available</label>&nbsp;\n                    <input class=\"form-control\" [(ngModel)]=\"prop.acc\" name=\"acc\" type=\"number\"\n                        uk-tooltip=\"title:Accomadation available;pos:top;\" placeholder=\"Accomadation available\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Property landmark</label>&nbsp;<i class=\"fas fa-map-marker\"></i>\n                    <input class=\"form-control\" [(ngModel)]=\"prop.landmark\" name=\"landmark\" type=\"text\"\n                        uk-tooltip=\"title:Property landmark;pos:top;\" placeholder=\"Property landmark\">\n                </div>\n                <div class=\"uk-width-1-1@s\">\n                    <label for=\"\">Property type</label>&nbsp;<i class=\"fas fa-compress\"></i>\n                    <select class=\"uk-select\" name=\"\" [(ngModel)]=\"prop.htype\" name=\"type\" id=\"\"\n                        uk-tooltip=\"title:Property type;pos:top;\" placeholder=\"Property type\">\n                        <option>\n                            <img src=\"https://image.flaticon.com/icons/svg/953/953503.svg\" alt=\"\" class=\"home\">\n                            House\n                        </option>\n                        <option>\n                            <img src=\"https://image.flaticon.com/icons/svg/953/953541.svg\" class=\"home\"\n                                alt=\"\">Apartment\n                        </option>\n                        <option>\n                            <img src=\"https://image.flaticon.com/icons/svg/953/953546.svg\" class=\"home\"\n                                alt=\"\">PG-Paying Guest\n                        </option>\n                        <option>\n                            <img src=\"https://image.flaticon.com/icons/svg/953/953482.svg\" class=\"home\"\n                                alt=\"\">Hostel\n                        </option>\n                    </select>\n                </div>\n\n                <!-- <div class=\"uk-width-1-2@s\">\n                    <div class=\"form-group\">\n                        <label for=\"exampleFormControlSelect2\">Additional lookups</label>\n                        <select multiple class=\"form-control\" id=\"exampleFormControlSelect2\">\n                            <option>Individual house</option>\n                            <option>Apartment</option>\n                            <option>Flat</option>\n                            <option>Villa</option>\n                            <option>PG</option>\n                        </select>\n                    </div>\n                </div> -->\n                <div class=\"uk-width-1-1@s\">\n                    <div class=\"form-group\">\n                        <label for=\"exampleFormControlTextarea1\">Additional information</label>\n                        <textarea class=\"form-control\" [(ngModel)]=\"prop.feed\" name=\"feed\"\n                            placeholder=\"Additional information\" id=\"exampleFormControlTextarea1\"\n                            rows=\"4\"></textarea>\n                    </div>\n                </div>\n                <br>\n                <div class=\"uk-width-1-2@s\">\n                    <!-- <label for=\"\">Rent starts from</label>&nbsp;<i -->\n                    <!-- class=\"fas fa-step-backward\"></i>&nbsp;{{prop.starts}} -->\n                    <i class=\"fas rup fa-rupee-sign\"></i>\n                    <input type=\"text\" class=\"form-control\" id=\"asaf\" [(ngModel)]=\"prop.starts\" name=\"starts\"\n                        uk-tooltip=\"title:Rent starts from;pos:top;\">\n                </div>\n                <div class=\"uk-width-1-2@s\">\n                    <i class=\"fas rup fa-rupee-sign\"></i>\n                    <!-- <span class=\"\">{{prop.starts - props.ends}}</span> -->\n                    <!-- <label for=\"\">Rent ends with</label>&nbsp;<i class=\"fas fa-step-forward\"></i>&nbsp;{{prop.ends}} -->\n                    <input type=\"text\" class=\"form-control\" id=\"ssd\" [(ngModel)]=\"prop.ends\" name=\"ends\"\n                        uk-tooltip=\"title:Rent ends with;pos:top;\">\n                </div>\n                <div class=\"uk-width-1-2@s\">\n                    <label for=\"\">Rent starts from</label>&nbsp;<i class=\"fas fa-step-backward\"></i>&nbsp;\n                    <input type=\"range\" class=\"uk-range\" value=\"0\" id=\"asaf\" [(ngModel)]=\"prop.starts\" name=\"starts\"\n                        step=\"1000\" min=\"0\" max=\"10000\">\n                </div>\n                <div class=\"uk-width-1-2@s\">\n                    <label for=\"\">Rent ends with</label>&nbsp;<i class=\"fas fa-step-forward\"></i>&nbsp;\n                    <input type=\"range\" class=\"uk-range\" value=\"0\" id=\"ssd\" [(ngModel)]=\"prop.ends\" step=\"1000\"\n                        min=\"0\" max=\"10000\" name=\"ends\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Door# / Street name</label>&nbsp;<i class=\"fas fa-thumbtack\"></i>\n                    <input class=\"form-control\" [(ngModel)]=\"prop.add\" name=\"add\" type=\"text\"\n                        uk-tooltip=\"title:Door# / Street name;pos:top;\" placeholder=\"Door# / Street name\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Locality / Apartment / Soceity</label>&nbsp;<i class=\"fas fa-search-location\"></i>\n                    <input class=\"form-control\" [(ngModel)]=\"prop.loc\" name=\"loc\" type=\"text\"\n                        uk-tooltip=\"title:Locality / Apartment / Soceity;pos:top;\"\n                        placeholder=\"Locality / Apartment / Soceity\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">State</label>&nbsp;<i class=\"fas fa-map-marked-alt\"></i>\n                    <input class=\"form-control\" [(ngModel)]=\"prop.state\" name=\"state\" type=\"text\"\n                        uk-tooltip=\"title:State;pos:top;\" placeholder=\"State\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Country</label>&nbsp;<i class=\"fas fa-bookmark\"></i>\n                    <input class=\"form-control\" [(ngModel)]=\"prop.country\" name=\"country\" type=\"text\"\n                        uk-tooltip=\"title:Country;pos:top;\" placeholder=\"Country\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Pincode</label>&nbsp;<i class=\"fas fa-list-ol\"></i>\n                    <input class=\"form-control\" type=\"number\" [(ngModel)]=\"prop.pin\" name=\"pin\"\n                        uk-tooltip=\"title:Pincode;pos:top;\" placeholder=\"Pincode\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Owner type</label>&nbsp;<i class=\"fas fa-compress\"></i>\n                    <select class=\"uk-select\" name=\"\" [(ngModel)]=\"prop.type\" name=\"type\" id=\"\"\n                        uk-tooltip=\"title:Owner type;pos:top;\" placeholder=\"Owner type\">\n                        <option>First</option>\n                        <option>Second</option>\n                        <option>Broker</option>\n                        <option>NRI</option>\n                    </select>\n                </div>\n                <!-- {{prop|json}} -->\n            </form>\n            <br>\n            <button (click)=\"props()\" class=\"btn btn-primary btn-block\">Set Property</button>\n\n        </div>\n    </div>\n    <br> <br>\n</div><div id=\"snackbar\">{{msg}}</div>";
+    __webpack_exports__["default"] = "<div class=\"col-md-12 card-left\">\n    <div class=\" \" [ngClass]=\"(sidemenu==true)?'active_screen':'inactive_screen'\">\n        <div class=\" \">\n            <legend>Bachelor / students <small>Individual</small></legend>\n            <form class=\"uk-grid-small\" uk-grid>\n                <div class=\"uk-width-1-1@s\">\n                    <div class=\"js-upload uk-placeholder uk-text-center\">\n                        <span uk-icon=\"icon: cloud-upload\"></span>\n                        <span class=\"uk-text-middle\">&nbsp;&nbsp;Attach image by dropping them here or</span>\n                        <div uk-form-custom>\n                            <input (change)=\"files($event)\" type=\"file\" multiple>\n                            <span class=\"uk-link\">&nbsp;selecting one</span>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Number of house mates</label>&nbsp;\n                    <input class=\"form-control\" [(ngModel)]=\"prop.mates\" name=\"mates\" type=\"number\"\n                        uk-tooltip=\"title:Number of house mates;pos:top;\" placeholder=\"Number of house mates\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Accomadation available</label>&nbsp;\n                    <input class=\"form-control\" [(ngModel)]=\"prop.acc\" name=\"acc\" type=\"number\"\n                        uk-tooltip=\"title:Accomadation available;pos:top;\" placeholder=\"Accomadation available\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Property landmark</label>&nbsp;<i class=\"fas fa-map-marker\"></i>\n                    <input class=\"form-control\" [(ngModel)]=\"prop.landmark\" name=\"landmark\" type=\"text\"\n                        uk-tooltip=\"title:Property landmark;pos:top;\" placeholder=\"Property landmark\">\n                </div>\n                <div class=\"uk-width-1-1@s\">\n                    <label for=\"\">Property type</label>&nbsp;<i class=\"fas fa-compress\"></i>\n                    <select class=\"uk-select\" name=\"\" [(ngModel)]=\"prop.htype\" name=\"type\" id=\"\"\n                        uk-tooltip=\"title:Property type;pos:top;\" placeholder=\"Property type\">\n                        <option>\n                            <img src=\"https://image.flaticon.com/icons/svg/953/953503.svg\" alt=\"\" class=\"home\">\n                            House\n                        </option>\n                        <option>\n                            <img src=\"https://image.flaticon.com/icons/svg/953/953541.svg\" class=\"home\" alt=\"\">Apartment\n                        </option>\n                        <option>\n                            <img src=\"https://image.flaticon.com/icons/svg/953/953546.svg\" class=\"home\" alt=\"\">PG-Paying\n                            Guest\n                        </option>\n                        <option>\n                            <img src=\"https://image.flaticon.com/icons/svg/953/953482.svg\" class=\"home\" alt=\"\">Hostel\n                        </option>\n                    </select>\n                </div>\n\n                <!-- <div class=\"uk-width-1-2@s\">\n                    <div class=\"form-group\">\n                        <label for=\"exampleFormControlSelect2\">Additional lookups</label>\n                        <select multiple class=\"form-control\" id=\"exampleFormControlSelect2\">\n                            <option>Individual house</option>\n                            <option>Apartment</option>\n                            <option>Flat</option>\n                            <option>Villa</option>\n                            <option>PG</option>\n                        </select>\n                    </div>\n                </div> -->\n                <div class=\"uk-width-1-1@s\">\n                    <div class=\"form-group\">\n                        <label for=\"exampleFormControlTextarea1\">Additional information</label>\n                        <textarea class=\"form-control\" [(ngModel)]=\"prop.feed\" name=\"feed\"\n                            placeholder=\"Additional information\" id=\"exampleFormControlTextarea1\" rows=\"4\"></textarea>\n                    </div>\n                </div>\n                <br>\n                <div class=\"uk-width-1-2@s\">\n                    <!-- <label for=\"\">Rent starts from</label>&nbsp;<i -->\n                    <!-- class=\"fas fa-step-backward\"></i>&nbsp;{{prop.starts}} -->\n                    <i class=\"fas rup fa-rupee-sign\"></i>\n                    <input type=\"text\" class=\"form-control\" id=\"asaf\" [(ngModel)]=\"prop.starts\" name=\"starts\"\n                        uk-tooltip=\"title:Rent starts from;pos:top;\">\n                </div>\n                <div class=\"uk-width-1-2@s\">\n                    <i class=\"fas rup fa-rupee-sign\"></i>\n                    <!-- <span class=\"\">{{prop.starts - props.ends}}</span> -->\n                    <!-- <label for=\"\">Rent ends with</label>&nbsp;<i class=\"fas fa-step-forward\"></i>&nbsp;{{prop.ends}} -->\n                    <input type=\"text\" class=\"form-control\" id=\"ssd\" [(ngModel)]=\"prop.ends\" name=\"ends\"\n                        uk-tooltip=\"title:Rent ends with;pos:top;\">\n                </div>\n                <div class=\"uk-width-1-2@s\">\n                    <label for=\"\">Rent starts from</label>&nbsp;<i class=\"fas fa-step-backward\"></i>&nbsp;\n                    <input type=\"range\" class=\"uk-range\" value=\"0\" id=\"asaf\" [(ngModel)]=\"prop.starts\" name=\"starts\"\n                        step=\"1000\" min=\"0\" max=\"10000\">\n                </div>\n                <div class=\"uk-width-1-2@s\">\n                    <label for=\"\">Rent ends with</label>&nbsp;<i class=\"fas fa-step-forward\"></i>&nbsp;\n                    <input type=\"range\" class=\"uk-range\" value=\"0\" id=\"ssd\" [(ngModel)]=\"prop.ends\" step=\"1000\" min=\"0\"\n                        max=\"10000\" name=\"ends\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Door# / Street name</label>&nbsp;<i class=\"fas fa-thumbtack\"></i>\n                    <input class=\"form-control\" [(ngModel)]=\"prop.add\" name=\"add\" type=\"text\"\n                        uk-tooltip=\"title:Door# / Street name;pos:top;\" placeholder=\"Door# / Street name\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Locality / Apartment / Soceity</label>&nbsp;<i class=\"fas fa-search-location\"></i>\n                    <input class=\"form-control\" [(ngModel)]=\"prop.loc\" name=\"loc\" type=\"text\"\n                        uk-tooltip=\"title:Locality / Apartment / Soceity;pos:top;\"\n                        placeholder=\"Locality / Apartment / Soceity\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">State</label>&nbsp;<i class=\"fas fa-map-marked-alt\"></i>\n                    <input class=\"form-control\" [(ngModel)]=\"prop.state\" name=\"state\" type=\"text\"\n                        uk-tooltip=\"title:State;pos:top;\" placeholder=\"State\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Country</label>&nbsp;<i class=\"fas fa-bookmark\"></i>\n                    <input class=\"form-control\" [(ngModel)]=\"prop.country\" name=\"country\" type=\"text\"\n                        uk-tooltip=\"title:Country;pos:top;\" placeholder=\"Country\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Pincode</label>&nbsp;<i class=\"fas fa-list-ol\"></i>\n                    <input class=\"form-control\" type=\"number\" [(ngModel)]=\"prop.pin\" name=\"pin\"\n                        uk-tooltip=\"title:Pincode;pos:top;\" placeholder=\"Pincode\">\n                </div>\n                <div class=\"uk-width-1-3@s\">\n                    <label for=\"\">Owner type</label>&nbsp;<i class=\"fas fa-compress\"></i>\n                    <select class=\"uk-select\" name=\"\" [(ngModel)]=\"prop.type\" name=\"type\" id=\"\"\n                        uk-tooltip=\"title:Owner type;pos:top;\" placeholder=\"Owner type\">\n                        <option>First</option>\n                        <option>Second</option>\n                        <option>Broker</option>\n                        <option>NRI</option>\n                    </select>\n                </div>\n                <!-- {{prop|json}} -->\n            </form>\n            <br>\n            <div class=\"row\">\n                <div class=\"col-md-3\">\n                    <div class=\"form-group\">\n                        <label for=\"exampleFormControlInput1\">Email address</label>\n                        <input type=\"email\" name=\"ddki\" [(ngModel)]=\"profile.email\" readonly class=\"form-control\"\n                            id=\"exampleFormControlInput1\" placeholder=\"name@example.com\">\n                    </div>\n                </div>\n                <div class=\"col-md-3\">\n                    <div class=\"form-group\">\n                        <label for=\"exampleFormControlInput1\">Mobile number</label>\n                        <input type=\"number\" name=\"ddksi\" [(ngModel)]=\"profile.mobile\" readonly class=\"form-control\"\n                            id=\"exampleFormContf rolInput1\" placeholder=\"name@example.com\">\n                    </div>\n                </div>\n                <div class=\"col-md-3\">\n                    <div class=\"form-group\">\n                        <label for=\"exampleFormControlInput1\">Gender</label>\n                        <input type=\"text\" name=\"ddrwksi\" [(ngModel)]=\"profile.gender\" readonly class=\"form-control\"\n                            id=\"exampleFormdfControlInput1\" placeholder=\"name@example.com\">\n                    </div>\n                </div>\n                <div class=\"col-md-3\">\n                    <div class=\"form-group\">\n                        <label for=\"exampleFormControlInput1\">Full name</label>\n                        <input type=\"text\" name=\"ddkersi\" [(ngModel)]=\"profile.fullname\" readonly class=\"form-control\"\n                            id=\"exampleFormContrsfolInput1\" placeholder=\"name@example.com\">\n                    </div>\n                </div>\n            </div>\n            <button (click)=\"props()\" class=\"btn btn-primary btn-block\">Post Property</button>\n\n        </div>\n    </div>\n    <br> <br>\n</div>\n<div id=\"snackbar\">{{msg}}</div>\n<!-- This is a button toggling the modal -->\n";
     /***/
   },
 
@@ -2983,17 +2983,28 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass(OneComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          var _this14 = this;
+
+          var prof = {
+            username: window.localStorage.getItem('username')
+          };
+          this.username = window.localStorage.getItem('username');
+          this.loc.userprofile(prof).subscribe(function (data) {
+            _this14.profile = data[0];
+          });
+        }
       }, {
         key: "props",
         value: function props() {
-          var _this14 = this;
+          var _this15 = this;
 
+          this.prop['profile'] = this.profile;
           this.loc.property(this.prop).subscribe(function (data) {
             if (data['status'] === true) {
-              _this14.eat(data['msg'], 1);
+              _this15.eat(data['msg'], 1);
             } else {
-              _this14.eat(data['msg'], 2);
+              _this15.eat(data['msg'], 2);
             }
           });
         }
@@ -3125,13 +3136,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "props",
         value: function props() {
-          var _this15 = this;
+          var _this16 = this;
 
           this.loc.property(this.prop).subscribe(function (data) {
             if (data['status'] === true) {
-              _this15.eat(data['msg'], 1);
+              _this16.eat(data['msg'], 1);
             } else {
-              _this15.eat(data['msg'], 2);
+              _this16.eat(data['msg'], 2);
             }
           });
         }
@@ -3263,13 +3274,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "props",
         value: function props() {
-          var _this16 = this;
+          var _this17 = this;
 
           this.loc.property(this.prop).subscribe(function (data) {
             if (data['status'] === true) {
-              _this16.eat(data['msg'], 1);
+              _this17.eat(data['msg'], 1);
             } else {
-              _this16.eat(data['msg'], 2);
+              _this17.eat(data['msg'], 2);
             }
           });
         }
@@ -5792,58 +5803,58 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ShiftComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this17 = this;
+          var _this18 = this;
 
           this.loc.getYellow().subscribe(function (data) {
-            _this17.info = data; // console.log(this.info.length);
+            _this18.info = data; // console.log(this.info.length);
           });
         }
       }, {
         key: "logins",
         value: function logins() {
-          var _this18 = this;
+          var _this19 = this;
 
           this.enter = false;
           this.logdata = true;
           this.loc.usercheck(this.login).subscribe(function (ccc) {
             if (ccc['status'] === false) {
-              _this18.loc.login(_this18.login).subscribe(function (data) {
-                _this18.logdata = false;
+              _this19.loc.login(_this19.login).subscribe(function (data) {
+                _this19.logdata = false;
 
                 if (data['status'] === true) {
                   console.log(data, data['msg']);
 
-                  _this18.eat(data['msg'], 1);
+                  _this19.eat(data['msg'], 1);
 
-                  _this18.logdata = false;
+                  _this19.logdata = false;
                   window.localStorage.setItem("username", data['username']);
                   window.localStorage.setItem("logged", data['username']);
                   window.localStorage.setItem("update", data['update']);
                   window.localStorage.setItem("_id", data['_id']);
 
-                  _this18.router.navigate(['/userdata']);
+                  _this19.router.navigate(['/userdata']);
 
                   window.localStorage.setItem("state", "true");
                 } else {
-                  _this18.eat(data['msg'], 2);
+                  _this19.eat(data['msg'], 2);
 
-                  _this18.logdata = false;
-                  _this18.enter = true;
+                  _this19.logdata = false;
+                  _this19.enter = true;
                   window.localStorage.setItem("state", "false");
                 }
               });
             } else {
-              _this18.logdata = false;
-              _this18.enter = true;
+              _this19.logdata = false;
+              _this19.enter = true;
 
-              _this18.eat('Username not exists', 2);
+              _this19.eat('Username not exists', 2);
             }
           });
         }
       }, {
         key: "register",
         value: function register() {
-          var _this19 = this;
+          var _this20 = this;
 
           this.enter = false; // delete this.login.lucky;
           // delete this.login.phrase;
@@ -5851,32 +5862,32 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           this.logdata = true;
           this.loc.usercheck(this.login).subscribe(function (ccc) {
             if (ccc['status'] === true) {
-              if (_this19.login.password === _this19.login.cpassword) {
-                _this19.loc.register(_this19.login).subscribe(function (data) {
-                  _this19.logdata = undefined;
-                  _this19.enter = true;
-                  _this19.reg = true;
-                  _this19.regData = data['msg'];
+              if (_this20.login.password === _this20.login.cpassword) {
+                _this20.loc.register(_this20.login).subscribe(function (data) {
+                  _this20.logdata = undefined;
+                  _this20.enter = true;
+                  _this20.reg = true;
+                  _this20.regData = data['msg'];
 
                   if (data['status'] === true) {
-                    _this19.eat(data['msg'], 1);
+                    _this20.eat(data['msg'], 1);
                   } else {
-                    _this19.eat(data['msg'], 2);
+                    _this20.eat(data['msg'], 2);
                   }
                 });
               } else {
-                _this19.logdata = undefined;
-                _this19.enter = true;
-                _this19.reg = true;
+                _this20.logdata = undefined;
+                _this20.enter = true;
+                _this20.reg = true;
 
-                _this19.eat('Password not matched', 2);
+                _this20.eat('Password not matched', 2);
               }
             } else {
-              _this19.logdata = undefined;
-              _this19.enter = true;
-              _this19.reg = true;
+              _this20.logdata = undefined;
+              _this20.enter = true;
+              _this20.reg = true;
 
-              _this19.eat(ccc['msg'], 2);
+              _this20.eat(ccc['msg'], 2);
             }
           });
         }
@@ -5996,11 +6007,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(UnshiftComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this20 = this;
+          var _this21 = this;
 
           this.load = true;
           setTimeout(function () {
-            _this20.load = false;
+            _this21.load = false;
           }, 3000);
         }
       }]);
@@ -6127,7 +6138,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(WantroomComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this21 = this;
+          var _this22 = this;
 
           this.getloc();
           var prof = {
@@ -6137,11 +6148,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           if (window.localStorage.getItem('update') === '0') {
             this.loc.userprofile(prof).subscribe(function (data) {
-              _this21.profile = data[0]; // this.eat('Sucess', 1);
+              _this22.profile = data[0]; // this.eat('Sucess', 1);
             });
           } else {
             this.loc.getupdateuser(prof).subscribe(function (data) {
-              _this21.profile = data[0]; // this.profile.update = window.localStorage.getItem('update');
+              _this22.profile = data[0]; // this.profile.update = window.localStorage.getItem('update');
               // this.instaname = data[0]['insta'];
               // this.prof.fname = this.profile.fullname;
             });
@@ -6150,12 +6161,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getloc",
         value: function getloc() {
-          var _this22 = this;
+          var _this23 = this;
 
           this.loc.getPosition().then(function (data) {
             console.log(data);
-            _this22.positions = data;
-            _this22.pop = false; // this.loc.goord(this.positions['lat'], this.positions['lng']).subscribe(datas => {
+            _this23.positions = data;
+            _this23.pop = false; // this.loc.goord(this.positions['lat'], this.positions['lng']).subscribe(datas => {
             //   console.log(datas);
             // });
           });
